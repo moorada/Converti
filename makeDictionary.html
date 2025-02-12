@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convertitore di lista di parole (txt) in un dizionario (json) per la conversione fonetica</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+    #file-input {
+      margin: 20px 0;
+    }
+    #download-btn {
+      display: none;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      background: #4caf50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    #download-btn:hover {
+      background: #43a047;
+    }
+    pre {
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: left;
+      overflow: auto;
+      max-height: 300px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Convertitore di lista di parole (txt) in un dizionario (json) per la conversione fonetica</h1>
+  
+  <!-- File input for reading a .txt file -->
+  <input type="file" id="file-input" accept=".txt">
+  
+  <!-- Button for downloading the resulting JSON -->
+  <button id="download-btn">Scarica JSON</button>
+  
+  <!-- Output area for showing the generated JSON -->
+  <pre id="output"></pre>
+
+  <script>
+    /**
+     * Main DOM references and event listeners
+     */
+    const fileInput = document.getElementById('file-input');
+    const downloadBtn = document.getElementById('download-btn');
+    const outputPre = document.getElementById('output');
+
+    fileInput.addEventListener('change', handleFileSelection);
+    downloadBtn.addEventListener('click', downloadJson);
+
+    /**
+     * Handles the file selection event. Reads the .txt file content
+     * and converts each word to a numeric key using 'convertWord'.
+     * Builds an object with numericKey -> array of words.
+     */
+    function handleFileSelection(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        // Split file content into lines, remove empty lines, trim each line
+        const wordsFromTxt = new Set(
+          e.target.result
+            .split('\n')
+            .map(w => w.trim())
+            .filter(w => w)
+        );
+
+        // Dictionary is a map of numberKey -> set of words
+        const dictionaryMap = {};
+
+        wordsFromTxt.forEach(word => {
+          const numberKey = convertWord(word);
+          if (!dictionaryMap[numberKey]) {
+            dictionaryMap[numberKey] = new Set();
+          }
+          dictionaryMap[numberKey].add(word);
+        });
+
+        // Convert each set to an array for final JSON
+        const finalDictionary = {};
+        Object.keys(dictionaryMap).forEach(key => {
+          finalDictionary[key] = Array.from(dictionaryMap[key]);
+        });
+
+        const jsonOutput = JSON.stringify(finalDictionary, null, 2);
+        outputPre.textContent = jsonOutput;
+        downloadBtn.style.display = 'inline-block';
+      };
+
+      reader.readAsText(file);
+    }
+
+    /**
+     * Converts a single word to its numeric code according to phonetic rules.
+     * Vowels are removed, and specific phonetic patterns are replaced with digits.
+     * If the result is empty, '99999999' is used as a fallback.
+     */
+    function convertWord(input) {
+      if (!input) return "99999999";
+
+      let word = input.toLowerCase().trim();
+
+      const VOWELS = ["a", "e", "i", "o", "u"];
+      const CONVERSION_TABLE = [
+        { number: "0", phonetics: ["ss", "zz", "sci", "sce", "s", "z"] },
+        { number: "1", phonetics: ["tt", "dd", "t", "d"] },
+        { number: "2", phonetics: ["nn", "gn", "n"] },
+        { number: "3", phonetics: ["mm", "m"] },
+        { number: "4", phonetics: ["rr", "r"] },
+        { number: "5", phonetics: ["gli", "ll", "l"] },
+        { number: "6", phonetics: ["cci", "ci", "cce", "ce", "ggi", "gi", "gge", "ge"] },
+        { number: "7", phonetics: ["cc", "gg", "cq", "kk", "ck", "q", "k", "c", "g"] },
+        { number: "8", phonetics: ["ff", "vv", "f", "v"] },
+        { number: "9", phonetics: ["pp", "bb", "p", "b"] }
+      ];
+
+      // Replace phonetic patterns with corresponding digits
+      CONVERSION_TABLE.forEach(entry => {
+        entry.phonetics.forEach(phonetic => {
+          const regex = new RegExp(phonetic, "g");
+          word = word.replace(regex, entry.number);
+        });
+      });
+
+      // Remove all vowels
+      VOWELS.forEach(v => {
+        const rg = new RegExp(v, "g");
+        word = word.replace(rg, "");
+      });
+
+      // If the word becomes empty, return fallback
+      return word === "" ? "99999999" : word;
+    }
+
+    /**
+     * Downloads the JSON currently displayed in the <pre> element as 'dictionary.json'.
+     */
+    function downloadJson() {
+      const jsonOutput = outputPre.textContent;
+      const blob = new Blob([jsonOutput], { type: 'application/json' });
+      const temporaryLink = document.createElement('a');
+      temporaryLink.href = URL.createObjectURL(blob);
+      temporaryLink.download = 'dictionary.json';
+      document.body.appendChild(temporaryLink);
+      temporaryLink.click();
+      document.body.removeChild(temporaryLink);
+    }
+  </script>
+</body>
+</html>

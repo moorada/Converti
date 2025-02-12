@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="./favicon/site.webmanifest" />
+
+  <title>CONVERTI</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <!-- Custom Toast -->
+  <div id="custom-alert">Testo copiato negli appunti!</div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="icon icon-left" id="help-icon">
+      <span class="material-icons">help_outline</span>
+    </a>
+
+    <div class="title-container">
+      <div class="svg-container">
+        <img src="./images/numbers.svg" alt="Numeri" class="svg-img">
+      </div>
+      <h1 class="title">
+        <span class="title-text">CONVERTI</span>
+      </h1>
+      <div class="svg-container">
+        <img src="./images/letters.svg" alt="Lettere" class="svg-img">
+      </div>
+    </div>
+
+    <a href="#" class="icon icon-right" id="settings-icon">
+      <span class="material-icons">settings</span>
+    </a>
+  </header>
+
+  <!-- Overlay for Popups -->
+  <div id="overlay" class="hidden"></div>
+
+  <!-- Popup Help -->
+  <div id="help-popup" class="popup">
+    <h2>CONVERSIONE FONETICA</h2>
+    <p>
+      La conversione fonetica è una tecnica di memorizzazione dei numeri. Funziona convertendo i numeri in consonanti e,
+      aggiungendo opportunamente delle vocali, si formano parole che si possono ricordare con più facilità di una serie
+      di cifre.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>N.</th>
+          <th>Suono</th>
+          <th>Lettere</th>
+          <th>Esempio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Dentale</td>
+          <td>T, D</td>
+          <td>tè, dio</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Nasale</td>
+          <td>N, GN</td>
+          <td>neo, anno</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Mugolante</td>
+          <td>M</td>
+          <td>amo, mio</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Vibrante</td>
+          <td>R</td>
+          <td>ara, oro</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Liquido</td>
+          <td>L, GL</td>
+          <td>ali, aglio</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Palatale</td>
+          <td>C, G (dolci)</td>
+          <td>ciao, gi</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Gutturale</td>
+          <td>C, G (dure), K</td>
+          <td>eco, chi</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Labiodentale</td>
+          <td>F, V</td>
+          <td>ufo, uva</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Labiale</td>
+          <td>P, B</td>
+          <td>boa, ape</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Sibilante</td>
+          <td>S, SC, Z</td>
+          <td>sei, ascia</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>🎯 REGOLE 🎯</h3>
+    <p>🅰️ Le vocali? Non contano, sono solo di compagnia!</p>
+    <p>🔁 Le doppie? Contano come una, niente raddoppi inutili!</p>
+    <p>🎵 Conta il suono, non la scrittura! Fidati delle tue orecchie👂!</p>
+  </div>
+
+  <!-- Popup Settings -->
+  <div id="settings-popup" class="popup">
+    <h2>IMPOSTAZIONI</h2>
+
+    <div class="setting-row" style="flex-direction: column; align-items: flex-start;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <p style="margin: 0;">Solo parole esistenti</p>
+        <label class="switch">
+          <input type="checkbox" id="check-words" />
+          <span class="slider"></span>
+        </label>
+      </div>
+      <small>
+        Se attivato, le parole inserite in “DA NUMERI” saranno verificate 
+        con il dizionario per assicurarsi che esistano davvero.
+      </small>
+    </div>
+
+    <br>
+    <h3>GESTIONE DIZIONARI</h3>
+    <p class="left-text">
+      Converti utilizza <strong>due raccolte di parole</strong>, 
+      pensate per le due modalità di gioco.
+      <br><br>
+      Il primo dizionario include un <em>ampio ventaglio di parole</em> 
+      e serve a controllare che i termini inseriti in “DA NUMERI” 
+      siano effettivamente esistenti, 
+      quando si attiva l’opzione “Solo parole esistenti”.
+      <br><br>
+      Il secondo dizionario, invece, raccoglie <em>parole più comuni</em> 
+      per la modalità “DA PAROLE”. 
+      In questo modo, quando l’app genera una parola a caso da convertire in cifre, 
+      si evitano termini troppo rari, offrendo un’esperienza di gioco più scorrevole.
+    </p>
+    
+    <div>
+      <h4>Dizionario per validare parole (DA NUMERI)</h4>
+      <button id="export-big" class="export-import-button">Esporta dizionario</button>
+      <button id="import-big" class="export-import-button">Importa dizionario</button>
+    </div>
+    <br>
+    <div>
+      <h4>Dizionario con parole più comuni (DA PAROLE)</h4>
+      <button id="export-small" class="export-import-button">Esporta dizionario</button>
+      <button id="import-small" class="export-import-button">Importa dizionario</button>
+    </div>
+    
+    <div id="loading-message" style="text-align:left; max-width:600px; margin:10px auto;">
+      <span class="material-icons" style="vertical-align:middle;">schedule</span>
+      Import in corso... Attendere
+    </div>
+    
+    <!-- Hidden file inputs for dictionary import -->
+    <input type="file" id="import-file-big" style="display:none" accept=".txt" />
+    <input type="file" id="import-file-small" style="display:none" accept=".txt" />
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="menu">
+    <button id="btn-numbers" onclick="showContent('numbers')">DA NUMERI</button>
+    <button id="btn-words" onclick="showContent('words')">DA PAROLE</button>
+  </div>
+
+  <!-- Main Container -->
+  <div id="page-container">
+    <div id="game-container">
+      <div id="timer">10</div>
+      <p id="info-text"></p>
+      <div id="box"></div>
+
+      <input type="text" inputmode="text" id="word-input" placeholder="Inserisci le parole" />
+
+      <input type="input" inputmode="numeric" pattern="[0-9]*" id="number-input" placeholder="Inserisci i numeri" />
+
+      <button id="start-button" onclick="initGame()" disabled>Inizia</button>
+    </div>
+  </div>
+
+  <!-- Scoreboard -->
+  <div id="resoconto"></div>
+
+  <!-- Footer with mapping reminder -->
+  <div class="footer">
+    <div class="mapping-footer">
+      <div>1 ➜ T, D</div>
+      <div>2 ➜ N, GN</div>
+      <div>3 ➜ M</div>
+      <div>4 ➜ R</div>
+      <div>5 ➜ L, GL</div>
+      <div>6 ➜ C, G (dolci)</div>
+      <div>7 ➜ C, G (dure), K</div>
+      <div>8 ➜ F, V</div>
+      <div>9 ➜ P, B</div>
+      <div>0 ➜ S, SC, Z</div>
+    </div>
+  </div>
+
+  <!-- Main JS -->
+  <script src="./js/script.js"></script>
+</body>
+</html>
