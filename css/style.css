@@ -18,7 +18,7 @@
   
   .left-text {
     text-align: left;
-    margin: 0 auto; /* Center the block if desired */
+    margin: 0 auto;
     line-height: 1.4;
   }
   
@@ -513,4 +513,16 @@
     border-radius: 8px; 
     font-weight: bold;
   }
+
+  #loading-message-first {
+    display: none; 
+    margin-top: 10px;
+    color: var(--text-color);
+    background-color: #fff4c2;
+    border: 1px solid #ffc107;
+    padding: 10px; 
+    border-radius: 8px; 
+    font-weight: bold;
+  }
+  
   

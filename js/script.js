@@ -1,8 +1,3 @@
-/**********************************************
- * All function names and comments in English *
- * Displayed text in Italian remains in HTML  *
- **********************************************/
-
 let bigDictionary = {};
 let smallDictionary = {};
 
@@ -47,6 +42,9 @@ const importSmallButton = document.getElementById("import-small");
 const importFileSmall   = document.getElementById("import-file-small");
 
 const loadingMessage    = document.getElementById("loading-message");
+const loadingMessageFirst    = document.getElementById("loading-message-first");
+loadingMessageFirst.style.display = "none";
+
 
 // Tables for phonetics
 const VOWELS = ["a","e","i","o","u"];
@@ -201,6 +199,7 @@ async function loadDictionaryFromJson(jsonUrl) {
  * same for smallDictionary.
  */
 async function loadDictionaries() {
+  loadingMessageFirst.style.display = "block";
   indexedDBInstance = await openDatabase();
   console.log("IndexedDB opened:", indexedDBInstance);
 
@@ -208,13 +207,13 @@ async function loadDictionaries() {
   let loadedBigDict = await getDictionaryFromDB("big");
   if (!loadedBigDict) {
     // If not found => try bigDictionary.json
-    let bigJson = await loadDictionaryFromJson("./bigDictionary.json");
+    let bigJson = await loadDictionaryFromJson("./dictionaries/bigDictionary.json");
     if (bigJson) {
       loadedBigDict = bigJson;
       console.log("Loaded bigDictionary.json with", Object.keys(loadedBigDict).length, "keys");
     } else {
       // If .json not found => fallback to bigDictionary.txt
-      let bigTxt = await loadDictionaryFromTxt("./bigDictionary.txt");
+      let bigTxt = await loadDictionaryFromTxt("./dictionaries/bigDictionary.txt");
       loadedBigDict = bigTxt;
       console.log("Loaded bigDictionary.txt with", Object.keys(loadedBigDict).length, "keys");
     }
@@ -227,13 +226,13 @@ async function loadDictionaries() {
   let loadedSmallDict = await getDictionaryFromDB("small");
   if (!loadedSmallDict) {
     // If not found => try smallDictionary.json
-    let smallJson = await loadDictionaryFromJson("./smallDictionary.json");
+    let smallJson = await loadDictionaryFromJson("./dictionaries/smallDictionary.json");
     if (smallJson) {
       loadedSmallDict = smallJson;
       console.log("Loaded smallDictionary.json with", Object.keys(loadedSmallDict).length, "keys");
     } else {
       // If .json not found => fallback to smallDictionary.txt
-      let smallTxt = await loadDictionaryFromTxt("./smallDictionary.txt");
+      let smallTxt = await loadDictionaryFromTxt("./dictionaries/smallDictionary.txt");
       loadedSmallDict = smallTxt;
       console.log("Loaded smallDictionary.txt with", Object.keys(loadedSmallDict).length, "keys");
     }
@@ -241,6 +240,7 @@ async function loadDictionaries() {
     await saveDictionaryToDB("small", loadedSmallDict);
   }
   smallDictionary = loadedSmallDict;
+  loadingMessageFirst.style.display = "none";
 }
 
 /**
@@ -718,7 +718,7 @@ function endGame() {
   boxElement.style.display = "none";
 
   infoText.style.display = "block";
-  infoText.innerHTML = `Tempo scaduto! Hai indovinato ${correctCount} volte.`;
+  infoText.innerHTML = `Tempo scaduto! Hai totalizzato ${correctCount} punti.`;
 
   const shareBtn = document.createElement("button");
   shareBtn.id = "share-button";
@@ -738,12 +738,14 @@ function shareResult() {
     textContent += p.innerText + "\n";
   });
 
+  const gameUrl = `${window.location.origin}`;
+
   const finalText = `Ho totalizzato ${correctCount} punti giocando a 🔢 Converti 🔡!
 Ecco il mio resoconto:
 ${textContent}
 
 Prova anche tu questo gioco:
-https://tuo-dominio-o-link-di-gioco.example.com
+${gameUrl}
 `;
 
   if (navigator.share) {
