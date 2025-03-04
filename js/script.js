@@ -4,7 +4,8 @@ let smallDictionary = {};
 let currentMode = "numbers";
 let isGameOver = false;
 let timerInterval = null;
-let timeLeft = 10;
+const gameDuration = 120;
+let timeLeft = gameDuration;
 let correctCount = 0;
 
 let digitsForNumbers = 1;  
@@ -424,7 +425,7 @@ function initGame() {
   if (oldShareBtn) oldShareBtn.remove();
 
   isGameOver = false;
-  timeLeft = 10;
+  timeLeft = gameDuration;
   correctCount = 0;
   timerElement.style.display = "inline-block";
   timerElement.textContent = timeLeft;
