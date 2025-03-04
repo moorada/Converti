@@ -741,10 +741,11 @@ function shareResult() {
   const gameUrl = `${window.location.origin}/Converti`;
 
   const finalText = `Ho totalizzato ${correctCount} punti giocando a \n🔢 CONVERTI 🔡!
+  
 Ecco il mio resoconto:
 ${textContent}
 
-Prova anche tu questo gioco:
+Mettiti alla prova con la conversione fonetica:
 ${gameUrl}
 `;
 
