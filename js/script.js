@@ -4,7 +4,7 @@ let smallDictionary = {};
 let currentMode = "numbers";
 let isGameOver = false;
 let timerInterval = null;
-let timeLeft = 120;
+let timeLeft = 10;
 let correctCount = 0;
 
 let digitsForNumbers = 1;  
@@ -424,7 +424,7 @@ function initGame() {
   if (oldShareBtn) oldShareBtn.remove();
 
   isGameOver = false;
-  timeLeft = 120;
+  timeLeft = 10;
   correctCount = 0;
   timerElement.style.display = "inline-block";
   timerElement.textContent = timeLeft;
@@ -615,13 +615,13 @@ function nextQuestionWords() {
 function checkWordsAnswer() {
   if (isGameOver) return;
   const userNumber = numberInput.value.trim();
-  const joinedWords = currentWordsArray.join("");
+  const joinedWords = currentWordsArray.join(" ");
   const correctNumber = convertWord(joinedWords);
 
   if (userNumber === correctNumber) {
     gameContainer.classList.add("correct");
     setTimeout(() => gameContainer.classList.remove("correct"), 500);
-    updateScoreboard(currentWordsArray.join(""), userNumber, true, false);
+    updateScoreboard(joinedWords, userNumber, true, false);
     correctCount++;
     if (correctCount % 3 === 0) {
       wordsCountForGame++;
@@ -630,7 +630,7 @@ function checkWordsAnswer() {
   } else {
     gameContainer.classList.add("incorrect");
     setTimeout(() => gameContainer.classList.remove("incorrect"), 500);
-    updateScoreboard(currentWordsArray.join(""), userNumber, false, false);
+    updateScoreboard(joinedWords, userNumber, false, false);
   }
   numberInput.value = "";
 }
@@ -741,7 +741,7 @@ function shareResult() {
   const gameUrl = `${window.location.origin}/Converti`;
 
   const finalText = `Ho totalizzato ${correctCount} punti giocando a \n🔢 CONVERTI 🔡!
-  
+
 Ecco il mio resoconto:
 ${textContent}
 
