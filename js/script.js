@@ -740,7 +740,7 @@ function shareResult() {
 
   const gameUrl = `${window.location.origin}/Converti`;
 
-  const finalText = `Ho totalizzato ${correctCount} punti giocando a 🔢 Converti 🔡!
+  const finalText = `Ho totalizzato ${correctCount} punti giocando a \n🔢 CONVERTI 🔡!
 Ecco il mio resoconto:
 ${textContent}
 
