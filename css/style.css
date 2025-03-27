@@ -266,7 +266,9 @@ small {
 }
 
 #game-container {
-  padding: 20px;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
   font-size: 1.2em;
   background: var(--panel-bg);
   color: var(--panel-text);
@@ -305,7 +307,7 @@ small {
 #box {
   background: var(--box-bg);
   color: var(--box-text);
-  width: 80%;
+
   margin: 10px auto;
   padding: 10px;
   border: 2px solid var(--text-color);
@@ -316,7 +318,6 @@ small {
 
 #word-input,
 #number-input {
-  width: 80%;
   padding: 10px;
   font-size: 1.2em;
   border: 2px solid var(--text-color);
@@ -568,3 +569,41 @@ input:checked+.slider:before {
   border-radius: 8px;
   font-weight: bold;
 }
+.input-group {
+  display: flex;
+  justify-content: center;
+
+  margin: 10px auto;
+  gap: 10px;
+  
+}
+
+.input-group input {
+  width: 100%;
+  font-size: 1.2em;
+  border: 2px solid var(--text-color);
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+
+}
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  border: 2px solid var(--text-color);
+  border-radius: 5px;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.submit-btn:hover {
+  background: #43a047;
+}
+

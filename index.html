@@ -244,10 +244,12 @@
       <p id="info-text"></p>
       <div id="box"></div>
 
-      <input type="text" inputmode="text" id="word-input" placeholder="Inserisci le parole" />
-
-      <input type="input" inputmode="numeric" pattern="[0-9]*" id="number-input" placeholder="Inserisci i numeri" />
-
+      <div id="input-group" class="input-group">
+        <input type="text" inputmode="text" id="word-input" placeholder="Inserisci le parole" />
+        <input type="input" inputmode="numeric" pattern="[0-9]*" id="number-input" placeholder="Inserisci i numeri" />
+        <button id="submit-btn" class="submit-btn" tabindex="-1">Invia</button>
+      </div>
+      
       <button id="start-button" onclick="initGame()" disabled>Inizia</button>
     </div>
   </div>

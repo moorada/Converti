@@ -365,7 +365,59 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
 });
+const submitBtn = document.getElementById("submit-btn");
 
+function updateSubmitButtonVisibility() {
+  const wordVisible = wordInput.style.display !== "none";
+  const numberVisible = numberInput.style.display !== "none";
+  submitBtn.style.display = (wordVisible || numberVisible) ? "inline-block" : "none";
+}
+
+// Wrappa showContent, initGame, endGame per aggiornare visibilità bottone
+const originalShowContent = showContent;
+showContent = function(mode) {
+  originalShowContent(mode);
+  updateSubmitButtonVisibility();
+};
+
+const originalInitGame = initGame;
+initGame = function() {
+  originalInitGame();
+  updateSubmitButtonVisibility();
+};
+
+const originalEndGame = endGame;
+endGame = function() {
+  originalEndGame();
+  updateSubmitButtonVisibility();
+};
+
+submitBtn.addEventListener("mousedown", (e) => {
+  e.preventDefault(); // Evita il blur
+
+  const wordVisible = wordInput.style.display !== "none";
+  const numberVisible = numberInput.style.display !== "none";
+
+  let targetInput = null;
+
+  if (wordVisible && !wordInput.disabled) {
+    targetInput = wordInput;
+  } else if (numberVisible && !numberInput.disabled) {
+    targetInput = numberInput;
+  }
+
+  if (targetInput) {
+    // Dispatch finto evento 'Enter'
+    const event = new KeyboardEvent('keypress', {
+      key: 'Enter',
+      code: 'Enter',
+      keyCode: 13,
+      which: 13,
+      bubbles: true
+    });
+    targetInput.dispatchEvent(event);
+  }
+});
 /**
  * Show the content for the given mode ("numbers" or "words").
  */
