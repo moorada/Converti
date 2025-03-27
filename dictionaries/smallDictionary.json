@@ -3,11 +3,6 @@
     "assai",
     "essa",
     "esso",
-    "se",
-    "si",
-    "su",
-    "suo",
-    "sì",
     "uso",
     "zia",
     "zio"
@@ -17,23 +12,14 @@
     "atto",
     "dio",
     "età",
-    "idea",
-    "tu",
-    "tuo"
+    "idea"
   ],
   "2": [
     "anno",
-    "in",
-    "no",
-    "noi",
-    "né",
     "ogni",
-    "un",
     "uno"
   ],
   "3": [
-    "ma",
-    "mio",
     "uomo"
   ],
   "4": [
@@ -43,39 +29,25 @@
     "oro"
   ],
   "5": [
-    "egli",
-    "il",
-    "lei",
-    "lui",
-    "là",
-    "lì"
+    "egli"
   ],
   "6": [
     "cioè",
-    "ciò",
     "gioia",
-    "già",
-    "giù",
     "oggi"
   ],
   "7": [
     "acqua",
-    "che",
-    "chi",
-    "cui",
     "ecco",
     "occhio",
     "qua",
     "qui"
   ],
   "8": [
-    "vi",
-    "via",
-    "voi"
+    "via"
   ],
   "9": [
-    "buio",
-    "più"
+    "buio"
   ],
   "10": [
     "addosso",
@@ -102,7 +74,6 @@
     "dire",
     "duro",
     "odore",
-    "tra",
     "udire"
   ],
   "15": [
@@ -128,7 +99,6 @@
     "nudo"
   ],
   "22": [
-    "non",
     "ognuno"
   ],
   "23": [
@@ -277,8 +247,7 @@
     "gatto"
   ],
   "72": [
-    "cane",
-    "con"
+    "cane"
   ],
   "73": [
     "come"
@@ -328,7 +297,6 @@
     "avere",
     "ferro",
     "fiore",
-    "fra",
     "fuori",
     "vario",
     "vero"
@@ -391,7 +359,6 @@
     "opporre",
     "oppure",
     "paura",
-    "per",
     "però",
     "porre",
     "pure",

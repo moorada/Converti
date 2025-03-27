@@ -159,8 +159,6 @@ centro
 cercare
 certamente
 certo
-che
-chi
 chiamare
 chiaro
 chiave
@@ -177,7 +175,6 @@ cittadino
 città
 civile
 civiltà
-ciò
 classe
 collina
 collo
@@ -201,7 +198,6 @@ comprendere
 comune
 comunicazione
 comunque
-con
 concedere
 concetto
 concludere
@@ -251,7 +247,6 @@ crisi
 cristiano
 croce
 cucina
-cui
 cultura
 cuore
 cura
@@ -402,7 +397,6 @@ forse
 forte
 fortuna
 forza
-fra
 francese
 frase
 fratello
@@ -442,8 +436,6 @@ giugno
 giungere
 giustizia
 giusto
-già
-giù
 godere
 governo
 grado
@@ -463,7 +455,6 @@ guidare
 gusto
 idea
 ieri
-il
 immaginare
 immagine
 imparare
@@ -475,7 +466,6 @@ importare
 impossibile
 impressione
 improvviso
-in
 incontrare
 indicare
 indietro
@@ -524,7 +514,6 @@ legare
 legge
 leggere
 leggero
-lei
 lettera
 letto
 levare
@@ -541,13 +530,9 @@ lontano
 loro
 lotta
 luce
-lui
 luna
 lungo
 luogo
-là
-lì
-ma
 macchina
 madre
 maestro
@@ -596,7 +581,6 @@ minimo
 ministro
 minore
 minuto
-mio
 misura
 moderno
 modo
@@ -632,11 +616,8 @@ neppure
 nero
 nessuno
 niente
-no
 nobile
-noi
 nome
-non
 nord
 normale
 nostro
@@ -650,7 +631,6 @@ nulla
 numero
 numeroso
 nuovo
-né
 occasione
 occhio
 occorrere
@@ -713,7 +693,6 @@ pelle
 pena
 pensare
 pensiero
-per
 perché
 perciò
 perdere
@@ -743,7 +722,6 @@ pieno
 pietra
 pietà
 piuttosto
-più
 poco
 poesia
 poeta
@@ -926,7 +904,6 @@ scrittore
 scrivere
 scuola
 scusare
-se
 secolo
 secondo
 sede
@@ -952,7 +929,6 @@ servizio
 settimana
 sforzo
 sguardo
-si
 sicurezza
 sicuro
 significare
@@ -1026,19 +1002,16 @@ strumento
 studiare
 studio
 stupido
-su
 subito
 succedere
 successo
 sud
-suo
 suonare
 superare
 superiore
 svegliare
 sviluppo
 svolgere
-sì
 tacere
 tagliare
 tale
@@ -1066,7 +1039,6 @@ toccare
 togliere
 tono
 tornare
-tra
 tranquillo
 trarre
 trascinare
@@ -1077,8 +1049,6 @@ treno
 triste
 troppo
 trovare
-tu
-tuo
 tuttavia
 tutto
 uccidere
@@ -1088,7 +1058,6 @@ ufficio
 uguale
 ultimo
 umano
-un
 unico
 unire
 università
@@ -1115,7 +1084,6 @@ vero
 verso
 vestire
 vestito
-vi
 via
 viaggio
 vicino
@@ -1130,7 +1098,6 @@ vivere
 vivo
 voce
 voglia
-voi
 volare
 volere
 volgere
