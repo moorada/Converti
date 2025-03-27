@@ -7,6 +7,7 @@
     "si",
     "su",
     "suo",
+    "sì",
     "uso",
     "zia",
     "zio"
@@ -14,9 +15,8 @@
   "1": [
     "aiuto",
     "atto",
-    "da",
-    "di",
     "dio",
+    "età",
     "idea",
     "tu",
     "tuo"
@@ -24,16 +24,15 @@
   "2": [
     "anno",
     "in",
-    "ne",
     "no",
     "noi",
+    "né",
     "ogni",
     "un",
     "uno"
   ],
   "3": [
     "ma",
-    "mi",
     "mio",
     "uomo"
   ],
@@ -47,19 +46,25 @@
     "egli",
     "il",
     "lei",
-    "li",
-    "lo",
-    "lui"
+    "lui",
+    "là",
+    "lì"
   ],
   "6": [
-    "ci",
+    "cioè",
+    "ciò",
     "gioia",
+    "già",
+    "giù",
     "oggi"
   ],
   "7": [
     "acqua",
+    "che",
+    "chi",
     "cui",
     "ecco",
+    "occhio",
     "qua",
     "qui"
   ],
@@ -69,7 +74,8 @@
     "voi"
   ],
   "9": [
-    "buio"
+    "buio",
+    "più"
   ],
   "10": [
     "addosso",
@@ -139,6 +145,7 @@
     "nulla"
   ],
   "27": [
+    "anche",
     "unico"
   ],
   "28": [
@@ -153,6 +160,7 @@
   ],
   "31": [
     "medio",
+    "metà",
     "modo"
   ],
   "32": [
@@ -204,6 +212,7 @@
     "reale"
   ],
   "47": [
+    "orecchio",
     "ricco"
   ],
   "48": [
@@ -239,6 +248,7 @@
     "luogo"
   ],
   "61": [
+    "città",
     "oggetto"
   ],
   "62": [
@@ -258,6 +268,8 @@
     "casa",
     "caso",
     "causa",
+    "chiesa",
+    "chissà",
     "cosa",
     "quasi"
   ],
@@ -273,6 +285,7 @@
   ],
   "74": [
     "caro",
+    "chiaro",
     "cuore",
     "cura",
     "guerra"
@@ -282,6 +295,10 @@
     "quale",
     "quello",
     "uguale"
+  ],
+  "78": [
+    "caffè",
+    "chiave"
   ],
   "79": [
     "capo"
@@ -333,7 +350,8 @@
     "voce"
   ],
   "87": [
-    "fuoco"
+    "fuoco",
+    "vecchio"
   ],
   "88": [
     "vivo"
@@ -352,6 +370,7 @@
   "91": [
     "abito",
     "piede",
+    "pietà",
     "poeta"
   ],
   "92": [
@@ -373,6 +392,7 @@
     "oppure",
     "paura",
     "per",
+    "però",
     "porre",
     "pure",
     "puro"
@@ -388,7 +408,11 @@
   "97": [
     "bocca",
     "epoca",
-    "poco"
+    "poco",
+    "poiché"
+  ],
+  "99": [
+    "papà"
   ],
   "101": [
     "testa"
@@ -430,6 +454,7 @@
     "terzo"
   ],
   "141": [
+    "autorità",
     "diretto",
     "diritto",
     "tardi",
@@ -469,6 +494,9 @@
   "180": [
     "difesa"
   ],
+  "181": [
+    "attività"
+  ],
   "184": [
     "davvero",
     "dovere"
@@ -507,6 +535,9 @@
   ],
   "221": [
     "niente"
+  ],
+  "227": [
+    "neanche"
   ],
   "232": [
     "nemmeno"
@@ -620,6 +651,9 @@
   "364": [
     "maggiore"
   ],
+  "372": [
+    "macchina"
+  ],
   "374": [
     "magari"
   ],
@@ -652,6 +686,9 @@
   "434": [
     "armare"
   ],
+  "451": [
+    "realtà"
+  ],
   "462": [
     "origine",
     "ragione",
@@ -659,7 +696,8 @@
   ],
   "470": [
     "ragazza",
-    "ragazzo"
+    "ragazzo",
+    "ricchezza"
   ],
   "474": [
     "recare"
@@ -770,6 +808,8 @@
   "714": [
     "accadere",
     "cadere",
+    "chiedere",
+    "chiudere",
     "godere",
     "guidare",
     "quadro"
@@ -790,7 +830,8 @@
     "comune"
   ],
   "734": [
-    "camera"
+    "camera",
+    "chiamare"
   ],
   "739": [
     "campo",
@@ -838,7 +879,8 @@
     "classe"
   ],
   "751": [
-    "caldo"
+    "caldo",
+    "qualità"
   ],
   "752": [
     "collina"
@@ -850,6 +892,9 @@
   ],
   "756": [
     "calcio"
+  ],
+  "757": [
+    "qualche"
   ],
   "759": [
     "colpa",
@@ -901,7 +946,8 @@
     "venire"
   ],
   "827": [
-    "fianco"
+    "fianco",
+    "finché"
   ],
   "830": [
     "famoso"
@@ -923,7 +969,8 @@
     "freddo",
     "fretta",
     "frutto",
-    "verde"
+    "verde",
+    "verità"
   ],
   "843": [
     "fermo",
@@ -1042,7 +1089,12 @@
     "parola"
   ],
   "946": [
-    "braccio"
+    "braccio",
+    "perciò"
+  ],
+  "947": [
+    "parecchio",
+    "perché"
   ],
   "948": [
     "bravo",
@@ -1153,6 +1205,9 @@
   "1727": [
     "tecnico"
   ],
+  "1744": [
+    "dichiarare"
+  ],
   "1814": [
     "dividere"
   ],
@@ -1216,6 +1271,9 @@
   ],
   "2514": [
     "inoltre"
+  ],
+  "2601": [
+    "necessità"
   ],
   "2604": [
     "necessario"
@@ -1325,6 +1383,9 @@
   "4684": [
     "ricevere"
   ],
+  "4714": [
+    "richiedere"
+  ],
   "4741": [
     "ricordo"
   ],
@@ -1364,6 +1425,9 @@
   ],
   "5844": [
     "lavorare"
+  ],
+  "5941": [
+    "libertà"
   ],
   "5944": [
     "liberare"
@@ -1411,6 +1475,9 @@
   ],
   "6821": [
     "giovanotto"
+  ],
+  "6851": [
+    "civiltà"
   ],
   "7012": [
     "questione"
@@ -1563,6 +1630,9 @@
   "8514": [
     "voltare"
   ],
+  "8521": [
+    "volontà"
+  ],
   "8564": [
     "volgere"
   ],
@@ -1712,6 +1782,9 @@
   "18420": [
     "differenza"
   ],
+  "18751": [
+    "difficoltà"
+  ],
   "19214": [
     "dipendere"
   ],
@@ -1729,6 +1802,9 @@
   ],
   "21404": [
     "interessare"
+  ],
+  "28401": [
+    "università"
   ],
   "30144": [
     "mostrare"
@@ -1871,6 +1947,9 @@
   "74640": [
     "accorgersi"
   ],
+  "75314": [
+    "chilometro"
+  ],
   "82014": [
     "finestra"
   ],
@@ -1885,6 +1964,9 @@
   ],
   "90120": [
     "abbastanza"
+  ],
+  "90951": [
+    "possibilità"
   ],
   "92124": [
     "abbandonare"
@@ -2091,170 +2173,6 @@
   "94995321": [
     "probabilmente"
   ],
-  "99999999": [
-    "a",
-    "e",
-    "io",
-    "o"
-  ],
-  "0ì": [
-    "sì"
-  ],
-  "1à": [
-    "età"
-  ],
-  "2é": [
-    "né"
-  ],
-  "5à": [
-    "là"
-  ],
-  "5ì": [
-    "lì"
-  ],
-  "6è": [
-    "cioè"
-  ],
-  "6ò": [
-    "ciò"
-  ],
-  "6à": [
-    "già"
-  ],
-  "6ù": [
-    "giù"
-  ],
-  "7h": [
-    "che",
-    "chi",
-    "occhio"
-  ],
-  "9ù": [
-    "più"
-  ],
-  "27h": [
-    "anche"
-  ],
-  "31à": [
-    "metà"
-  ],
-  "47h": [
-    "orecchio"
-  ],
-  "61à": [
-    "città"
-  ],
-  "7h0": [
-    "chiesa"
-  ],
-  "7h0à": [
-    "chissà"
-  ],
-  "7h4": [
-    "chiaro"
-  ],
-  "78è": [
-    "caffè"
-  ],
-  "7h8": [
-    "chiave"
-  ],
-  "87h": [
-    "vecchio"
-  ],
-  "91à": [
-    "pietà"
-  ],
-  "94ò": [
-    "però"
-  ],
-  "97hé": [
-    "poiché"
-  ],
-  "99à": [
-    "papà"
-  ],
-  "141à": [
-    "autorità"
-  ],
-  "181à": [
-    "attività"
-  ],
-  "227h": [
-    "neanche"
-  ],
-  "37h2": [
-    "macchina"
-  ],
-  "451à": [
-    "realtà"
-  ],
-  "47h0": [
-    "ricchezza"
-  ],
-  "7h14": [
-    "chiedere",
-    "chiudere"
-  ],
-  "7h34": [
-    "chiamare"
-  ],
-  "751à": [
-    "qualità"
-  ],
-  "757h": [
-    "qualche"
-  ],
-  "827hé": [
-    "finché"
-  ],
-  "841à": [
-    "verità"
-  ],
-  "946ò": [
-    "perciò"
-  ],
-  "947h": [
-    "parecchio"
-  ],
-  "947hé": [
-    "perché"
-  ],
-  "17h44": [
-    "dichiarare"
-  ],
-  "2601à": [
-    "necessità"
-  ],
-  "47h14": [
-    "richiedere"
-  ],
-  "5941à": [
-    "libertà"
-  ],
-  "6851à": [
-    "civiltà"
-  ],
-  "8521à": [
-    "volontà"
-  ],
-  "18751à": [
-    "difficoltà"
-  ],
-  "28401à": [
-    "università"
-  ],
-  "7h5314": [
-    "chilometro"
-  ],
-  "90951à": [
-    "possibilità"
-  ],
-  "h": [
-    "ah",
-    "eh",
-    "oh"
-  ],
   "07514": [
     "ascoltare",
     "escludere"
@@ -2397,7 +2315,7 @@
     "scendere",
     "sentire"
   ],
-  "07h404": [
+  "07404": [
     "scherzare"
   ],
   "020": [
@@ -2499,7 +2417,7 @@
   "065": [
     "sociale"
   ],
-  "061à": [
+  "061": [
     "società"
   ],
   "0844": [

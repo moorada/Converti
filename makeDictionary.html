@@ -106,47 +106,70 @@
       reader.readAsText(file);
     }
 
+
+// Tables for phonetics
+const VOWELS = ["a","e","i","o","u"];
+const ITALIAN_ADJUSTMENTS = [
+  { original:"a", variants:["á","à"] },
+  { original:"e", variants:["è","é"] },
+  { original:"i", variants:["ì","í","y","j"] },
+  { original:"o", variants:["ò","ó"] },
+  { original:"u", variants:["ù","ú"] },
+  { original:"ks", variants:["x"] }
+];
+const EXCEPTIONS = [
+  { number:"756", words:["glig","glic"] },
+  { number:"05",  words:["siglio"] },
+  { number:"405", words:["rsigli"] },
+  { number:"205", words:["msigli"] },
+  { number:"075", words:["sigli"] }
+];
+const CONVERSION_TABLE = [
+  { number:"0", phonetics:["ss","zz","sci","sce","s","z"] },
+  { number:"1", phonetics:["tt","dd","t","d"] },
+  { number:"2", phonetics:["nn","gn","n"] },
+  { number:"3", phonetics:["mm","m"] },
+  { number:"4", phonetics:["rr","r"] },
+  { number:"5", phonetics:["gli","ll","l"] },
+  { number:"6", phonetics:["cci","ci","cce","ce","ggi","gi","gge","ge"] },
+  { number:"7", phonetics:["cc","gg","cq","kk","ck","q","k","c","g"] },
+  { number:"8", phonetics:["ff","vv","f","v"] },
+  { number:"9", phonetics:["pp","bb","p","b"] }
+];
+
+
     /**
      * Converts a single word to its numeric code according to phonetic rules.
      * Vowels are removed, and specific phonetic patterns are replaced with digits.
      * If the result is empty, '99999999' is used as a fallback.
      */
-    function convertWord(input) {
-      if (!input) return "99999999";
+     function convertWord(input) {
+  if (!input) return "99999999";
+  let word = String(input).toLowerCase().trim();
 
-      let word = input.toLowerCase().trim();
-
-      const VOWELS = ["a", "e", "i", "o", "u"];
-      const CONVERSION_TABLE = [
-        { number: "0", phonetics: ["ss", "zz", "sci", "sce", "s", "z"] },
-        { number: "1", phonetics: ["tt", "dd", "t", "d"] },
-        { number: "2", phonetics: ["nn", "gn", "n"] },
-        { number: "3", phonetics: ["mm", "m"] },
-        { number: "4", phonetics: ["rr", "r"] },
-        { number: "5", phonetics: ["gli", "ll", "l"] },
-        { number: "6", phonetics: ["cci", "ci", "cce", "ce", "ggi", "gi", "gge", "ge"] },
-        { number: "7", phonetics: ["cc", "gg", "cq", "kk", "ck", "q", "k", "c", "g"] },
-        { number: "8", phonetics: ["ff", "vv", "f", "v"] },
-        { number: "9", phonetics: ["pp", "bb", "p", "b"] }
-      ];
-
-      // Replace phonetic patterns with corresponding digits
-      CONVERSION_TABLE.forEach(entry => {
-        entry.phonetics.forEach(phonetic => {
-          const regex = new RegExp(phonetic, "g");
-          word = word.replace(regex, entry.number);
-        });
-      });
-
-      // Remove all vowels
-      VOWELS.forEach(v => {
-        const rg = new RegExp(v, "g");
-        word = word.replace(rg, "");
-      });
-
-      // If the word becomes empty, return fallback
-      return word === "" ? "99999999" : word;
-    }
+  ITALIAN_ADJUSTMENTS.forEach((adj) => {
+    adj.variants.forEach((variant) => {
+      word = word.replace(new RegExp(variant, "g"), adj.original);
+    });
+  });
+  EXCEPTIONS.forEach((ex) => {
+    ex.words.forEach((w) => {
+      word = word.replace(new RegExp(w, "g"), ex.number);
+    });
+  });
+  CONVERSION_TABLE.forEach((entry) => {
+    entry.phonetics.forEach((phonetic) => {
+      const regex = new RegExp(phonetic, "g");
+      word = word.replace(regex, entry.number);
+    });
+  });
+  VOWELS.forEach((v) => {
+    const rg = new RegExp(v, "g");
+    word = word.replace(rg, "");
+  });
+  word = word.replace(/[^0-9]/g, "");
+  return (word === "") ? "99999999" : word;
+}
 
     /**
      * Downloads the JSON currently displayed in the <pre> element as 'dictionary.json'.
