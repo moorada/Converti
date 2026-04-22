@@ -5,6 +5,7 @@ The description of this tool is in Italian because this tool is designed for Ita
 Webapp per esercitarsi con la conversione fonetica (The major system), in lingua italiana.
 
 🔗 **[Live Demo](https://moorada.github.io/Converti/)** (GitHub Pages)
+🔗 **[Allenamento conversione fonetica](https://moorada.github.io/Converti/allenamento-conversione-fonetica.html)** (guida pratica)
 
 ---
 
@@ -78,4 +79,3 @@ POLSO   950
  - Ti viene mostrata una o più parole casuali.  
  - Devi scrivere il numero corrispondente secondo le regole della conversione fonetica. 
  - Ogni 3 risposte corrette, aumentano le parole da convertire!
-

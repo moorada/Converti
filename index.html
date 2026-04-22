@@ -4,22 +4,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <meta name="description" content="Converti è un gioco interattivo per allenarsi con la conversione fonetica (sistema maggiore), migliorare la velocità di associazione numeri-parole e condividere i propri risultati divertendosi." />
-  <meta name="keywords" content="conversione fonetica, numeri, memoria, gioco, mnemonica, esercizi mentali, allenarsi, sistema maggiore">
+  <title>Converti | Gioco di Conversione Fonetica e Allenamento Sistema Maggiore</title>
+  <meta name="description" content="Converti è un gioco online gratuito per la conversione fonetica: allenamento pratico del sistema maggiore, esercizi numeri-parole e sfide a tempo per migliorare memoria e velocità." />
+  <meta name="keywords" content="conversione fonetica, conversione fonetica allenamento, allenamento conversione fonetica, gioco conversione fonetica, sistema maggiore, esercizi sistema maggiore, mnemonica numeri parole">
   <meta name="author" content="moorada">
-  <meta property="og:title" content="Converti - Gioco di Conversione Fonetica">
-  <meta property="og:description"
-    content="Un gioco divertente per imparare la conversione fonetica e migliorare la memoria.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="https://moorada.github.io/Converti/" />
+  <link rel="alternate" hreflang="it-IT" href="https://moorada.github.io/Converti/" />
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Converti">
+  <meta property="og:title" content="Converti | Gioco di Conversione Fonetica e Allenamento">
+  <meta property="og:description" content="Allenati con la conversione fonetica (sistema maggiore) con esercizi numeri-parole e modalità sfida.">
   <meta property="og:url" content="https://moorada.github.io/Converti/">
+  <meta property="og:image" content="https://moorada.github.io/Converti/favicon/favicon.svg">
+  <meta property="og:image:alt" content="Logo Converti per allenamento conversione fonetica">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Converti | Allenamento Conversione Fonetica">
+  <meta name="twitter:description" content="Gioco online gratuito per conversione fonetica e sistema maggiore.">
+  <meta name="twitter:image" content="https://moorada.github.io/Converti/favicon/favicon.svg">
+  <link rel="sitemap" type="application/xml" title="Sitemap Converti" href="https://moorada.github.io/Converti/sitemap.xml" />
 
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- Favicons -->
   <link rel="icon" href="/Converti/favicon/favicon.ico" type="image/x-icon" />
-
-  <title>CONVERTI</title>
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="./css/style.css" />
@@ -31,6 +42,64 @@
     gtag('js', new Date());
 
     gtag('config', 'G-KKYCT5V96P');
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Converti",
+          "url": "https://moorada.github.io/Converti/",
+          "inLanguage": "it-IT",
+          "description": "Gioco online per la conversione fonetica con focus su allenamento ed esercizi del sistema maggiore."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Converti",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "Web",
+          "url": "https://moorada.github.io/Converti/",
+          "inLanguage": "it-IT",
+          "description": "Web app gratuita per allenamento conversione fonetica, esercizi numeri-parole e pratica del sistema maggiore.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR"
+          },
+          "keywords": "conversione fonetica, allenamento conversione fonetica, sistema maggiore, esercizi mnemonica"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "A cosa serve Converti?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Converti serve ad allenarsi con la conversione fonetica e con il sistema maggiore, migliorando la velocita di associazione tra numeri e parole."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Converti e utile per l'allenamento della conversione fonetica?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Si. Include modalita da numeri e da parole, con difficolta progressiva e timer, ideali per un allenamento regolare."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Posso usare Converti gratis?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Si, la web app e gratuita e funziona direttamente nel browser."
+              }
+            }
+          ]
+        }
+      ]
+    }
   </script>
 </head>
 
@@ -225,35 +294,68 @@
 
   </div>
 
-  <!-- Navigation Buttons -->
-  <div class="menu">
-    <button id="btn-numbers" onclick="showContent('numbers')">DA NUMERI</button>
-    <button id="btn-words" onclick="showContent('words')">DA PAROLE</button>
-  </div>
-
-  <!-- Main Container -->
-  <div id="page-container">
-    <div id="loading-message-first" style="max-width:600px; margin:10px auto;">
-      <span class="material-icons" style="vertical-align:middle;">schedule</span>
-      Caricamento in corso... Attendere
+  <main>
+    <!-- Navigation Buttons -->
+    <div class="menu">
+      <button id="btn-numbers" onclick="showContent('numbers')">DA NUMERI</button>
+      <button id="btn-words" onclick="showContent('words')">DA PAROLE</button>
     </div>
-    <div id="game-container">
-      <div id="timer">10</div>
-      <p id="info-text"></p>
-      <div id="box"></div>
 
-      <div id="input-group" class="input-group">
-        <input type="text" inputmode="text" id="word-input" placeholder="Inserisci le parole" />
-        <input type="input" inputmode="numeric" pattern="[0-9]*" id="number-input" placeholder="Inserisci i numeri" />
-        <button id="submit-btn" class="submit-btn" tabindex="-1">Invia</button>
+    <!-- Main Container -->
+    <div id="page-container">
+      <div id="loading-message-first" style="max-width:600px; margin:10px auto;">
+        <span class="material-icons" style="vertical-align:middle;">schedule</span>
+        Caricamento in corso... Attendere
       </div>
-      
-      <button id="start-button" onclick="initGame()" disabled>Inizia</button>
-    </div>
-  </div>
+      <div id="game-container">
+        <div id="timer">10</div>
+        <p id="info-text"></p>
+        <div id="box"></div>
 
-  <!-- Scoreboard -->
-  <div id="resoconto"></div>
+        <div id="input-group" class="input-group">
+          <input type="text" inputmode="text" id="word-input" placeholder="Inserisci le parole" />
+          <input type="input" inputmode="numeric" pattern="[0-9]*" id="number-input" placeholder="Inserisci i numeri" />
+          <button id="submit-btn" class="submit-btn" tabindex="-1">Invia</button>
+        </div>
+
+        <button id="start-button" onclick="initGame()" disabled>Inizia</button>
+      </div>
+    </div>
+
+    <!-- Scoreboard -->
+    <div id="resoconto"></div>
+
+    <section class="seo-content" aria-label="Allenamento conversione fonetica">
+      <h2>Allenamento Conversione Fonetica Online</h2>
+      <p>
+        Converti e una web app per fare <strong>allenamento conversione fonetica</strong> in modo pratico.
+        Puoi allenarti nel passaggio numeri-parole e parole-numeri, con difficolta progressiva e timer.
+      </p>
+      <h3>Perche funziona per l'allenamento</h3>
+      <p>
+        La modalita sfida migliora rapidita e precisione: ripetendo esercizi brevi e frequenti, il sistema maggiore
+        diventa piu automatico e stabile nella memoria a lungo termine.
+      </p>
+      <h3>Esercizi consigliati con Converti</h3>
+      <ol>
+        <li>Fai 2 sessioni da 2 minuti in modalita <strong>DA NUMERI</strong>.</li>
+        <li>Fai 2 sessioni da 2 minuti in modalita <strong>DA PAROLE</strong>.</li>
+        <li>Rivedi gli errori nel resoconto e ripeti subito i pattern piu difficili.</li>
+      </ol>
+      <p>
+        Se cercavi <em>conversione fonetica allenamento</em>, questa pagina e pensata proprio per questo uso:
+        esercitarti ogni giorno con un gioco rapido e gratuito.
+      </p>
+      <p class="seo-link">
+        Guida completa:
+        <a href="./allenamento-conversione-fonetica.html">allenamento conversione fonetica con metodo, esercizi e routine</a>.
+      </p>
+      <h3>FAQ</h3>
+      <p><strong>A cosa serve Converti?</strong><br>Serve ad allenarsi con conversione fonetica e sistema maggiore, migliorando la velocita di associazione tra numeri e parole.</p>
+      <p><strong>Converti e utile per l'allenamento della conversione fonetica?</strong><br>Si. Include modalita da numeri e da parole, con difficolta progressiva e timer.</p>
+      <p><strong>Posso usare Converti gratis?</strong><br>Si, la web app e gratuita e funziona direttamente nel browser.</p>
+    </section>
+  </main>
 
   <!-- Footer with mapping reminder -->
   <div class="footer">
