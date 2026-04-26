@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>converti Lab | Gioco di Conversione Fonetica e Allenamento Sistema Maggiore</title>
+  <meta name="description" content="converti Lab è un gioco online gratuito per la conversione fonetica: allenamento pratico del sistema maggiore, esercizi numeri-parole e sfide a tempo per migliorare memoria e velocità." />
+  <meta name="keywords" content="conversione fonetica, conversione fonetica allenamento, allenamento conversione fonetica, gioco conversione fonetica, sistema maggiore, esercizi sistema maggiore, mnemonica numeri parole">
+  <meta name="author" content="moorada">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="https://moorada.github.io/converti-lab/" />
+  <link rel="alternate" hreflang="it-IT" href="https://moorada.github.io/converti-lab/" />
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="converti Lab">
+  <meta property="og:title" content="converti Lab | Gioco di Conversione Fonetica e Allenamento">
+  <meta property="og:description" content="Allenati con la conversione fonetica (sistema maggiore) con esercizi numeri-parole e modalità sfida.">
+  <meta property="og:url" content="https://moorada.github.io/converti-lab/">
+  <meta property="og:image" content="https://moorada.github.io/converti-lab/favicon/favicon.svg">
+  <meta property="og:image:alt" content="Logo converti Lab per allenamento conversione fonetica">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="converti Lab | Allenamento Conversione Fonetica">
+  <meta name="twitter:description" content="Gioco online gratuito per conversione fonetica e sistema maggiore.">
+  <meta name="twitter:image" content="https://moorada.github.io/converti-lab/favicon/favicon.svg">
+  <link rel="sitemap" type="application/xml" title="Sitemap converti Lab" href="https://moorada.github.io/converti-lab/sitemap.xml" />
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/converti-lab/favicon/favicon.ico" type="image/x-icon" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKYCT5V96P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KKYCT5V96P');
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "converti Lab",
+          "url": "https://moorada.github.io/converti-lab/",
+          "inLanguage": "it-IT",
+          "description": "Gioco online per la conversione fonetica con focus su allenamento ed esercizi del sistema maggiore."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "converti Lab",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "Web",
+          "url": "https://moorada.github.io/converti-lab/",
+          "inLanguage": "it-IT",
+          "description": "Web app gratuita per allenamento conversione fonetica, esercizi numeri-parole e pratica del sistema maggiore.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR"
+          },
+          "keywords": "conversione fonetica, allenamento conversione fonetica, sistema maggiore, esercizi mnemonica"
+        }
+      ]
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Custom Toast -->
+  <div id="custom-alert">Testo copiato negli appunti!</div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="icon icon-left" id="help-icon">
+      <span class="material-icons">help_outline</span>
+    </a>
+
+    <div class="title-container">
+      <div class="svg-container">
+        <img src="./images/numbers.svg" alt="Numeri" class="svg-img">
+      </div>
+      <h1 class="title">
+        <span class="title-text">CONVERTI LAB</span>
+      </h1>
+      <div class="svg-container">
+        <img src="./images/letters.svg" alt="Lettere" class="svg-img">
+      </div>
+    </div>
+
+    <a href="#" class="icon icon-right" id="settings-icon">
+      <span class="material-icons">settings</span>
+    </a>
+  </header>
+
+  <!-- Overlay for Popups -->
+  <div id="overlay" class="hidden"></div>
+
+  <!-- Popup Help -->
+  <div id="help-popup" class="popup">
+    <h2>CONVERSIONE FONETICA</h2>
+    <p>
+      La conversione fonetica è una tecnica di memorizzazione dei numeri. Funziona convertendo i numeri in consonanti e,
+      aggiungendo opportunamente delle vocali, si formano parole che si possono ricordare con più facilità di una serie
+      di cifre.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>N.</th>
+          <th>Suono</th>
+          <th>Lettere</th>
+          <th>Esempio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Dentale</td>
+          <td>T, D</td>
+          <td>tè, dio</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Nasale</td>
+          <td>N, GN</td>
+          <td>neo, anno</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Mugolante</td>
+          <td>M</td>
+          <td>amo, mio</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Vibrante</td>
+          <td>R</td>
+          <td>ara, oro</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Liquido</td>
+          <td>L, GL</td>
+          <td>ali, aglio</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Palatale</td>
+          <td>C, G (dolci)</td>
+          <td>ciao, gi</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Gutturale</td>
+          <td>C, G (dure), K</td>
+          <td>eco, chi</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Labiodentale</td>
+          <td>F, V</td>
+          <td>ufo, uva</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Labiale</td>
+          <td>P, B</td>
+          <td>boa, ape</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Sibilante</td>
+          <td>S, SC, Z</td>
+          <td>sei, ascia</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>🎯 REGOLE 🎯</h3>
+    <p>🅰️ Le vocali? Non contano, sono solo di compagnia!</p>
+    <p>🔁 Le doppie? Contano come una, niente raddoppi inutili!</p>
+    <p>🎵 Conta il suono, non la scrittura! Fidati delle tue orecchie👂!</p>
+  </div>
+
+  <!-- Popup Settings -->
+  <div id="settings-popup" class="popup">
+    <h2>IMPOSTAZIONI</h2>
+
+    <div class="setting-row" style="flex-direction: column; align-items: flex-start;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <p style="margin: 0;">Solo parole esistenti</p>
+        <label class="switch">
+          <input type="checkbox" id="check-words" />
+          <span class="slider"></span>
+        </label>
+      </div>
+      <small>
+        Se attivato, le parole inserite in “DA NUMERI” saranno verificate
+        con il dizionario per assicurarsi che esistano davvero.
+      </small>
+    </div>
+
+    <div class="setting-row" style="flex-direction: column; align-items: flex-start;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <p style="margin: 0;">Numeri → parole con dizionario grande</p>
+        <label class="switch">
+          <input type="checkbox" id="check-big-dict-numbers" />
+          <span class="slider"></span>
+        </label>
+      </div>
+      <small>
+        Se attivato, la modalità numeri → parole usa il dizionario grande
+        invece di quello comune.
+      </small>
+    </div>
+
+    <br>
+    <h3>GESTIONE DIZIONARI</h3>
+    <p class="left-text">
+      converti Lab utilizza <strong>due raccolte di parole</strong>,
+      pensate per le due modalità di gioco.
+      <br><br>
+      Il primo dizionario include un <em>ampio ventaglio di parole</em>
+      e serve a controllare che i termini inseriti in “DA NUMERI”
+      siano effettivamente esistenti,
+      quando si attiva l’opzione “Solo parole esistenti”.
+      <br><br>
+      Il secondo dizionario, invece, raccoglie <em>parole più comuni</em>
+      per la modalità “DA PAROLE”.
+      In questo modo, quando l’app genera una parola a caso da convertire in cifre,
+      si evitano termini troppo rari, offrendo un’esperienza di gioco più scorrevole.
+    </p>
+
+    <div>
+      <h4>Dizionario per validare parole (DA NUMERI)</h4>
+      <button id="export-big" class="export-import-button">Esporta dizionario</button>
+      <button id="import-big" class="export-import-button">Importa dizionario</button>
+    </div>
+    <br>
+    <div>
+      <h4>Dizionario con parole più comuni (DA PAROLE)</h4>
+      <button id="export-small" class="export-import-button">Esporta dizionario</button>
+      <button id="import-small" class="export-import-button">Importa dizionario</button>
+    </div>
+
+    <div id="loading-message" style="text-align:left; max-width:600px; margin:10px auto;">
+      <span class="material-icons" style="vertical-align:middle;">schedule</span>
+      Import in corso... Attendere
+    </div>
+
+    <!-- Hidden file inputs for dictionary import -->
+    <input type="file" id="import-file-big" style="display:none" accept=".txt" />
+    <input type="file" id="import-file-small" style="display:none" accept=".txt" />
+
+    <!-- BuyMeACoffee -->
+    <hr style="margin: 30px 0; border: none; border-top: 1px solid #ccc;">
+
+    <a href="https://www.buymeacoffee.com/moorada" target="_blank" rel="noopener noreferrer">
+      <button class="donation-feedback-button">
+        ☕ Buy Me a Coffee
+      </button>
+    </a>
+
+    <a href="https://github.com/moorada/converti-lab/issues/new" target="_blank" rel="noopener noreferrer">
+      <button class="donation-feedback-button">
+        📝 Lasciami un feedback
+      </button>
+    </a>
+
+    <a href="https://github.com/moorada/converti-lab" target="_blank" rel="noopener noreferrer">
+      <button class="donation-feedback-button">
+        ⭐ Metti una stella su GitHub
+      </button>
+    </a>
+
+
+  </div>
+
+  <main>
+    <div id="page-container">
+      <div id="loading-message-first" style="max-width:600px; margin:10px auto;">
+        <span class="material-icons" style="vertical-align:middle;">schedule</span>
+        Caricamento in corso... Attendere
+      </div>
+
+      <div id="converter-container">
+        <div id="input-group" class="input-group input-group-modern">
+          <input
+            type="text"
+            inputmode="text"
+            id="unified-input"
+            placeholder="Scrivi numeri o parole (es. 1234 oppure stella marina)"
+            autocomplete="off"
+          />
+          <button id="convert-button" class="submit-btn">Converti</button>
+        </div>
+        <p id="mode-hint">
+          Inserisci solo cifre per ottenere una tabella di parole.
+          Inserisci testo per ottenere un solo numero.
+        </p>
+      </div>
+
+      <div id="result-container"></div>
+    </div>
+  </main>
+
+  <!-- Footer with mapping reminder -->
+  <div class="footer">
+    <div class="mapping-footer">
+      <div>1 ➜ T, D</div>
+      <div>2 ➜ N, GN</div>
+      <div>3 ➜ M</div>
+      <div>4 ➜ R</div>
+      <div>5 ➜ L, GL</div>
+      <div>6 ➜ C, G (dolci)</div>
+      <div>7 ➜ C, G (dure), K</div>
+      <div>8 ➜ F, V</div>
+      <div>9 ➜ P, B</div>
+      <div>0 ➜ S, SC, Z</div>
+    </div>
+  </div>
+
+  <!-- Main JS -->
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>

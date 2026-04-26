@@ -1,0 +1,5639 @@
+{
+  "0": [
+    "assai",
+    "essa",
+    "esso",
+    "uso",
+    "zia",
+    "zio",
+    "asia",
+    "soia",
+    "jazz",
+    "sci"
+  ],
+  "1": [
+    "aiuto",
+    "atto",
+    "dio",
+    "età",
+    "idea",
+    "tè",
+    "auto",
+    "dj",
+    "judo",
+    "odio"
+  ],
+  "2": [
+    "anno",
+    "ogni",
+    "uno",
+    "anna",
+    "eni"
+  ],
+  "3": [
+    "uomo"
+  ],
+  "4": [
+    "aria",
+    "ieri",
+    "ora",
+    "oro",
+    "yuri",
+    "aereo",
+    "hr"
+  ],
+  "5": [
+    "egli",
+    "illy",
+    "olio",
+    "aglio"
+  ],
+  "6": [
+    "cioè",
+    "gioia",
+    "oggi",
+    "ceo"
+  ],
+  "7": [
+    "acqua",
+    "ecco",
+    "occhio",
+    "qua",
+    "qui",
+    "gaia",
+    "kiwi",
+    "coo",
+    "hockey"
+  ],
+  "8": [
+    "via",
+    "uova",
+    "iva"
+  ],
+  "9": [
+    "buio",
+    "baia",
+    "hub",
+    "pho",
+    "pooh"
+  ],
+  "10": [
+    "addosso",
+    "adesso",
+    "attesa",
+    "tazza",
+    "tassa",
+    "dazio"
+  ],
+  "11": [
+    "dito",
+    "tutto",
+    "dado",
+    "tuta"
+  ],
+  "12": [
+    "don",
+    "donna",
+    "tono",
+    "tonno"
+  ],
+  "13": [
+    "attimo",
+    "tim"
+  ],
+  "14": [
+    "aiutare",
+    "attore",
+    "autore",
+    "dare",
+    "dire",
+    "duro",
+    "odore",
+    "udire",
+    "dario",
+    "diario",
+    "tour"
+  ],
+  "15": [
+    "attuale",
+    "tale",
+    "utile",
+    "italia"
+  ],
+  "16": [
+    "doccia"
+  ],
+  "17": [
+    "diego",
+    "dock",
+    "tacco"
+  ],
+  "18": [
+    "dove",
+    "tofu",
+    "attivo"
+  ],
+  "19": [
+    "dopo",
+    "dubbio",
+    "tipo"
+  ],
+  "20": [
+    "anzi",
+    "inizio",
+    "jeans"
+  ],
+  "21": [
+    "noto",
+    "notte",
+    "nudo",
+    "notaio",
+    "india",
+    "onde",
+    "nuoto"
+  ],
+  "22": [
+    "ognuno",
+    "neon"
+  ],
+  "23": [
+    "anima",
+    "animo",
+    "nome",
+    "noemi"
+  ],
+  "24": [
+    "nero",
+    "onore",
+    "unire"
+  ],
+  "25": [
+    "nulla",
+    "enel",
+    "agnello"
+  ],
+  "26": [
+    "noce"
+  ],
+  "27": [
+    "anche",
+    "unico",
+    "gnocchi"
+  ],
+  "28": [
+    "nave",
+    "nuovo",
+    "neve"
+  ],
+  "30": [
+    "massa",
+    "mese",
+    "messa",
+    "mezzo",
+    "mouse",
+    "mais",
+    "hummus",
+    "miso"
+  ],
+  "31": [
+    "medio",
+    "metà",
+    "modo",
+    "matteo",
+    "moto",
+    "modà"
+  ],
+  "32": [
+    "mano",
+    "meno",
+    "umano",
+    "mina"
+  ],
+  "33": [
+    "mamma"
+  ],
+  "34": [
+    "amare",
+    "amore",
+    "mare",
+    "muro",
+    "maria",
+    "omar",
+    "marea",
+    "amaro"
+  ],
+  "35": [
+    "male",
+    "meglio",
+    "moglie",
+    "maiale",
+    "miele",
+    "miglio",
+    "mela",
+    "molo"
+  ],
+  "36": [
+    "maggio"
+  ],
+  "37": [
+    "amico",
+    "mocha"
+  ],
+  "39": [
+    "ampio",
+    "mappa"
+  ],
+  "40": [
+    "rosso",
+    "russo",
+    "rosa",
+    "russia",
+    "rasoio",
+    "riso",
+    "orzo",
+    "razzo",
+    "arisa"
+  ],
+  "41": [
+    "arte",
+    "orata"
+  ],
+  "42": [
+    "regno",
+    "irene",
+    "arianna"
+  ],
+  "43": [
+    "arma",
+    "oramai",
+    "roma",
+    "rum",
+    "irama"
+  ],
+  "44": [
+    "errore",
+    "aurora"
+  ],
+  "45": [
+    "reale",
+    "rullo"
+  ],
+  "46": [
+    "roccia"
+  ],
+  "47": [
+    "orecchio",
+    "ricco",
+    "ragù",
+    "rock"
+  ],
+  "48": [
+    "riva",
+    "orafo"
+  ],
+  "49": [
+    "erba",
+    "europeo",
+    "roba",
+    "europa",
+    "rap"
+  ],
+  "50": [
+    "alessia",
+    "elisa",
+    "alessio",
+    "lazio"
+  ],
+  "51": [
+    "alto",
+    "lato",
+    "latte",
+    "letto",
+    "lotta",
+    "aldo"
+  ],
+  "52": [
+    "linea",
+    "luna",
+    "elena"
+  ],
+  "53": [
+    "lima"
+  ],
+  "54": [
+    "allora",
+    "lira",
+    "loro",
+    "laura"
+  ],
+  "55": [
+    "luglio"
+  ],
+  "56": [
+    "legge",
+    "luce",
+    "luigi",
+    "lecce",
+    "alici"
+  ],
+  "57": [
+    "lago",
+    "luogo",
+    "luca"
+  ],
+  "58": [
+    "halva"
+  ],
+  "59": [
+    "alpi"
+  ],
+  "60": [
+    "gyoza"
+  ],
+  "61": [
+    "città",
+    "oggetto",
+    "egitto",
+    "aceto"
+  ],
+  "62": [
+    "giugno",
+    "cina",
+    "oceania",
+    "oceano",
+    "gin",
+    "gennaio"
+  ],
+  "63": [
+    "cima"
+  ],
+  "64": [
+    "giro"
+  ],
+  "65": [
+    "cielo",
+    "giallo",
+    "giulia",
+    "agile"
+  ],
+  "66": [
+    "ceci"
+  ],
+  "67": [
+    "gioco",
+    "acciuga",
+    "giacca"
+  ],
+  "70": [
+    "casa",
+    "caso",
+    "causa",
+    "chiesa",
+    "chissà",
+    "cosa",
+    "quasi",
+    "cozze",
+    "caos"
+  ],
+  "71": [
+    "gatto",
+    "guido",
+    "chiodo",
+    "yacht",
+    "cto"
+  ],
+  "72": [
+    "cane",
+    "kenya",
+    "quinoa",
+    "gonna"
+  ],
+  "73": [
+    "come",
+    "gomma",
+    "cmo"
+  ],
+  "74": [
+    "caro",
+    "chiaro",
+    "cuore",
+    "cura",
+    "guerra",
+    "chiara",
+    "curry",
+    "gru",
+    "gara"
+  ],
+  "75": [
+    "collo",
+    "quale",
+    "quello",
+    "uguale",
+    "occhiali",
+    "colla",
+    "chili",
+    "cola",
+    "ghali",
+    "gol"
+  ],
+  "76": [
+    "gucci",
+    "ghiacciaio",
+    "ghiacciaia"
+  ],
+  "77": [
+    "cuoco",
+    "cucchiaio"
+  ],
+  "78": [
+    "caffè",
+    "chiave",
+    "cuffie",
+    "chiavi",
+    "cavo",
+    "cfo"
+  ],
+  "79": [
+    "capo",
+    "jacopo",
+    "coppa"
+  ],
+  "80": [
+    "viso"
+  ],
+  "81": [
+    "affatto",
+    "effetto",
+    "fatto",
+    "fede",
+    "vita",
+    "vuoto",
+    "fiat",
+    "vetta",
+    "vite"
+  ],
+  "82": [
+    "fine",
+    "fino",
+    "vino",
+    "ivan",
+    "avena"
+  ],
+  "83": [
+    "fame",
+    "fiume"
+  ],
+  "84": [
+    "affare",
+    "avere",
+    "ferro",
+    "fiore",
+    "fuori",
+    "vario",
+    "vero",
+    "faro",
+    "farro"
+  ],
+  "85": [
+    "figlia",
+    "figlio",
+    "filo",
+    "foglia",
+    "folla",
+    "valle",
+    "villa",
+    "voglia",
+    "waffle",
+    "vela"
+  ],
+  "86": [
+    "faccia",
+    "ufficio",
+    "viaggio",
+    "voce",
+    "foce"
+  ],
+  "87": [
+    "fuoco",
+    "vecchio"
+  ],
+  "88": [
+    "vivo"
+  ],
+  "89": [
+    "fabio"
+  ],
+  "90": [
+    "base",
+    "basso",
+    "paese",
+    "passo",
+    "pazzo",
+    "peso",
+    "pezzo",
+    "piazza",
+    "poesia",
+    "pisa",
+    "pizza",
+    "pesce"
+  ],
+  "91": [
+    "abito",
+    "piede",
+    "pietà",
+    "poeta",
+    "piatti",
+    "body",
+    "podio"
+  ],
+  "92": [
+    "appena",
+    "bagno",
+    "bene",
+    "buono",
+    "pane",
+    "pena",
+    "piano",
+    "pieno",
+    "pina",
+    "penna",
+    "panna",
+    "bignè",
+    "penne"
+  ],
+  "94": [
+    "bere",
+    "eppure",
+    "opera",
+    "operaio",
+    "opporre",
+    "oppure",
+    "paura",
+    "però",
+    "porre",
+    "pure",
+    "puro",
+    "bari",
+    "perù",
+    "burro",
+    "birra",
+    "pera"
+  ],
+  "95": [
+    "bello",
+    "pelle",
+    "paolo",
+    "paola",
+    "puglia",
+    "pollo",
+    "paella",
+    "polo"
+  ],
+  "96": [
+    "pace",
+    "peggio"
+  ],
+  "97": [
+    "bocca",
+    "epoca",
+    "poco",
+    "poiché",
+    "poke"
+  ],
+  "99": [
+    "papà",
+    "papa",
+    "pop",
+    "hiphop"
+  ],
+  "101": [
+    "testa",
+    "autista"
+  ],
+  "102": [
+    "tiziana",
+    "tisana"
+  ],
+  "105": [
+    "diesel"
+  ],
+  "109": [
+    "whatsapp"
+  ],
+  "114": [
+    "dietro",
+    "dottore",
+    "teatro",
+    "tutor",
+    "auditor"
+  ],
+  "115": [
+    "titolo"
+  ],
+  "117": [
+    "hotdog"
+  ],
+  "118": [
+    "tuttavia"
+  ],
+  "120": [
+    "denis",
+    "tennis"
+  ],
+  "121": [
+    "attento",
+    "dente",
+    "tanto",
+    "tenda"
+  ],
+  "124": [
+    "denaro",
+    "ottenere",
+    "tenere",
+    "doner"
+  ],
+  "125": [
+    "daniele",
+    "daniela"
+  ],
+  "127": [
+    "dunque",
+    "tunica"
+  ],
+  "130": [
+    "tommaso"
+  ],
+  "131": [
+    "timido"
+  ],
+  "132": [
+    "domani"
+  ],
+  "134": [
+    "temere",
+    "timer"
+  ],
+  "139": [
+    "tempo",
+    "tempeh"
+  ],
+  "140": [
+    "terzo",
+    "teresa",
+    "terrazzo"
+  ],
+  "141": [
+    "autorità",
+    "diretto",
+    "diritto",
+    "tardi",
+    "tratto",
+    "edoardo",
+    "torta"
+  ],
+  "142": [
+    "attorno",
+    "terreno",
+    "treno",
+    "torino",
+    "torrone",
+    "droni",
+    "torneo"
+  ],
+  "143": [
+    "tram"
+  ],
+  "144": [
+    "durare",
+    "tirare",
+    "trarre"
+  ],
+  "145": [
+    "taralli"
+  ],
+  "146": [
+    "torcia",
+    "attrice"
+  ],
+  "147": [
+    "turchia",
+    "teriyaki"
+  ],
+  "149": [
+    "troppo",
+    "dirupo"
+  ],
+  "150": [
+    "deluso"
+  ],
+  "151": [
+    "delta"
+  ],
+  "152": [
+    "italiano"
+  ],
+  "154": [
+    "dolore",
+    "tagliare",
+    "togliere",
+    "tagliere"
+  ],
+  "156": [
+    "dolce",
+    "dolci",
+    "taleggio"
+  ],
+  "164": [
+    "tacere"
+  ],
+  "170": [
+    "tacos",
+    "taxi"
+  ],
+  "172": [
+    "tacchino",
+    "dogana"
+  ],
+  "174": [
+    "attaccare",
+    "toccare"
+  ],
+  "180": [
+    "difesa",
+    "divisa"
+  ],
+  "181": [
+    "attività",
+    "davide"
+  ],
+  "182": [
+    "divano"
+  ],
+  "184": [
+    "davvero",
+    "dovere"
+  ],
+  "185": [
+    "tavola",
+    "tavolo"
+  ],
+  "190": [
+    "autobus"
+  ],
+  "191": [
+    "tappeto",
+    "debito"
+  ],
+  "194": [
+    "debora",
+    "ottobre"
+  ],
+  "195": [
+    "debole"
+  ],
+  "200": [
+    "ansioso"
+  ],
+  "201": [
+    "onestà"
+  ],
+  "202": [
+    "nazione",
+    "nessuno"
+  ],
+  "203": [
+    "insieme",
+    "insomma"
+  ],
+  "204": [
+    "iniziare",
+    "nascere"
+  ],
+  "210": [
+    "notizia"
+  ],
+  "212": [
+    "antonio",
+    "antenna"
+  ],
+  "213": [
+    "intimo"
+  ],
+  "214": [
+    "andare",
+    "entro",
+    "intero",
+    "natura",
+    "notare",
+    "andrea"
+  ],
+  "215": [
+    "inutile"
+  ],
+  "217": [
+    "antico"
+  ],
+  "220": [
+    "nunzia",
+    "ananas"
+  ],
+  "221": [
+    "niente"
+  ],
+  "227": [
+    "neanche"
+  ],
+  "231": [
+    "i nomadi"
+  ],
+  "232": [
+    "nemmeno"
+  ],
+  "234": [
+    "numero"
+  ],
+  "235": [
+    "animale"
+  ],
+  "237": [
+    "nemico"
+  ],
+  "241": [
+    "nord"
+  ],
+  "243": [
+    "enorme"
+  ],
+  "246": [
+    "energia"
+  ],
+  "247": [
+    "enrico"
+  ],
+  "250": [
+    "annalisa",
+    "analisi"
+  ],
+  "264": [
+    "nigeria",
+    "nigiri"
+  ],
+  "265": [
+    "nocciola"
+  ],
+  "270": [
+    "nachos",
+    "incasso"
+  ],
+  "272": [
+    "ancona"
+  ],
+  "274": [
+    "ancora",
+    "ungheria",
+    "anguria",
+    "hangar"
+  ],
+  "275": [
+    "angolo",
+    "nicolò"
+  ],
+  "280": [
+    "infuso"
+  ],
+  "281": [
+    "infatti",
+    "navetta"
+  ],
+  "282": [
+    "infine"
+  ],
+  "286": [
+    "invece"
+  ],
+  "294": [
+    "neppure"
+  ],
+  "295": [
+    "nobile",
+    "napoli"
+  ],
+  "302": [
+    "amazon"
+  ],
+  "303": [
+    "massimo"
+  ],
+  "304": [
+    "ammazzare",
+    "misura"
+  ],
+  "307": [
+    "musica",
+    "messico"
+  ],
+  "311": [
+    "matita"
+  ],
+  "312": [
+    "mattina",
+    "mattino",
+    "modena"
+  ],
+  "313": [
+    "modem"
+  ],
+  "314": [
+    "ammettere",
+    "madre",
+    "materia",
+    "metro",
+    "mettere",
+    "matera"
+  ],
+  "315": [
+    "medaglia"
+  ],
+  "317": [
+    "medico"
+  ],
+  "318": [
+    "motivo"
+  ],
+  "320": [
+    "manzo",
+    "maionese"
+  ],
+  "321": [
+    "mente",
+    "minuto",
+    "mondo",
+    "monte"
+  ],
+  "323": [
+    "minimo"
+  ],
+  "324": [
+    "maniera",
+    "minore"
+  ],
+  "325": [
+    "emanuele"
+  ],
+  "327": [
+    "monica",
+    "mango"
+  ],
+  "331": [
+    "mahmood"
+  ],
+  "334": [
+    "memoria"
+  ],
+  "340": [
+    "maurizio",
+    "marzo"
+  ],
+  "341": [
+    "marito",
+    "merito",
+    "morte"
+  ],
+  "344": [
+    "morire"
+  ],
+  "345": [
+    "morale"
+  ],
+  "347": [
+    "marco",
+    "marche",
+    "marocco",
+    "america"
+  ],
+  "350": [
+    "melissa",
+    "molise"
+  ],
+  "351": [
+    "malattia",
+    "molto",
+    "omelette",
+    "maglietta",
+    "malato"
+  ],
+  "352": [
+    "milione",
+    "milano",
+    "melone",
+    "maglione"
+  ],
+  "354": [
+    "migliore"
+  ],
+  "362": [
+    "immagine"
+  ],
+  "363": [
+    "amici miei"
+  ],
+  "364": [
+    "maggiore"
+  ],
+  "365": [
+    "macellaio"
+  ],
+  "371": [
+    "macchiato"
+  ],
+  "372": [
+    "macchina"
+  ],
+  "374": [
+    "magari"
+  ],
+  "375": [
+    "michele",
+    "michela"
+  ],
+  "382": [
+    "muffin"
+  ],
+  "384": [
+    "muovere"
+  ],
+  "394": [
+    "imporre",
+    "ombra",
+    "umbria"
+  ],
+  "395": [
+    "mobile"
+  ],
+  "401": [
+    "resto",
+    "risotto",
+    "arrosto"
+  ],
+  "402": [
+    "rosanna",
+    "reazione"
+  ],
+  "404": [
+    "riuscire"
+  ],
+  "405": [
+    "ruscello"
+  ],
+  "407": [
+    "rischio"
+  ],
+  "409": [
+    "ruspa"
+  ],
+  "412": [
+    "ordine"
+  ],
+  "414": [
+    "ridere",
+    "ridurre",
+    "router"
+  ],
+  "417": [
+    "radicchio"
+  ],
+  "421": [
+    "renato"
+  ],
+  "424": [
+    "riunire"
+  ],
+  "425": [
+    "ornella"
+  ],
+  "426": [
+    "arancia"
+  ],
+  "431": [
+    "armadio"
+  ],
+  "432": [
+    "romano",
+    "armani",
+    "romania",
+    "ramen"
+  ],
+  "434": [
+    "armare"
+  ],
+  "451": [
+    "realtà"
+  ],
+  "456": [
+    "orologio"
+  ],
+  "462": [
+    "origine",
+    "ragione",
+    "regione",
+    "argine"
+  ],
+  "470": [
+    "ragazza",
+    "ragazzo",
+    "ricchezza"
+  ],
+  "471": [
+    "ricotta",
+    "orecchiette"
+  ],
+  "473": [
+    "rkomi"
+  ],
+  "474": [
+    "recare"
+  ],
+  "475": [
+    "righello",
+    "rucola"
+  ],
+  "478": [
+    "ricavo"
+  ],
+  "479": [
+    "rugby"
+  ],
+  "482": [
+    "ravenna"
+  ],
+  "484": [
+    "arrivare"
+  ],
+  "485": [
+    "raffaele",
+    "raffaella",
+    "ravioli"
+  ],
+  "486": [
+    "rifugio"
+  ],
+  "491": [
+    "rapido",
+    "arrabbiato"
+  ],
+  "502": [
+    "lasagna"
+  ],
+  "504": [
+    "alzare",
+    "lasciare"
+  ],
+  "512": [
+    "latino"
+  ],
+  "513": [
+    "ultimo"
+  ],
+  "514": [
+    "altro",
+    "lettera",
+    "oltre",
+    "lettore"
+  ],
+  "517": [
+    "lattuga"
+  ],
+  "521": [
+    "lente",
+    "lunedì",
+    "lento"
+  ],
+  "524": [
+    "eleonora"
+  ],
+  "527": [
+    "lingua",
+    "lungo"
+  ],
+  "531": [
+    "limite"
+  ],
+  "532": [
+    "almeno",
+    "limone"
+  ],
+  "543": [
+    "allarme"
+  ],
+  "547": [
+    "largo"
+  ],
+  "561": [
+    "laccetto"
+  ],
+  "564": [
+    "leggere",
+    "leggero"
+  ],
+  "571": [
+    "lucchetto"
+  ],
+  "572": [
+    "alcuno",
+    "laguna"
+  ],
+  "574": [
+    "legare",
+    "liguria",
+    "liquore"
+  ],
+  "579": [
+    "ligabue"
+  ],
+  "580": [
+    "lavazza"
+  ],
+  "581": [
+    "lievito"
+  ],
+  "584": [
+    "elevare",
+    "lavoro",
+    "levare"
+  ],
+  "585": [
+    "livella",
+    "lavello",
+    "il volo"
+  ],
+  "593": [
+    "album"
+  ],
+  "594": [
+    "albero",
+    "labbro",
+    "libero",
+    "libro"
+  ],
+  "601": [
+    "gesto",
+    "giusto"
+  ],
+  "604": [
+    "cesare"
+  ],
+  "609": [
+    "giuseppe"
+  ],
+  "610": [
+    "giudizio"
+  ],
+  "614": [
+    "accettare",
+    "eccetera",
+    "gettare",
+    "uccidere"
+  ],
+  "616": [
+    "giudice"
+  ],
+  "621": [
+    "gente",
+    "agente",
+    "agenda"
+  ],
+  "623": [
+    "cinema"
+  ],
+  "624": [
+    "genere"
+  ],
+  "628": [
+    "genova"
+  ],
+  "641": [
+    "certo"
+  ],
+  "642": [
+    "giorno"
+  ],
+  "644": [
+    "girare"
+  ],
+  "645": [
+    "cereali"
+  ],
+  "646": [
+    "giorgia"
+  ],
+  "647": [
+    "circa"
+  ],
+  "650": [
+    "geloso"
+  ],
+  "651": [
+    "gelato",
+    "gilet"
+  ],
+  "654": [
+    "gioielliere"
+  ],
+  "657": [
+    "geologo"
+  ],
+  "674": [
+    "giocare"
+  ],
+  "681": [
+    "giovedì"
+  ],
+  "682": [
+    "giovane",
+    "giovanni"
+  ],
+  "685": [
+    "civile"
+  ],
+  "691": [
+    "ciabatte",
+    "giubbotto"
+  ],
+  "692": [
+    "giappone"
+  ],
+  "695": [
+    "cipolla"
+  ],
+  "701": [
+    "costa",
+    "gusto",
+    "questo",
+    "costo",
+    "agosto"
+  ],
+  "702": [
+    "occasione",
+    "cuscino"
+  ],
+  "704": [
+    "cassiere"
+  ],
+  "705": [
+    "casello"
+  ],
+  "707": [
+    "casco"
+  ],
+  "712": [
+    "catania",
+    "catena"
+  ],
+  "714": [
+    "accadere",
+    "cadere",
+    "chiedere",
+    "chiudere",
+    "godere",
+    "guidare",
+    "quadro",
+    "cutter",
+    "chitarra"
+  ],
+  "718": [
+    "cattivo"
+  ],
+  "721": [
+    "accanto",
+    "conto",
+    "quanto",
+    "quindi",
+    "canada",
+    "guanti",
+    "canotta"
+  ],
+  "725": [
+    "canale",
+    "cannolo",
+    "coniglio"
+  ],
+  "726": [
+    "gancio"
+  ],
+  "730": [
+    "commesso"
+  ],
+  "731": [
+    "comodo"
+  ],
+  "732": [
+    "comune",
+    "kimono",
+    "camion"
+  ],
+  "734": [
+    "camera",
+    "chiamare",
+    "gomorra"
+  ],
+  "735": [
+    "camilla"
+  ],
+  "736": [
+    "camicia"
+  ],
+  "737": [
+    "chimico",
+    "kimchi"
+  ],
+  "739": [
+    "campo",
+    "gamba"
+  ],
+  "740": [
+    "corsa",
+    "corso",
+    "crisi",
+    "grazia",
+    "grazie",
+    "grosso",
+    "croazia",
+    "carrozza",
+    "corsia"
+  ],
+  "741": [
+    "accordo",
+    "carta",
+    "grado",
+    "guardia",
+    "quarto",
+    "greta",
+    "corrado",
+    "corda",
+    "corridoio",
+    "yogurt",
+    "carota",
+    "karate"
+  ],
+  "742": [
+    "carne",
+    "ucraina"
+  ],
+  "743": [
+    "crema"
+  ],
+  "744": [
+    "correre",
+    "creare",
+    "occorrere"
+  ],
+  "745": [
+    "carlo",
+    "carrello",
+    "griglia"
+  ],
+  "746": [
+    "coraggio",
+    "croce",
+    "grigio",
+    "grecia",
+    "grucce",
+    "garage"
+  ],
+  "747": [
+    "greco"
+  ],
+  "748": [
+    "grave",
+    "caraffa"
+  ],
+  "749": [
+    "corpo",
+    "gruppo",
+    "grappa"
+  ],
+  "750": [
+    "classe",
+    "glassa",
+    "calze"
+  ],
+  "751": [
+    "caldo",
+    "qualità",
+    "claudio",
+    "claudia",
+    "culotte"
+  ],
+  "752": [
+    "collina"
+  ],
+  "754": [
+    "accogliere",
+    "colore",
+    "coloro",
+    "cagliari",
+    "galleria"
+  ],
+  "756": [
+    "calcio"
+  ],
+  "757": [
+    "qualche"
+  ],
+  "758": [
+    "golfo",
+    "golf"
+  ],
+  "759": [
+    "colpa",
+    "colpo"
+  ],
+  "762": [
+    "cucina"
+  ],
+  "772": [
+    "checkin"
+  ],
+  "775": [
+    "google"
+  ],
+  "781": [
+    "chiavetta",
+    "quo vado?"
+  ],
+  "785": [
+    "cavallo"
+  ],
+  "791": [
+    "cappotto",
+    "accappatoio"
+  ],
+  "794": [
+    "capire"
+  ],
+  "795": [
+    "capello",
+    "cappello"
+  ],
+  "796": [
+    "capace"
+  ],
+  "799": [
+    "kebab"
+  ],
+  "801": [
+    "festa",
+    "vasto",
+    "visita",
+    "vista"
+  ],
+  "804": [
+    "fissare"
+  ],
+  "805": [
+    "fusilli"
+  ],
+  "807": [
+    "fisico",
+    "vasca"
+  ],
+  "810": [
+    "fedez"
+  ],
+  "811": [
+    "viadotto"
+  ],
+  "814": [
+    "evitare",
+    "futuro",
+    "vedere",
+    "vittoria",
+    "fattura"
+  ],
+  "816": [
+    "fiducia"
+  ],
+  "817": [
+    "fatica",
+    "vodka"
+  ],
+  "820": [
+    "vanessa",
+    "venezia"
+  ],
+  "821": [
+    "avanti",
+    "fondo",
+    "vento",
+    "veneto",
+    "jovanotti"
+  ],
+  "824": [
+    "avvenire",
+    "finire",
+    "venire"
+  ],
+  "827": [
+    "fianco",
+    "finché",
+    "finocchio"
+  ],
+  "830": [
+    "famoso"
+  ],
+  "831": [
+    "affamato"
+  ],
+  "834": [
+    "fumare"
+  ],
+  "835": [
+    "famiglia"
+  ],
+  "840": [
+    "forse",
+    "forza",
+    "frase",
+    "verso"
+  ],
+  "841": [
+    "forte",
+    "freddo",
+    "fretta",
+    "frutto",
+    "verde",
+    "verità",
+    "frutta",
+    "fritto",
+    "frutti",
+    "offerta"
+  ],
+  "842": [
+    "verona",
+    "forno",
+    "farina"
+  ],
+  "843": [
+    "fermo",
+    "forma"
+  ],
+  "844": [
+    "ferire",
+    "offrire",
+    "ferrari",
+    "ferrero"
+  ],
+  "847": [
+    "africa"
+  ],
+  "849": [
+    "frappè"
+  ],
+  "851": [
+    "volta",
+    "volto"
+  ],
+  "852": [
+    "violino"
+  ],
+  "853": [
+    "film"
+  ],
+  "854": [
+    "valere",
+    "valore",
+    "volare",
+    "volere"
+  ],
+  "856": [
+    "felice",
+    "valigia"
+  ],
+  "859": [
+    "filippo",
+    "felpa"
+  ],
+  "862": [
+    "vicino"
+  ],
+  "864": [
+    "fuggire"
+  ],
+  "865": [
+    "facile",
+    "ufficiale",
+    "vigile",
+    "fagioli"
+  ],
+  "870": [
+    "fax"
+  ],
+  "871": [
+    "avvocato",
+    "avocado"
+  ],
+  "872": [
+    "vagone"
+  ],
+  "874": [
+    "figura"
+  ],
+  "876": [
+    "focaccia"
+  ],
+  "884": [
+    "favore",
+    "vivere"
+  ],
+  "894": [
+    "fabbro",
+    "febbraio"
+  ],
+  "901": [
+    "bestia",
+    "passato",
+    "posto",
+    "posate",
+    "busta",
+    "pasta",
+    "pesto",
+    "pista"
+  ],
+  "902": [
+    "bisogno",
+    "passione"
+  ],
+  "904": [
+    "passare",
+    "pesare",
+    "posare"
+  ],
+  "905": [
+    "bussola",
+    "piselli"
+  ],
+  "907": [
+    "bosco"
+  ],
+  "908": [
+    "passivo"
+  ],
+  "911": [
+    "bidet",
+    "patata"
+  ],
+  "912": [
+    "pettine",
+    "budino",
+    "piadina"
+  ],
+  "914": [
+    "abitare",
+    "badare",
+    "battere",
+    "buttare",
+    "padre",
+    "patria",
+    "pietra",
+    "potere",
+    "pietro",
+    "batteria"
+  ],
+  "915": [
+    "battaglia",
+    "padella",
+    "bottiglia"
+  ],
+  "916": [
+    "badge",
+    "pedaggio"
+  ],
+  "918": [
+    "padova"
+  ],
+  "920": [
+    "pinza",
+    "bonus"
+  ],
+  "921": [
+    "appunto",
+    "biondo",
+    "pianta",
+    "ponte",
+    "punta",
+    "punto",
+    "band"
+  ],
+  "922": [
+    "opinione",
+    "appennini",
+    "panino",
+    "banana"
+  ],
+  "924": [
+    "pianura",
+    "binario"
+  ],
+  "925": [
+    "pennello"
+  ],
+  "927": [
+    "bianco"
+  ],
+  "940": [
+    "presso",
+    "prezzo",
+    "abruzzo",
+    "borsa",
+    "presa"
+  ],
+  "941": [
+    "brutto",
+    "parete",
+    "parte",
+    "periodo",
+    "porta",
+    "porto",
+    "prato",
+    "prada",
+    "brodo",
+    "burrito"
+  ],
+  "942": [
+    "bruno",
+    "brownie"
+  ],
+  "943": [
+    "prima",
+    "primo",
+    "parma",
+    "premio"
+  ],
+  "944": [
+    "apparire",
+    "aprire",
+    "parere"
+  ],
+  "945": [
+    "parola",
+    "barilla",
+    "pirelli",
+    "payroll",
+    "aprile"
+  ],
+  "946": [
+    "braccio",
+    "perciò",
+    "perugia",
+    "borraccia",
+    "pareggio"
+  ],
+  "947": [
+    "parecchio",
+    "perché",
+    "brioche",
+    "parka",
+    "barca"
+  ],
+  "948": [
+    "bravo",
+    "breve",
+    "prova"
+  ],
+  "950": [
+    "bellezza",
+    "palazzo",
+    "polizia",
+    "blues"
+  ],
+  "951": [
+    "pilota",
+    "paletta",
+    "bollito",
+    "biglietto"
+  ],
+  "952": [
+    "bologna",
+    "polonia",
+    "bullone"
+  ],
+  "956": [
+    "belgio"
+  ],
+  "957": [
+    "biologo",
+    "palco"
+  ],
+  "959": [
+    "polpo"
+  ],
+  "962": [
+    "pagina",
+    "bacino"
+  ],
+  "963": [
+    "pigiama"
+  ],
+  "964": [
+    "appoggiare",
+    "baciare",
+    "piacere"
+  ],
+  "970": [
+    "boxe"
+  ],
+  "971": [
+    "peccato",
+    "pochette"
+  ],
+  "973": [
+    "webcam"
+  ],
+  "974": [
+    "pagare",
+    "bicchiere"
+  ],
+  "975": [
+    "piccolo",
+    "baccalà"
+  ],
+  "984": [
+    "povero"
+  ],
+  "995": [
+    "popolo"
+  ],
+  "1001": [
+    "tassista"
+  ],
+  "1012": [
+    "destino"
+  ],
+  "1014": [
+    "desiderio",
+    "destro",
+    "tastiera",
+    "dosatore"
+  ],
+  "1041": [
+    "dessert"
+  ],
+  "1044": [
+    "tesoriere"
+  ],
+  "1072": [
+    "toscana"
+  ],
+  "1094": [
+    "disporre"
+  ],
+  "1101": [
+    "dietista"
+  ],
+  "1107": [
+    "tedesco"
+  ],
+  "1114": [
+    "adattatore"
+  ],
+  "1174": [
+    "dedicare"
+  ],
+  "1202": [
+    "attenzione"
+  ],
+  "1214": [
+    "attendere",
+    "dentro",
+    "tendere",
+    "tentare"
+  ],
+  "1220": [
+    "dinanzi"
+  ],
+  "1244": [
+    "itinerario"
+  ],
+  "1303": [
+    "dimsum"
+  ],
+  "1321": [
+    "domanda"
+  ],
+  "1327": [
+    "domenica"
+  ],
+  "1394": [
+    "timbro",
+    "tempura"
+  ],
+  "1395": [
+    "automobile"
+  ],
+  "1401": [
+    "triste",
+    "trieste"
+  ],
+  "1402": [
+    "direzione",
+    "darsena"
+  ],
+  "1412": [
+    "tortino"
+  ],
+  "1414": [
+    "addirittura",
+    "direttore",
+    "territorio",
+    "trattare",
+    "trattore"
+  ],
+  "1421": [
+    "durante",
+    "trento",
+    "taranto",
+    "torrente"
+  ],
+  "1424": [
+    "tornare"
+  ],
+  "1425": [
+    "tornello"
+  ],
+  "1430": [
+    "thermos",
+    "tiramisù",
+    "autorimessa"
+  ],
+  "1432": [
+    "termine"
+  ],
+  "1434": [
+    "dormire"
+  ],
+  "1454": [
+    "trailer"
+  ],
+  "1457": [
+    "idraulico"
+  ],
+  "1464": [
+    "dirigere"
+  ],
+  "1471": [
+    "traghetto"
+  ],
+  "1484": [
+    "trovare"
+  ],
+  "1492": [
+    "trapano"
+  ],
+  "1515": [
+    "tagliatelle"
+  ],
+  "1517": [
+    "atletica"
+  ],
+  "1521": [
+    "thailandia"
+  ],
+  "1542": [
+    "taglierino"
+  ],
+  "1582": [
+    "telefono"
+  ],
+  "1602": [
+    "decisione"
+  ],
+  "1614": [
+    "decidere"
+  ],
+  "1621": [
+    "docente"
+  ],
+  "1714": [
+    "educatore",
+    "decoder"
+  ],
+  "1717": [
+    "tiktok"
+  ],
+  "1721": [
+    "taekwondo"
+  ],
+  "1727": [
+    "tecnico"
+  ],
+  "1744": [
+    "dichiarare"
+  ],
+  "1792": [
+    "attaccapanni"
+  ],
+  "1814": [
+    "dividere"
+  ],
+  "1821": [
+    "davanti"
+  ],
+  "1824": [
+    "divenire"
+  ],
+  "1840": [
+    "diverso"
+  ],
+  "1865": [
+    "difficile"
+  ],
+  "1901": [
+    "deposito"
+  ],
+  "1912": [
+    "tappetino"
+  ],
+  "1940": [
+    "depresso"
+  ],
+  "1951": [
+    "tablet"
+  ],
+  "2014": [
+    "nostro",
+    "nastro"
+  ],
+  "2024": [
+    "insegnare"
+  ],
+  "2025": [
+    "nazionale"
+  ],
+  "2051": [
+    "insalata"
+  ],
+  "2071": [
+    "insaccati"
+  ],
+  "2114": [
+    "indietro"
+  ],
+  "2120": [
+    "indonesia"
+  ],
+  "2121": [
+    "intanto",
+    "antonietta"
+  ],
+  "2125": [
+    "antonella"
+  ],
+  "2140": [
+    "interesse"
+  ],
+  "2142": [
+    "interno",
+    "intorno"
+  ],
+  "2144": [
+    "entrare"
+  ],
+  "2145": [
+    "naturale"
+  ],
+  "2150": [
+    "noodles"
+  ],
+  "2174": [
+    "indicare"
+  ],
+  "2185": [
+    "notevole"
+  ],
+  "2264": [
+    "annunciare"
+  ],
+  "2294": [
+    "io non ho paura"
+  ],
+  "2340": [
+    "numeroso"
+  ],
+  "2344": [
+    "innamorare"
+  ],
+  "2435": [
+    "normale"
+  ],
+  "2467": [
+    "energico"
+  ],
+  "2480": [
+    "nervoso"
+  ],
+  "2486": [
+    "norvegia"
+  ],
+  "2501": [
+    "analista"
+  ],
+  "2514": [
+    "inoltre"
+  ],
+  "2601": [
+    "necessità"
+  ],
+  "2604": [
+    "necessario"
+  ],
+  "2624": [
+    "ingegnere"
+  ],
+  "2657": [
+    "angelica"
+  ],
+  "2740": [
+    "ingresso"
+  ],
+  "2746": [
+    "incrocio"
+  ],
+  "2750": [
+    "inglese"
+  ],
+  "2802": [
+    "innovazione"
+  ],
+  "2814": [
+    "invitare"
+  ],
+  "2842": [
+    "inverno"
+  ],
+  "2843": [
+    "uniforme"
+  ],
+  "3014": [
+    "maestro",
+    "mestiere"
+  ],
+  "3015": [
+    "mestolo"
+  ],
+  "3041": [
+    "maserati"
+  ],
+  "3042": [
+    "misurino"
+  ],
+  "3045": [
+    "mozzarella"
+  ],
+  "3091": [
+    "mousepad"
+  ],
+  "3103": [
+    "medesimo"
+  ],
+  "3121": [
+    "mutande"
+  ],
+  "3140": [
+    "materasso"
+  ],
+  "3142": [
+    "moderno",
+    "motorino"
+  ],
+  "3181": [
+    "motivato"
+  ],
+  "3205": [
+    "mensola"
+  ],
+  "3212": [
+    "montagna"
+  ],
+  "3214": [
+    "aumentare",
+    "mandare",
+    "mentre",
+    "monitor"
+  ],
+  "3216": [
+    "montaggio"
+  ],
+  "3264": [
+    "mangiare",
+    "manager"
+  ],
+  "3274": [
+    "mancare"
+  ],
+  "3321": [
+    "momento"
+  ],
+  "3342": [
+    "emma marrone"
+  ],
+  "3409": [
+    "marsupio"
+  ],
+  "3411": [
+    "martedì"
+  ],
+  "3412": [
+    "martina",
+    "maratona"
+  ],
+  "3414": [
+    "meritare",
+    "muratore"
+  ],
+  "3415": [
+    "martello"
+  ],
+  "3421": [
+    "marinata"
+  ],
+  "3462": [
+    "margine"
+  ],
+  "3470": [
+    "marracash"
+  ],
+  "3471": [
+    "mercato"
+  ],
+  "3472": [
+    "americano"
+  ],
+  "3479": [
+    "markup"
+  ],
+  "3514": [
+    "militare",
+    "militari"
+  ],
+  "3585": [
+    "millefoglie"
+  ],
+  "3622": [
+    "macinino"
+  ],
+  "3624": [
+    "immaginare"
+  ],
+  "3702": [
+    "mocassini"
+  ],
+  "3704": [
+    "mixer"
+  ],
+  "3727": [
+    "meccanico"
+  ],
+  "3751": [
+    "immacolata"
+  ],
+  "3914": [
+    "impedire"
+  ],
+  "3921": [
+    "ambiente"
+  ],
+  "3940": [
+    "impresa"
+  ],
+  "3941": [
+    "umberto"
+  ],
+  "3944": [
+    "imparare"
+  ],
+  "3945": [
+    "ombrello"
+  ],
+  "3947": [
+    "imbarco"
+  ],
+  "4014": [
+    "arrestare",
+    "restare"
+  ],
+  "4091": [
+    "rispetto"
+  ],
+  "4101": [
+    "artista"
+  ],
+  "4107": [
+    "harddisk"
+  ],
+  "4114": [
+    "radiatore"
+  ],
+  "4121": [
+    "rotonda"
+  ],
+  "4124": [
+    "ordinare",
+    "ritenere"
+  ],
+  "4142": [
+    "ritorno"
+  ],
+  "4162": [
+    "artigiano"
+  ],
+  "4175": [
+    "articolo"
+  ],
+  "4214": [
+    "rendere"
+  ],
+  "4215": [
+    "rondella"
+  ],
+  "4221": [
+    "regno unito"
+  ],
+  "4261": [
+    "aranciata"
+  ],
+  "4262": [
+    "arancino"
+  ],
+  "4314": [
+    "rimettere"
+  ],
+  "4324": [
+    "rimanere"
+  ],
+  "4347": [
+    "rimorchio"
+  ],
+  "4394": [
+    "riempire",
+    "rompere"
+  ],
+  "4501": [
+    "rilassato"
+  ],
+  "4502": [
+    "relazione"
+  ],
+  "4521": [
+    "irlanda"
+  ],
+  "4560": [
+    "religioso"
+  ],
+  "4601": [
+    "regista"
+  ],
+  "4602": [
+    "reggiseno"
+  ],
+  "4621": [
+    "recente"
+  ],
+  "4647": [
+    "ricerca"
+  ],
+  "4684": [
+    "ricevere"
+  ],
+  "4701": [
+    "aragosta"
+  ],
+  "4711": [
+    "architetto"
+  ],
+  "4714": [
+    "richiedere"
+  ],
+  "4741": [
+    "ricordo",
+    "riccardo",
+    "record"
+  ],
+  "4747": [
+    "ricarica"
+  ],
+  "4750": [
+    "orgoglioso"
+  ],
+  "4754": [
+    "raccogliere"
+  ],
+  "4801": [
+    "rivista"
+  ],
+  "4804": [
+    "revisore"
+  ],
+  "4814": [
+    "rifiutare",
+    "rivedere"
+  ],
+  "4844": [
+    "riferire"
+  ],
+  "4854": [
+    "rivelare"
+  ],
+  "4901": [
+    "riposato"
+  ],
+  "4914": [
+    "ripetere",
+    "arbitro"
+  ],
+  "4940": [
+    "ripresa"
+  ],
+  "4941": [
+    "rapporto",
+    "roberto",
+    "roberta",
+    "aeroporto"
+  ],
+  "5021": [
+    "lasagnette"
+  ],
+  "5147": [
+    "elettrico"
+  ],
+  "5187": [
+    "ludovica"
+  ],
+  "5205": [
+    "lenzuolo"
+  ],
+  "5212": [
+    "lontano"
+  ],
+  "5214": [
+    "allenatore"
+  ],
+  "5217": [
+    "lenticchie"
+  ],
+  "5241": [
+    "leonardo"
+  ],
+  "5264": [
+    "lanciare"
+  ],
+  "5314": [
+    "limitare"
+  ],
+  "5321": [
+    "elemento",
+    "limonata"
+  ],
+  "5391": [
+    "lampada"
+  ],
+  "5412": [
+    "loredana"
+  ],
+  "5420": [
+    "lorenzo"
+  ],
+  "5711": [
+    "liquidità"
+  ],
+  "5714": [
+    "elicottero"
+  ],
+  "5814": [
+    "allevatore"
+  ],
+  "5843": [
+    "alfa romeo"
+  ],
+  "5844": [
+    "lavorare"
+  ],
+  "5941": [
+    "libertà",
+    "alberto",
+    "eliporto"
+  ],
+  "5944": [
+    "liberare",
+    "libreria"
+  ],
+  "5947": [
+    "albergo"
+  ],
+  "6010": [
+    "giustizia"
+  ],
+  "6012": [
+    "cestino",
+    "gestione"
+  ],
+  "6015": [
+    "cestello"
+  ],
+  "6072": [
+    "ciascuno"
+  ],
+  "6112": [
+    "cittadino"
+  ],
+  "6145": [
+    "cetriolo"
+  ],
+  "6174": [
+    "giudicare"
+  ],
+  "6182": [
+    "citofono"
+  ],
+  "6212": [
+    "accendino"
+  ],
+  "6214": [
+    "accendere",
+    "centro",
+    "cintura"
+  ],
+  "6245": [
+    "generale"
+  ],
+  "6264": [
+    "aggiungere",
+    "giungere"
+  ],
+  "6395": [
+    "ciambella"
+  ],
+  "6412": [
+    "giardino"
+  ],
+  "6421": [
+    "giornata"
+  ],
+  "6425": [
+    "giornale"
+  ],
+  "6432": [
+    "germania"
+  ],
+  "6474": [
+    "cercare"
+  ],
+  "6512": [
+    "gelatina"
+  ],
+  "6520": [
+    "eccellenza"
+  ],
+  "6714": [
+    "giocatore"
+  ],
+  "6751": [
+    "cioccolato"
+  ],
+  "6821": [
+    "giovanotto"
+  ],
+  "6851": [
+    "civiltà"
+  ],
+  "7011": [
+    "custode",
+    "custodia"
+  ],
+  "7012": [
+    "questione",
+    "castagna"
+  ],
+  "7014": [
+    "cassettiera"
+  ],
+  "7020": [
+    "coscienza"
+  ],
+  "7070": [
+    "couscous"
+  ],
+  "7071": [
+    "cascata"
+  ],
+  "7077": [
+    "cheesecake"
+  ],
+  "7097": [
+    "gazpacho"
+  ],
+  "7102": [
+    "equitazione"
+  ],
+  "7142": [
+    "caterina",
+    "quaderno"
+  ],
+  "7157": [
+    "cattolico"
+  ],
+  "7179": [
+    "ketchup"
+  ],
+  "7202": [
+    "canzone"
+  ],
+  "7204": [
+    "conoscere"
+  ],
+  "7205": [
+    "consiglio",
+    "console"
+  ],
+  "7211": [
+    "contatto"
+  ],
+  "7212": [
+    "continuo",
+    "cantina"
+  ],
+  "7214": [
+    "cantare",
+    "condurre",
+    "contare",
+    "contro"
+  ],
+  "7215": [
+    "candela"
+  ],
+  "7237": [
+    "economico"
+  ],
+  "7252": [
+    "cannelloni"
+  ],
+  "7261": [
+    "concetto",
+    "concetta"
+  ],
+  "7265": [
+    "guanciale"
+  ],
+  "7280": [
+    "confuso"
+  ],
+  "7281": [
+    "confetto"
+  ],
+  "7285": [
+    "convoglio"
+  ],
+  "7302": [
+    "commissione"
+  ],
+  "7312": [
+    "comodino"
+  ],
+  "7324": [
+    "camminare"
+  ],
+  "7327": [
+    "comunque"
+  ],
+  "7341": [
+    "cameretta"
+  ],
+  "7344": [
+    "cameriere"
+  ],
+  "7346": [
+    "commercio"
+  ],
+  "7392": [
+    "campagna",
+    "compagnia",
+    "compagno",
+    "campania",
+    "champagne"
+  ],
+  "7394": [
+    "cambiare",
+    "compiere",
+    "comporre",
+    "gambero"
+  ],
+  "7397": [
+    "kombucha"
+  ],
+  "7401": [
+    "crescita"
+  ],
+  "7402": [
+    "grissini",
+    "creazione"
+  ],
+  "7404": [
+    "crescere"
+  ],
+  "7411": [
+    "credito"
+  ],
+  "7414": [
+    "carattere",
+    "credere",
+    "gridare",
+    "guardare"
+  ],
+  "7415": [
+    "cortile",
+    "cartella",
+    "cartello"
+  ],
+  "7416": [
+    "grattugia"
+  ],
+  "7421": [
+    "corrente",
+    "grande",
+    "granite",
+    "cornetto",
+    "granita"
+  ],
+  "7426": [
+    "cornice"
+  ],
+  "7435": [
+    "carmela",
+    "caramella",
+    "caramello"
+  ],
+  "7451": [
+    "carlotta"
+  ],
+  "7481": [
+    "graffette",
+    "graffetta",
+    "cravatta"
+  ],
+  "7490": [
+    "crepes"
+  ],
+  "7500": [
+    "qualsiasi"
+  ],
+  "7502": [
+    "calzone",
+    "calzini"
+  ],
+  "7507": [
+    "classica"
+  ],
+  "7511": [
+    "accaldato"
+  ],
+  "7514": [
+    "cultura"
+  ],
+  "7515": [
+    "coltello"
+  ],
+  "7521": [
+    "collante",
+    "cliente"
+  ],
+  "7522": [
+    "colonnina"
+  ],
+  "7527": [
+    "qualunque"
+  ],
+  "7534": [
+    "calamari"
+  ],
+  "7539": [
+    "colomba"
+  ],
+  "7554": [
+    "achille lauro"
+  ],
+  "7570": [
+    "qualcosa"
+  ],
+  "7572": [
+    "qualcuno"
+  ],
+  "7594": [
+    "colpire",
+    "calabria",
+    "calibro"
+  ],
+  "7681": [
+    "cacciavite"
+  ],
+  "7715": [
+    "cocktail"
+  ],
+  "7735": [
+    "guacamole"
+  ],
+  "7819": [
+    "cavatappi"
+  ],
+  "7842": [
+    "governo"
+  ],
+  "7912": [
+    "capitano"
+  ],
+  "7914": [
+    "capitare"
+  ],
+  "7915": [
+    "capitale"
+  ],
+  "7928": [
+    "cabinovia"
+  ],
+  "7940": [
+    "caparezza"
+  ],
+  "7941": [
+    "coperta"
+  ],
+  "7944": [
+    "coprire"
+  ],
+  "7945": [
+    "gabriele"
+  ],
+  "7951": [
+    "cappelletti"
+  ],
+  "7962": [
+    "cappuccino"
+  ],
+  "7977": [
+    "cupcake"
+  ],
+  "8011": [
+    "vestito"
+  ],
+  "8014": [
+    "vestire",
+    "vostro"
+  ],
+  "8123": [
+    "vietnam"
+  ],
+  "8141": [
+    "fatturato"
+  ],
+  "8147": [
+    "federica",
+    "federico"
+  ],
+  "8162": [
+    "fettuccine"
+  ],
+  "8202": [
+    "funzione"
+  ],
+  "8204": [
+    "avanzare"
+  ],
+  "8210": [
+    "fantasia",
+    "fantozzi"
+  ],
+  "8211": [
+    "fonduta",
+    "vendite"
+  ],
+  "8214": [
+    "fondare",
+    "offendere",
+    "vendere"
+  ],
+  "8215": [
+    "fondale",
+    "ventaglio"
+  ],
+  "8220": [
+    "finanza"
+  ],
+  "8232": [
+    "fenomeno"
+  ],
+  "8241": [
+    "venerdì"
+  ],
+  "8264": [
+    "vincere"
+  ],
+  "8275": [
+    "vongole"
+  ],
+  "8401": [
+    "frusta"
+  ],
+  "8406": [
+    "versace"
+  ],
+  "8407": [
+    "fresco"
+  ],
+  "8411": [
+    "frittata"
+  ],
+  "8412": [
+    "fortuna"
+  ],
+  "8414": [
+    "avvertire",
+    "verdura"
+  ],
+  "8415": [
+    "fratello",
+    "frittella"
+  ],
+  "8420": [
+    "forense",
+    "firenze"
+  ],
+  "8421": [
+    "fronte"
+  ],
+  "8424": [
+    "fornire"
+  ],
+  "8426": [
+    "francia",
+    "vernice"
+  ],
+  "8427": [
+    "franco"
+  ],
+  "8431": [
+    "fermata"
+  ],
+  "8434": [
+    "affermare",
+    "fermare",
+    "formare"
+  ],
+  "8436": [
+    "formaggio"
+  ],
+  "8451": [
+    "frullato"
+  ],
+  "8471": [
+    "forchetta"
+  ],
+  "8472": [
+    "furgone"
+  ],
+  "8475": [
+    "fragola"
+  ],
+  "8496": [
+    "forbici"
+  ],
+  "8514": [
+    "voltare"
+  ],
+  "8521": [
+    "volontà",
+    "affluente"
+  ],
+  "8532": [
+    "filomena"
+  ],
+  "8541": [
+    "foulard"
+  ],
+  "8561": [
+    "valigetta"
+  ],
+  "8564": [
+    "volgere"
+  ],
+  "8572": [
+    "flacone"
+  ],
+  "8585": [
+    "falafel"
+  ],
+  "8590": [
+    "filobus"
+  ],
+  "8592": [
+    "filippine"
+  ],
+  "8624": [
+    "avvicinare"
+  ],
+  "8697": [
+    "facebook"
+  ],
+  "8744": [
+    "figurare"
+  ],
+  "8947": [
+    "fabbrica"
+  ],
+  "9002": [
+    "posizione"
+  ],
+  "9014": [
+    "bastare",
+    "possedere",
+    "poster"
+  ],
+  "9017": [
+    "pistacchio"
+  ],
+  "9020": [
+    "business"
+  ],
+  "9024": [
+    "bisognare"
+  ],
+  "9035": [
+    "besciamella"
+  ],
+  "9071": [
+    "biscotti",
+    "basket"
+  ],
+  "9074": [
+    "pizzoccheri"
+  ],
+  "9090": [
+    "paesi bassi"
+  ],
+  "9095": [
+    "possibile",
+    "baseball"
+  ],
+  "9101": [
+    "piuttosto"
+  ],
+  "9112": [
+    "patatine"
+  ],
+  "9120": [
+    "potenza"
+  ],
+  "9124": [
+    "betoniera"
+  ],
+  "9134": [
+    "pattumiera"
+  ],
+  "9140": [
+    "patrizia"
+  ],
+  "9142": [
+    "padrone"
+  ],
+  "9146": [
+    "beatrice"
+  ],
+  "9161": [
+    "budget"
+  ],
+  "9202": [
+    "benzina"
+  ],
+  "9204": [
+    "pensare",
+    "pensiero"
+  ],
+  "9211": [
+    "benedetta"
+  ],
+  "9212": [
+    "benetton",
+    "puntina",
+    "panettone",
+    "bandana"
+  ],
+  "9214": [
+    "piantare",
+    "panettiere"
+  ],
+  "9215": [
+    "pentola",
+    "pontile"
+  ],
+  "9216": [
+    "punteggio"
+  ],
+  "9261": [
+    "pancetta"
+  ],
+  "9264": [
+    "piangere"
+  ],
+  "9271": [
+    "panchetta"
+  ],
+  "9272": [
+    "banchina"
+  ],
+  "9275": [
+    "binocolo"
+  ],
+  "9277": [
+    "pancake"
+  ],
+  "9314": [
+    "pomodoro"
+  ],
+  "9321": [
+    "piemonte"
+  ],
+  "9346": [
+    "pomeriggio"
+  ],
+  "9392": [
+    "bambina",
+    "bambino"
+  ],
+  "9394": [
+    "pompiere"
+  ],
+  "9401": [
+    "presto",
+    "barista",
+    "borsetta",
+    "prosciutto"
+  ],
+  "9402": [
+    "operazione",
+    "persona",
+    "borsone",
+    "presina",
+    "proiezione"
+  ],
+  "9403": [
+    "prossimo"
+  ],
+  "9405": [
+    "brasile",
+    "bresaola",
+    "borsello"
+  ],
+  "9407": [
+    "prosecco"
+  ],
+  "9411": [
+    "partito",
+    "prodotto",
+    "partita"
+  ],
+  "9414": [
+    "partire",
+    "perdere",
+    "portare",
+    "produrre",
+    "portiere"
+  ],
+  "9415": [
+    "barattolo"
+  ],
+  "9416": [
+    "portagioie"
+  ],
+  "9418": [
+    "aperitivo"
+  ],
+  "9420": [
+    "pranzo"
+  ],
+  "9421": [
+    "pronto"
+  ],
+  "9452": [
+    "praline"
+  ],
+  "9454": [
+    "parlare"
+  ],
+  "9460": [
+    "preciso",
+    "processo"
+  ],
+  "9464": [
+    "bruciare"
+  ],
+  "9473": [
+    "bergamo"
+  ],
+  "9474": [
+    "pregare",
+    "broker",
+    "parrucchiere"
+  ],
+  "9475": [
+    "pericolo",
+    "broccoli"
+  ],
+  "9476": [
+    "parcheggio"
+  ],
+  "9481": [
+    "perfetto",
+    "privato",
+    "profitto"
+  ],
+  "9482": [
+    "perfino"
+  ],
+  "9484": [
+    "provare"
+  ],
+  "9494": [
+    "proporre",
+    "proprio"
+  ],
+  "9501": [
+    "poliziotto"
+  ],
+  "9502": [
+    "bolzano"
+  ],
+  "9504": [
+    "blazer"
+  ],
+  "9514": [
+    "bollitore",
+    "biglietteria"
+  ],
+  "9517": [
+    "politica",
+    "politico"
+  ],
+  "9521": [
+    "polenta"
+  ],
+  "9526": [
+    "bilancia",
+    "bilancio"
+  ],
+  "9527": [
+    "blanco"
+  ],
+  "9532": [
+    "pallamano"
+  ],
+  "9543": [
+    "palermo"
+  ],
+  "9572": [
+    "balcone"
+  ],
+  "9574": [
+    "bulgaria"
+  ],
+  "9585": [
+    "pallavolo"
+  ],
+  "9712": [
+    "bucatini"
+  ],
+  "9742": [
+    "pecorino"
+  ],
+  "9758": [
+    "baklava"
+  ],
+  "9942": [
+    "peperoni"
+  ],
+  "9957": [
+    "pubblico"
+  ],
+  "10120": [
+    "distanza"
+  ],
+  "10141": [
+    "autostrada"
+  ],
+  "10142": [
+    "tastierino"
+  ],
+  "10144": [
+    "desiderare"
+  ],
+  "10192": [
+    "tostapane"
+  ],
+  "10284": [
+    "tiziano ferro"
+  ],
+  "10714": [
+    "discutere"
+  ],
+  "10740": [
+    "discorso"
+  ],
+  "10741": [
+    "discord"
+  ],
+  "11321": [
+    "adattamento"
+  ],
+  "11718": [
+    "detective"
+  ],
+  "12101": [
+    "dentista"
+  ],
+  "12347": [
+    "danimarca"
+  ],
+  "13214": [
+    "domandare"
+  ],
+  "13514": [
+    "teamleader"
+  ],
+  "13942": [
+    "temperino"
+  ],
+  "14024": [
+    "trascinare"
+  ],
+  "14114": [
+    "traduttore"
+  ],
+  "14152": [
+    "tortellini",
+    "triathlon"
+  ],
+  "14201": [
+    "transito"
+  ],
+  "14270": [
+    "tronchese"
+  ],
+  "14275": [
+    "tranquillo"
+  ],
+  "14302": [
+    "tramezzino"
+  ],
+  "14325": [
+    "terminal"
+  ],
+  "14621": [
+    "dirigente"
+  ],
+  "14714": [
+    "truccatore"
+  ],
+  "15421": [
+    "dolorante"
+  ],
+  "15681": [
+    "dolcevita"
+  ],
+  "15734": [
+    "telecamera"
+  ],
+  "15743": [
+    "telegram"
+  ],
+  "15804": [
+    "televisore"
+  ],
+  "16018": [
+    "digestivo"
+  ],
+  "16321": [
+    "atteggiamento"
+  ],
+  "16394": [
+    "dicembre"
+  ],
+  "17321": [
+    "documento"
+  ],
+  "18121": [
+    "dividendo"
+  ],
+  "18214": [
+    "difendere",
+    "diffondere",
+    "diventare"
+  ],
+  "18414": [
+    "divertire"
+  ],
+  "18420": [
+    "differenza"
+  ],
+  "18502": [
+    "deflazione"
+  ],
+  "18751": [
+    "difficoltà"
+  ],
+  "19214": [
+    "dipendere"
+  ],
+  "20014": [
+    "insistere"
+  ],
+  "21001": [
+    "entusiasta"
+  ],
+  "21014": [
+    "industria"
+  ],
+  "21048": [
+    "windsurf"
+  ],
+  "21202": [
+    "intenzione"
+  ],
+  "21214": [
+    "intendere"
+  ],
+  "21404": [
+    "interessare"
+  ],
+  "21411": [
+    "antartide"
+  ],
+  "21414": [
+    "interruttore"
+  ],
+  "21482": [
+    "interfono"
+  ],
+  "21714": [
+    "indicatore"
+  ],
+  "27411": [
+    "unicredit"
+  ],
+  "27434": [
+    "negramaro"
+  ],
+  "28394": [
+    "novembre"
+  ],
+  "28401": [
+    "università"
+  ],
+  "28434": [
+    "infermiere"
+  ],
+  "28502": [
+    "inflazione"
+  ],
+  "30144": [
+    "mostrare"
+  ],
+  "30601": [
+    "musicista"
+  ],
+  "30712": [
+    "moschettone"
+  ],
+  "31142": [
+    "mediterraneo"
+  ],
+  "31432": [
+    "matrimonio"
+  ],
+  "32014": [
+    "ministro",
+    "minestra"
+  ],
+  "32041": [
+    "mansarda"
+  ],
+  "32072": [
+    "måneskin"
+  ],
+  "32124": [
+    "mantenere"
+  ],
+  "32142": [
+    "mandarino"
+  ],
+  "32145": [
+    "mandorla"
+  ],
+  "32912": [
+    "monopattino"
+  ],
+  "34115": [
+    "mortadella"
+  ],
+  "34351": [
+    "marmellata"
+  ],
+  "34691": [
+    "marciapiede"
+  ],
+  "34751": [
+    "mercoledì"
+  ],
+  "35202": [
+    "melanzana"
+  ],
+  "35432": [
+    "emilia-romagna"
+  ],
+  "37024": [
+    "magazziniere"
+  ],
+  "37421": [
+    "microonde"
+  ],
+  "37482": [
+    "microfono"
+  ],
+  "38321": [
+    "movimento"
+  ],
+  "39095": [
+    "impossibile"
+  ],
+  "39272": [
+    "imbianchino"
+  ],
+  "39402": [
+    "impressione"
+  ],
+  "39414": [
+    "importare"
+  ],
+  "39464": [
+    "hamburger"
+  ],
+  "39480": [
+    "improvviso"
+  ],
+  "40014": [
+    "resistere"
+  ],
+  "40032": [
+    "riso jasmine"
+  ],
+  "40494": [
+    "risoarborio"
+  ],
+  "40502": [
+    "risoluzione"
+  ],
+  "40511": [
+    "risultato"
+  ],
+  "40514": [
+    "risultare"
+  ],
+  "40584": [
+    "risolvere"
+  ],
+  "40901": [
+    "risposta"
+  ],
+  "41424": [
+    "ritornare"
+  ],
+  "41484": [
+    "ritrovare"
+  ],
+  "42104": [
+    "renato zero"
+  ],
+  "42144": [
+    "rientrare"
+  ],
+  "43971": [
+    "arrampicata"
+  ],
+  "46212": [
+    "argentina"
+  ],
+  "46264": [
+    "raggiungere"
+  ],
+  "47204": [
+    "organizzare",
+    "riconoscere",
+    "organizer"
+  ],
+  "47214": [
+    "raccontare"
+  ],
+  "47321": [
+    "argomento"
+  ],
+  "47414": [
+    "ricordare",
+    "riguardare",
+    "recruiter"
+  ],
+  "47801": [
+    "archivista"
+  ],
+  "47984": [
+    "ricchi e poveri"
+  ],
+  "48411": [
+    "raffreddato"
+  ],
+  "48502": [
+    "rivoluzione"
+  ],
+  "48564": [
+    "rivolgere"
+  ],
+  "49011": [
+    "arabia saudita"
+  ],
+  "49414": [
+    "riportare"
+  ],
+  "49957": [
+    "repubblica"
+  ],
+  "50214": [
+    "alessandro",
+    "alessandra"
+  ],
+  "51112": [
+    "altitudine"
+  ],
+  "51371": [
+    "latte macchiato"
+  ],
+  "52124": [
+    "allontanare"
+  ],
+  "52142": [
+    "lanterna"
+  ],
+  "52321": [
+    "allenamento"
+  ],
+  "53265": [
+    "limoncello"
+  ],
+  "53914": [
+    "lampadario"
+  ],
+  "53941": [
+    "lombardia"
+  ],
+  "54902": [
+    "laura pausini"
+  ],
+  "56017": [
+    "logistica"
+  ],
+  "56270": [
+    "leggings"
+  ],
+  "57318": [
+    "locomotiva"
+  ],
+  "58146": [
+    "lavatrice"
+  ],
+  "58195": [
+    "la vita è bella"
+  ],
+  "59012": [
+    "il postino"
+  ],
+  "59142": [
+    "il padrino"
+  ],
+  "60142": [
+    "cisterna"
+  ],
+  "62017": [
+    "ginnastica"
+  ],
+  "62145": [
+    "centrale"
+  ],
+  "62745": [
+    "giancarlo"
+  ],
+  "65944": [
+    "celebrare"
+  ],
+  "67503": [
+    "ciclismo"
+  ],
+  "70114": [
+    "costituire"
+  ],
+  "70127": [
+    "casting"
+  ],
+  "70144": [
+    "costruire"
+  ],
+  "72020": [
+    "conoscenza"
+  ],
+  "72102": [
+    "condizione"
+  ],
+  "72112": [
+    "contadino"
+  ],
+  "72114": [
+    "contatore"
+  ],
+  "72121": [
+    "contento",
+    "cantante"
+  ],
+  "72124": [
+    "contenere",
+    "continuare"
+  ],
+  "72132": [
+    "condominio"
+  ],
+  "72141": [
+    "contratto"
+  ],
+  "72144": [
+    "contrario"
+  ],
+  "72145": [
+    "controllo",
+    "acqua naturale"
+  ],
+  "72154": [
+    "candeliere"
+  ],
+  "72301": [
+    "economista"
+  ],
+  "72614": [
+    "concedere"
+  ],
+  "72641": [
+    "concerto"
+  ],
+  "72651": [
+    "congelato"
+  ],
+  "72740": [
+    "congresso"
+  ],
+  "72804": [
+    "confessare"
+  ],
+  "73264": [
+    "cominciare"
+  ],
+  "73465": [
+    "commerciale"
+  ],
+  "73914": [
+    "computer"
+  ],
+  "73921": [
+    "campionato"
+  ],
+  "73924": [
+    "accompagnare"
+  ],
+  "73925": [
+    "campanello"
+  ],
+  "73944": [
+    "comprare"
+  ],
+  "74011": [
+    "crostata"
+  ],
+  "74012": [
+    "cristiano",
+    "cristian"
+  ],
+  "74021": [
+    "croissant"
+  ],
+  "74120": [
+    "credenza"
+  ],
+  "74152": [
+    "cartellina",
+    "cartellone"
+  ],
+  "74172": [
+    "cardigan"
+  ],
+  "74640": [
+    "accorgersi"
+  ],
+  "74714": [
+    "caricatore"
+  ],
+  "74924": [
+    "carabiniere"
+  ],
+  "75214": [
+    "calendario"
+  ],
+  "75314": [
+    "chilometro"
+  ],
+  "76146": [
+    "cucitrice"
+  ],
+  "76785": [
+    "caciocavallo"
+  ],
+  "78015": [
+    "chiavistello"
+  ],
+  "78214": [
+    "co-founder"
+  ],
+  "78578": [
+    "cavalcavia"
+  ],
+  "78584": [
+    "cavolfiore"
+  ],
+  "79414": [
+    "copriwater"
+  ],
+  "80185": [
+    "festival"
+  ],
+  "80740": [
+    "vasco rossi"
+  ],
+  "81424": [
+    "veterinario"
+  ],
+  "81734": [
+    "videocamera"
+  ],
+  "81748": [
+    "fotografo"
+  ],
+  "82014": [
+    "finestra"
+  ],
+  "82114": [
+    "venditore",
+    "fondatore"
+  ],
+  "82521": [
+    "finlandia"
+  ],
+  "82620": [
+    "vincenzo"
+  ],
+  "82741": [
+    "vinaigrette"
+  ],
+  "82754": [
+    "funicolare"
+  ],
+  "84214": [
+    "affrontare",
+    "fornitore"
+  ],
+  "84260": [
+    "francese"
+  ],
+  "84314": [
+    "formatore"
+  ],
+  "84321": [
+    "veramente"
+  ],
+  "84365": [
+    "vermicelli"
+  ],
+  "84514": [
+    "frullatore"
+  ],
+  "85101": [
+    "valle d'aosta"
+  ],
+  "85102": [
+    "valutazione"
+  ],
+  "85212": [
+    "valentina"
+  ],
+  "85321": [
+    "fallimento"
+  ],
+  "90120": [
+    "abbastanza"
+  ],
+  "90164": [
+    "pasticcere"
+  ],
+  "90571": [
+    "basilicata"
+  ],
+  "90714": [
+    "pescatore"
+  ],
+  "90757": [
+    "psicologo"
+  ],
+  "90951": [
+    "possibilità"
+  ],
+  "91432": [
+    "patrimonio"
+  ],
+  "92041": [
+    "panzerotto"
+  ],
+  "92124": [
+    "abbandonare"
+  ],
+  "92152": [
+    "pantaloni"
+  ],
+  "92321": [
+    "abbonamento"
+  ],
+  "92841": [
+    "pianoforte"
+  ],
+  "94020": [
+    "presenza"
+  ],
+  "94021": [
+    "presente"
+  ],
+  "94025": [
+    "personale"
+  ],
+  "94026": [
+    "personaggio"
+  ],
+  "94071": [
+    "bruschetta"
+  ],
+  "94102": [
+    "produzione"
+  ],
+  "94120": [
+    "operations"
+  ],
+  "94124": [
+    "appartenere",
+    "partner"
+  ],
+  "94152": [
+    "barattolino"
+  ],
+  "94161": [
+    "portaoggetti"
+  ],
+  "94175": [
+    "portogallo"
+  ],
+  "94178": [
+    "portachiavi"
+  ],
+  "94185": [
+    "portafoglio"
+  ],
+  "94192": [
+    "portapenne"
+  ],
+  "94202": [
+    "branzino"
+  ],
+  "94214": [
+    "prendere"
+  ],
+  "94269": [
+    "principe",
+    "principio"
+  ],
+  "94314": [
+    "permettere",
+    "promettere"
+  ],
+  "94362": [
+    "parmigiano"
+  ],
+  "94527": [
+    "prolunga"
+  ],
+  "94614": [
+    "procedere"
+  ],
+  "94740": [
+    "percorso"
+  ],
+  "94743": [
+    "programma"
+  ],
+  "94750": [
+    "pericoloso"
+  ],
+  "94794": [
+    "preoccupare"
+  ],
+  "94804": [
+    "professore"
+  ],
+  "94814": [
+    "prevedere",
+    "provvedere"
+  ],
+  "94821": [
+    "profondo",
+    "paravento"
+  ],
+  "94826": [
+    "provincia"
+  ],
+  "94844": [
+    "preferire"
+  ],
+  "94874": [
+    "provocare"
+  ],
+  "94901": [
+    "proposito",
+    "proposta"
+  ],
+  "94915": [
+    "apribottiglie"
+  ],
+  "94927": [
+    "powerbank"
+  ],
+  "94944": [
+    "preparare"
+  ],
+  "94953": [
+    "problema"
+  ],
+  "95104": [
+    "bulldozer"
+  ],
+  "95142": [
+    "poltrona"
+  ],
+  "95377": [
+    "plumcake"
+  ],
+  "95501": [
+    "playlist"
+  ],
+  "95702": [
+    "obbligazione"
+  ],
+  "95911": [
+    "pelapatate"
+  ],
+  "96751": [
+    "bicicletta"
+  ],
+  "97321": [
+    "pagamento"
+  ],
+  "99399": [
+    "bibimbap"
+  ],
+  "99502": [
+    "popolazione"
+  ],
+  "99574": [
+    "pubblicare"
+  ],
+  "101202": [
+    "destinazione"
+  ],
+  "101274": [
+    "distinguere"
+  ],
+  "101402": [
+    "distruzione"
+  ],
+  "101464": [
+    "distruggere"
+  ],
+  "107484": [
+    "descrivere"
+  ],
+  "109002": [
+    "disposizione"
+  ],
+  "109204": [
+    "dispenser"
+  ],
+  "114324": [
+    "determinare"
+  ],
+  "114621": [
+    "detergente"
+  ],
+  "121846": [
+    "dentifricio"
+  ],
+  "126205": [
+    "tangenziale"
+  ],
+  "130144": [
+    "dimostrare"
+  ],
+  "132174": [
+    "dimenticare"
+  ],
+  "143314": [
+    "termometro"
+  ],
+  "148404": [
+    "attraversare"
+  ],
+  "156792": [
+    "dolce & gabbana"
+  ],
+  "157321": [
+    "telecomando"
+  ],
+  "171146": [
+    "etichettatrice"
+  ],
+  "192121": [
+    "dipendente"
+  ],
+  "201743": [
+    "instagram"
+  ],
+  "202321": [
+    "insegnamento"
+  ],
+  "207214": [
+    "nascondere"
+  ],
+  "210145": [
+    "industriale"
+  ],
+  "214021": [
+    "interessante"
+  ],
+  "214911": [
+    "intorpidito"
+  ],
+  "214941": [
+    "interprete"
+  ],
+  "214957": [
+    "antropologo"
+  ],
+  "214965": [
+    "andrea bocelli"
+  ],
+  "218570": [
+    "netflix"
+  ],
+  "272144": [
+    "incontrare"
+  ],
+  "280114": [
+    "investitore"
+  ],
+  "280521": [
+    "nuova zelanda"
+  ],
+  "284121": [
+    "infortunato"
+  ],
+  "307492": [
+    "mascarpone"
+  ],
+  "347127": [
+    "marketing"
+  ],
+  "351940": [
+    "multipresa"
+  ],
+  "354321": [
+    "miglioramento"
+  ],
+  "360141": [
+    "magistrato"
+  ],
+  "394120": [
+    "importanza"
+  ],
+  "394121": [
+    "importante"
+  ],
+  "394395": [
+    "impermeabile"
+  ],
+  "404301": [
+    "eros ramazzotti"
+  ],
+  "409031": [
+    "riso basmati"
+  ],
+  "409214": [
+    "rispondere"
+  ],
+  "427404": [
+    "ringraziare"
+  ],
+  "464714": [
+    "ricercatore"
+  ],
+  "472002": [
+    "organizzazione"
+  ],
+  "494214": [
+    "riprendere"
+  ],
+  "514601": [
+    "elettricista"
+  ],
+  "515681": [
+    "la dolce vita"
+  ],
+  "527970": [
+    "lunchbox"
+  ],
+  "539472": [
+    "lamborghini"
+  ],
+  "569101": [
+    "lucio battisti"
+  ],
+  "580185": [
+    "lavastoviglie"
+  ],
+  "589402": [
+    "le vibrazioni"
+  ],
+  "621074": [
+    "accendisigari"
+  ],
+  "623421": [
+    "gianni morandi"
+  ],
+  "641321": [
+    "certamente"
+  ],
+  "642501": [
+    "giornalista"
+  ],
+  "675151": [
+    "cioccolatolatte"
+  ],
+  "701402": [
+    "costruzione"
+  ],
+  "720144": [
+    "considerare"
+  ],
+  "720214": [
+    "consentire"
+  ],
+  "720484": [
+    "conservare"
+  ],
+  "720521": [
+    "consulente"
+  ],
+  "720720": [
+    "conseguenza"
+  ],
+  "721214": [
+    "contenitore"
+  ],
+  "721321": [
+    "condimento"
+  ],
+  "721454": [
+    "controller"
+  ],
+  "721951": [
+    "contabilità"
+  ],
+  "727420": [
+    "concorrenza"
+  ],
+  "727514": [
+    "concludere"
+  ],
+  "728264": [
+    "convincere"
+  ],
+  "728421": [
+    "confronto"
+  ],
+  "728520": [
+    "confluenza"
+  ],
+  "732702": [
+    "comunicazione"
+  ],
+  "739102": [
+    "competizione"
+  ],
+  "739321": [
+    "cambiamento"
+  ],
+  "740427": [
+    "carsharing"
+  ],
+  "741214": [
+    "coordinatore"
+  ],
+  "741501": [
+    "corea del sud"
+  ],
+  "741627": [
+    "cartaigienica"
+  ],
+  "742314": [
+    "cronometro"
+  ],
+  "743257": [
+    "criminologo"
+  ],
+  "747205": [
+    "gorgonzola"
+  ],
+  "747514": [
+    "agricoltore"
+  ],
+  "747914": [
+    "caricabatterie"
+  ],
+  "749214": [
+    "carpentiere"
+  ],
+  "749421": [
+    "carburante"
+  ],
+  "749527": [
+    "carpooling"
+  ],
+  "751952": [
+    "claudio baglioni"
+  ],
+  "752024": [
+    "colonna sonora"
+  ],
+  "759402": [
+    "collaborazione"
+  ],
+  "759414": [
+    "collaboratore"
+  ],
+  "784021": [
+    "acqua frizzante"
+  ],
+  "812014": [
+    "evidenziatore"
+  ],
+  "816182": [
+    "videocitofono"
+  ],
+  "821514": [
+    "ventilatore"
+  ],
+  "825321": [
+    "finalmente"
+  ],
+  "827214": [
+    "fincantieri"
+  ],
+  "840141": [
+    "frustrato"
+  ],
+  "842607": [
+    "francesco",
+    "francesca"
+  ],
+  "843594": [
+    "fermalibri"
+  ],
+  "843601": [
+    "farmacista"
+  ],
+  "847484": [
+    "frigorifero"
+  ],
+  "894894": [
+    "fabri fibra"
+  ],
+  "928702": [
+    "pianificazione"
+  ],
+  "940121": [
+    "presidente"
+  ],
+  "940214": [
+    "presentare"
+  ],
+  "940715": [
+    "apriscatole"
+  ],
+  "941090": [
+    "portaspezie"
+  ],
+  "941321": [
+    "portamonete",
+    "appartamento"
+  ],
+  "941694": [
+    "partecipare"
+  ],
+  "941741": [
+    "portacarte"
+  ],
+  "941754": [
+    "particolare"
+  ],
+  "941915": [
+    "portabottiglie"
+  ],
+  "941916": [
+    "portabadge"
+  ],
+  "941974": [
+    "portabicchiere"
+  ],
+  "942695": [
+    "principale"
+  ],
+  "995174": [
+    "bibliotecario"
+  ],
+  "1014902": [
+    "distribuzione"
+  ],
+  "1408434": [
+    "trasformare"
+  ],
+  "1642501": [
+    "thegiornalisti"
+  ],
+  "2014108": [
+    "nastroadesivo"
+  ],
+  "2100295": [
+    "intesa sanpaolo"
+  ],
+  "2140201": [
+    "nutrizionista"
+  ],
+  "2142025": [
+    "internazionale"
+  ],
+  "2145321": [
+    "naturalmente"
+  ],
+  "2801321": [
+    "investimento"
+  ],
+  "2801714": [
+    "investigatore"
+  ],
+  "3149512": [
+    "metropolitana"
+  ],
+  "3201414": [
+    "amministratore"
+  ],
+  "3414921": [
+    "emirati arabi uniti"
+  ],
+  "3473272": [
+    "marco mengoni"
+  ],
+  "3512025": [
+    "multinazionale"
+  ],
+  "3942114": [
+    "imprenditore"
+  ],
+  "3958714": [
+    "amplificatore"
+  ],
+  "4092095": [
+    "responsabile"
+  ],
+  "4601414": [
+    "registratore"
+  ],
+  "4691201": [
+    "receptionist"
+  ],
+  "4940214": [
+    "rappresentare"
+  ],
+  "4995767": [
+    "repubblica ceca"
+  ],
+  "5194521": [
+    "altoparlante"
+  ],
+  "5629841": [
+    "luciano pavarotti"
+  ],
+  "6751927": [
+    "cioccolatobianco"
+  ],
+  "7014264": [
+    "costringere"
+  ],
+  "7346501": [
+    "commercialista"
+  ],
+  "7394214": [
+    "comprendere"
+  ],
+  "7414017": [
+    "caratteristico"
+  ],
+  "7419408": [
+    "cartaabrasiva"
+  ],
+  "7432750": [
+    "cremainglese"
+  ],
+  "7437215": [
+    "cremachantilly"
+  ],
+  "8946121": [
+    "febbricitante"
+  ],
+  "9215262": [
+    "pantaloncini"
+  ],
+  "9413945": [
+    "portaombrelli"
+  ],
+  "9414801": [
+    "portariviste"
+  ],
+  "9417215": [
+    "portacandele"
+  ],
+  "9419420": [
+    "portapranzo"
+  ],
+  "9421321": [
+    "apprendimento"
+  ],
+  "9474314": [
+    "programmatore"
+  ],
+  "9474321": [
+    "procurement"
+  ],
+  "9481450": [
+    "profiteroles"
+  ],
+  "9514146": [
+    "obliteratrice"
+  ],
+  "14265212": [
+    "adriano celentano"
+  ],
+  "21258211": [
+    "antonello venditti"
+  ],
+  "40751321": [
+    "riscaldamento"
+  ],
+  "40920951": [
+    "responsabilità"
+  ],
+  "50214340": [
+    "alessandra amoroso"
+  ],
+  "57421950": [
+    "la grande bellezza"
+  ],
+  "73951321": [
+    "completamente"
+  ],
+  "84582065": [
+    "friuli-venezia giulia"
+  ],
+  "86940121": [
+    "vicepresidente"
+  ],
+  "92821501": [
+    "benvenuti al sud"
+  ],
+  "94117321": [
+    "portadocumenti"
+  ],
+  "94995321": [
+    "probabilmente"
+  ],
+  "142125116": [
+    "trentino-alto adige"
+  ],
+  "286239410": [
+    "nuovo cinema paradiso"
+  ],
+  "573821421": [
+    "lo chiamavano trinità"
+  ],
+  "675182121": [
+    "cioccolatofondente"
+  ],
+  "742851501": [
+    "c'era una volta il west"
+  ],
+  "948107201": [
+    "perfetti sconosciuti"
+  ],
+  "950187146": [
+    "plastificatrice"
+  ],
+  "1014617321": [
+    "distruggidocumenti"
+  ],
+  "07514": [
+    "ascoltare",
+    "escludere"
+  ],
+  "0914": [
+    "aspettare"
+  ],
+  "091": [
+    "aspetto",
+    "subito",
+    "sabato"
+  ],
+  "0744": [
+    "assicurare",
+    "scorrere"
+  ],
+  "0014": [
+    "assistere",
+    "esistere"
+  ],
+  "051": [
+    "assoluto",
+    "solito",
+    "salotto",
+    "saldi",
+    "scelta"
+  ],
+  "034": [
+    "assumere"
+  ],
+  "02": [
+    "azione",
+    "scena",
+    "segno",
+    "sino",
+    "sogno",
+    "sonno",
+    "zona",
+    "siena",
+    "zaino"
+  ],
+  "04": [
+    "azzurro",
+    "essere",
+    "sera",
+    "serie",
+    "serio",
+    "usare",
+    "uscire",
+    "sara"
+  ],
+  "03": [
+    "esame"
+  ],
+  "039": [
+    "esempio",
+    "shampoo"
+  ],
+  "0461": [
+    "esercito"
+  ],
+  "09420": [
+    "esperienza",
+    "speranza"
+  ],
+  "094": [
+    "esporre",
+    "sapere",
+    "sopra"
+  ],
+  "09402": [
+    "espressione",
+    "spruzzino"
+  ],
+  "09434": [
+    "esprimere"
+  ],
+  "011": [
+    "estate",
+    "stato",
+    "studio",
+    "assetato",
+    "sudato"
+  ],
+  "01214": [
+    "estendere"
+  ],
+  "014": [
+    "estero",
+    "sedere",
+    "stare",
+    "storia",
+    "austria",
+    "sidro"
+  ],
+  "0143": [
+    "estremo"
+  ],
+  "05": [
+    "isola",
+    "sala",
+    "sole",
+    "solo",
+    "sale"
+  ],
+  "0121": [
+    "istante"
+  ],
+  "0111": [
+    "istituto"
+  ],
+  "0915": [
+    "ospedale",
+    "spatola"
+  ],
+  "0484": [
+    "osservare",
+    "servire",
+    "server"
+  ],
+  "07486": [
+    "sacrificio"
+  ],
+  "074": [
+    "sacro",
+    "seguire",
+    "sicuro",
+    "zucchero"
+  ],
+  "054": [
+    "salire",
+    "scegliere",
+    "salario"
+  ],
+  "0514": [
+    "saltare",
+    "salutare"
+  ],
+  "0584": [
+    "salvare"
+  ],
+  "027": [
+    "sangue",
+    "snack"
+  ],
+  "0954": [
+    "sbagliare"
+  ],
+  "075": [
+    "scala",
+    "scuola",
+    "secolo",
+    "secchiello",
+    "segale",
+    "scalo"
+  ],
+  "0794": [
+    "scappare",
+    "scoppiare"
+  ],
+  "0214": [
+    "scendere",
+    "sentire",
+    "sandro",
+    "sentiero"
+  ],
+  "07404": [
+    "scherzare"
+  ],
+  "020": [
+    "scienza",
+    "senso",
+    "senza"
+  ],
+  "073944": [
+    "scomparire"
+  ],
+  "079": [
+    "scopo",
+    "scopa"
+  ],
+  "07944": [
+    "scoprire"
+  ],
+  "07414": [
+    "scrittore",
+    "segretario"
+  ],
+  "07484": [
+    "scrivere"
+  ],
+  "0704": [
+    "scusare"
+  ],
+  "0721": [
+    "secondo",
+    "sconto"
+  ],
+  "01": [
+    "sede",
+    "sotto",
+    "sud",
+    "zitto",
+    "aosta",
+    "sito",
+    "sedia",
+    "ssd",
+    "satay",
+    "set"
+  ],
+  "024": [
+    "segnare",
+    "signora",
+    "signore",
+    "sognare",
+    "suonare"
+  ],
+  "0741": [
+    "segreto",
+    "sguardo"
+  ],
+  "071": [
+    "seguito",
+    "sacchetto",
+    "seghetto"
+  ],
+  "03944": [
+    "sembrare"
+  ],
+  "03956": [
+    "semplice"
+  ],
+  "021321": [
+    "sentimento"
+  ],
+  "042": [
+    "sereno"
+  ],
+  "0480": [
+    "servizio"
+  ],
+  "0132": [
+    "settimana"
+  ],
+  "0840": [
+    "sforzo"
+  ],
+  "0740": [
+    "sicurezza"
+  ],
+  "02874": [
+    "significare"
+  ],
+  "0242": [
+    "signorina"
+  ],
+  "0520": [
+    "silenzio"
+  ],
+  "035": [
+    "simile",
+    "samuele"
+  ],
+  "02014": [
+    "sinistro"
+  ],
+  "0013": [
+    "sistema"
+  ],
+  "0102": [
+    "situazione",
+    "stazione"
+  ],
+  "0314": [
+    "smettere"
+  ],
+  "065": [
+    "sociale",
+    "sicilia"
+  ],
+  "061": [
+    "società"
+  ],
+  "0844": [
+    "soffrire"
+  ],
+  "0511": [
+    "soldato"
+  ],
+  "05121": [
+    "soltanto"
+  ],
+  "0502": [
+    "soluzione"
+  ],
+  "09411": [
+    "soprattutto"
+  ],
+  "045": [
+    "sorella",
+    "israele"
+  ],
+  "0464": [
+    "sorgere"
+  ],
+  "0494214": [
+    "sorprendere"
+  ],
+  "0414": [
+    "sorridere",
+    "serratura"
+  ],
+  "040": [
+    "sorriso"
+  ],
+  "00124": [
+    "sostenere"
+  ],
+  "015": [
+    "sottile",
+    "stella",
+    "shuttle"
+  ],
+  "095": [
+    "spalla",
+    "zeppola",
+    "supplì"
+  ],
+  "090": [
+    "spazio",
+    "spesa",
+    "spesso",
+    "spezie"
+  ],
+  "0965": [
+    "speciale"
+  ],
+  "096": [
+    "specie",
+    "spiaggia"
+  ],
+  "0924": [
+    "spegnere"
+  ],
+  "0944": [
+    "sperare",
+    "superare",
+    "superiore"
+  ],
+  "09175": [
+    "spettacolo"
+  ],
+  "0974": [
+    "spiegare",
+    "specchiera"
+  ],
+  "09264": [
+    "spingere"
+  ],
+  "0941": [
+    "spirito",
+    "sport"
+  ],
+  "0904": [
+    "sposare"
+  ],
+  "01954": [
+    "stabilire"
+  ],
+  "0174": [
+    "staccare"
+  ],
+  "0162": [
+    "stagione"
+  ],
+  "01312": [
+    "stamattina"
+  ],
+  "0139": [
+    "stampa"
+  ],
+  "0127": [
+    "stanco"
+  ],
+  "0120": [
+    "stanza"
+  ],
+  "0104": [
+    "stasera"
+  ],
+  "010": [
+    "stesso",
+    "hostess"
+  ],
+  "0147": [
+    "storico"
+  ],
+  "0141": [
+    "strada"
+  ],
+  "01424": [
+    "straniero"
+  ],
+  "0142": [
+    "strano"
+  ],
+  "0144124": [
+    "straordinario"
+  ],
+  "014264": [
+    "stringere"
+  ],
+  "014321": [
+    "strumento"
+  ],
+  "0114": [
+    "studiare"
+  ],
+  "0191": [
+    "stupido"
+  ],
+  "0614": [
+    "succedere"
+  ],
+  "060": [
+    "successo"
+  ],
+  "0854": [
+    "svegliare"
+  ],
+  "0859": [
+    "sviluppo"
+  ],
+  "08564": [
+    "svolgere"
+  ],
+  "032": [
+    "simone"
+  ],
+  "0182": [
+    "stefano",
+    "stefania"
+  ],
+  "058": [
+    "silvia"
+  ],
+  "05814": [
+    "salvatore"
+  ],
+  "0942": [
+    "sabrina"
+  ],
+  "046": [
+    "sergio"
+  ],
+  "021": [
+    "assunta",
+    "zainetto",
+    "azienda"
+  ],
+  "01423": [
+    "astronomo"
+  ],
+  "0657": [
+    "sociologo"
+  ],
+  "011017": [
+    "statistico"
+  ],
+  "048521": [
+    "sorvegliante"
+  ],
+  "01101": [
+    "estetista"
+  ],
+  "01501": [
+    "stilista"
+  ],
+  "041": [
+    "sarto"
+  ],
+  "0542": [
+    "salerno"
+  ],
+  "0412": [
+    "sardegna"
+  ],
+  "014327": [
+    "streaming"
+  ],
+  "0918": [
+    "spotify"
+  ],
+  "01121": [
+    "studente",
+    "stati uniti"
+  ],
+  "092": [
+    "spagna",
+    "sapone",
+    "spugna",
+    "zabaione"
+  ],
+  "0145": [
+    "australia"
+  ],
+  "01847": [
+    "sudafrica"
+  ],
+  "0804": [
+    "svizzera"
+  ],
+  "080": [
+    "svezia"
+  ],
+  "049": [
+    "serbia",
+    "sciroppo",
+    "sciarpa"
+  ],
+  "0754": [
+    "scogliera"
+  ],
+  "04621": [
+    "sorgente"
+  ],
+  "0921": [
+    "sponda"
+  ],
+  "07482": [
+    "scrivania"
+  ],
+  "097": [
+    "specchio",
+    "spago",
+    "speck"
+  ],
+  "085": [
+    "sveglia",
+    "soufflé"
+  ],
+  "0785": [
+    "scaffale"
+  ],
+  "018": [
+    "stufa"
+  ],
+  "0949584": [
+    "aspirapolvere"
+  ],
+  "07795": [
+    "asciugacapelli"
+  ],
+  "07146": [
+    "asciugatrice"
+  ],
+  "095146": [
+    "spillatrice"
+  ],
+  "013921": [
+    "stampante"
+  ],
+  "0724": [
+    "scanner"
+  ],
+  "0971": [
+    "specchietto",
+    "spaghetti"
+  ],
+  "0905": [
+    "spazzola"
+  ],
+  "0732": [
+    "asciugamano"
+  ],
+  "07": [
+    "secchio",
+    "sacco",
+    "succo",
+    "whisky",
+    "zucca",
+    "asiago"
+  ],
+  "01974": [
+    "sottobicchiere"
+  ],
+  "075901": [
+    "scolapasta"
+  ],
+  "0715": [
+    "scatola"
+  ],
+  "0492": [
+    "zerbino"
+  ],
+  "016": [
+    "astuccio"
+  ],
+  "0204": [
+    "sensore"
+  ],
+  "09052": [
+    "spazzolino",
+    "spazzolone"
+  ],
+  "0581": [
+    "salvietta"
+  ],
+  "0795": [
+    "sgabello"
+  ],
+  "0751": [
+    "scaletta"
+  ],
+  "081107": [
+    "svuotatasche"
+  ],
+  "0714": [
+    "squadra",
+    "scooter"
+  ],
+  "017": [
+    "switch"
+  ],
+  "019215": [
+    "sottopentola"
+  ],
+  "07345": [
+    "schiumarola"
+  ],
+  "0943743": [
+    "spremiagrumi"
+  ],
+  "07152": [
+    "scatolina"
+  ],
+  "07626": [
+    "schiaccianoci"
+  ],
+  "0642": [
+    "soggiorno"
+  ],
+  "072": [
+    "zucchina"
+  ],
+  "053": [
+    "salame",
+    "salmo"
+  ],
+  "0532": [
+    "salmone"
+  ],
+  "09": [
+    "zuppa",
+    "seppia"
+  ],
+  "00": [
+    "sushi",
+    "sazio"
+  ],
+  "031": [
+    "smoothie"
+  ],
+  "09431": [
+    "spremuta"
+  ],
+  "09410": [
+    "spritz"
+  ],
+  "012": [
+    "seitan"
+  ],
+  "0926": [
+    "spinaci"
+  ],
+  "074851": [
+    "zuccherofilato"
+  ],
+  "07394": [
+    "sgombro"
+  ],
+  "0739": [
+    "scampi"
+  ],
+  "01780": [
+    "stoccafisso"
+  ],
+  "0506": [
+    "salsiccia"
+  ],
+  "07340": [
+    "scamorza"
+  ],
+  "0761": [
+    "schiacciata"
+  ],
+  "0491": [
+    "sorbetto"
+  ],
+  "029": [
+    "senape"
+  ],
+  "050": [
+    "salsa"
+  ],
+  "08431": [
+    "sformato"
+  ],
+  "01415": [
+    "strudel"
+  ],
+  "0045": [
+    "sushiroll"
+  ],
+  "003": [
+    "sashimi"
+  ],
+  "0940": [
+    "espresso"
+  ],
+  "0274": [
+    "sangria"
+  ],
+  "0410": [
+    "shorts"
+  ],
+  "0749": [
+    "scarpe"
+  ],
+  "0185": [
+    "stivali"
+  ],
+  "0215": [
+    "sandali"
+  ],
+  "0591": [
+    "salopette"
+  ],
+  "01801": [
+    "sottoveste"
+  ],
+  "02740": [
+    "sneakers"
+  ],
+  "014271": [
+    "stringate"
+  ],
+  "091450": [
+    "espadrillas"
+  ],
+  "0384": [
+    "semaforo"
+  ],
+  "02517": [
+    "segnaletica"
+  ],
+  "068": [
+    "seggiovia"
+  ],
+  "034347": [
+    "semirimorchio"
+  ],
+  "07814": [
+    "escavatore"
+  ],
+  "0190": [
+    "sottopasso"
+  ],
+  "09411487": [
+    "sparti traffico"
+  ],
+  "025": [
+    "segnale"
+  ],
+  "0947": [
+    "sbarco"
+  ],
+  "01419": [
+    "startup"
+  ],
+  "0201": [
+    "azionista"
+  ],
+  "017514": [
+    "stakeholder"
+  ],
+  "01921": [
+    "stipendio"
+  ],
+  "094804": [
+    "supervisore"
+  ],
+  "09572": [
+    "supplychain"
+  ],
+  "01416": [
+    "strategia"
+  ],
+  "02614": [
+    "sceneggiatura"
+  ],
+  "0275": [
+    "singolo"
+  ],
+  "59259415718": [
+    "il buono, il brutto, il cattivo"
+  ],
+  "7428512347": [
+    "c'era una volta in america"
+  ],
+  "14314094565": [
+    "tre metri sopra il cielo"
+  ],
+  "03172185": [
+    "smetto quando voglio"
+  ],
+  "84260717474": [
+    "francesco de gregori"
+  ],
+  "084901": [
+    "sfera ebbasta"
+  ],
+  "09027": [
+    "subsonica"
+  ],
+  "02941": [
+    "snowboard"
+  ],
+  "0743": [
+    "scherma"
+  ],
+  "08195": [
+    "softball"
+  ],
+  "048": [
+    "surf"
+  ],
+  "0740203": [
+    "escursionismo"
+  ],
+  "07281": [
+    "sconfitta"
+  ],
+  "01394": [
+    "settembre"
+  ],
+  "098211": [
+    "spaventato"
+  ],
+  "04940": [
+    "sorpreso"
+  ],
+  "01081": [
+    "soddisfatto"
+  ],
+  "01401": [
+    "stressato"
+  ]
+}

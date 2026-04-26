@@ -21,17 +21,20 @@
     "auto",
     "dj",
     "judo",
-    "odio"
+    "odio",
+    "te"
   ],
   "2": [
     "anno",
     "ogni",
     "uno",
     "anna",
-    "eni"
+    "eni",
+    "iena"
   ],
   "3": [
-    "uomo"
+    "uomo",
+    "amo"
   ],
   "4": [
     "aria",
@@ -40,19 +43,22 @@
     "oro",
     "yuri",
     "aereo",
-    "hr"
+    "hr",
+    "re"
   ],
   "5": [
     "egli",
     "illy",
     "olio",
-    "aglio"
+    "aglio",
+    "ali"
   ],
   "6": [
     "cioè",
     "gioia",
     "oggi",
-    "ceo"
+    "ceo",
+    "ciao"
   ],
   "7": [
     "acqua",
@@ -63,19 +69,22 @@
     "gaia",
     "kiwi",
     "coo",
-    "hockey"
+    "hockey",
+    "oca"
   ],
   "8": [
     "via",
     "uova",
-    "iva"
+    "iva",
+    "ufo"
   ],
   "9": [
     "buio",
     "baia",
     "hub",
     "pho",
-    "pooh"
+    "pooh",
+    "ape"
   ],
   "10": [
     "addosso",
@@ -83,13 +92,15 @@
     "attesa",
     "tazza",
     "tassa",
-    "dazio"
+    "dazio",
+    "tasso"
   ],
   "11": [
     "dito",
     "tutto",
     "dado",
-    "tuta"
+    "tuta",
+    "dadi"
   ],
   "12": [
     "don",
@@ -99,7 +110,8 @@
   ],
   "13": [
     "attimo",
-    "tim"
+    "tim",
+    "dama"
   ],
   "14": [
     "aiutare",
@@ -112,13 +124,15 @@
     "udire",
     "dario",
     "diario",
-    "tour"
+    "tour",
+    "toro"
   ],
   "15": [
     "attuale",
     "tale",
     "utile",
-    "italia"
+    "italia",
+    "tela"
   ],
   "16": [
     "doccia"
@@ -126,22 +140,26 @@
   "17": [
     "diego",
     "dock",
-    "tacco"
+    "tacco",
+    "tacchi"
   ],
   "18": [
     "dove",
     "tofu",
-    "attivo"
+    "attivo",
+    "duff"
   ],
   "19": [
     "dopo",
     "dubbio",
-    "tipo"
+    "tipo",
+    "topo"
   ],
   "20": [
     "anzi",
     "inizio",
-    "jeans"
+    "jeans",
+    "naso"
   ],
   "21": [
     "noto",
@@ -150,17 +168,20 @@
     "notaio",
     "india",
     "onde",
-    "nuoto"
+    "nuoto",
+    "nido"
   ],
   "22": [
     "ognuno",
-    "neon"
+    "neon",
+    "nonno"
   ],
   "23": [
     "anima",
     "animo",
     "nome",
-    "noemi"
+    "noemi",
+    "nemo"
   ],
   "24": [
     "nero",
@@ -170,20 +191,26 @@
   "25": [
     "nulla",
     "enel",
-    "agnello"
+    "agnello",
+    "anello"
   ],
   "26": [
-    "noce"
+    "noce",
+    "noci"
   ],
   "27": [
     "anche",
     "unico",
-    "gnocchi"
+    "gnocchi",
+    "nico"
   ],
   "28": [
     "nave",
     "nuovo",
     "neve"
+  ],
+  "29": [
+    "nube"
   ],
   "30": [
     "massa",
@@ -193,7 +220,8 @@
     "mouse",
     "mais",
     "hummus",
-    "miso"
+    "miso",
+    "mazza"
   ],
   "31": [
     "medio",
@@ -233,11 +261,17 @@
     "molo"
   ],
   "36": [
-    "maggio"
+    "maggio",
+    "mocio"
   ],
   "37": [
     "amico",
-    "mocha"
+    "mocha",
+    "mago",
+    "mucca"
+  ],
+  "38": [
+    "muffa"
   ],
   "39": [
     "ampio",
@@ -252,57 +286,68 @@
     "riso",
     "orzo",
     "razzo",
-    "arisa"
+    "arisa",
+    "orso"
   ],
   "41": [
     "arte",
-    "orata"
+    "orata",
+    "rete"
   ],
   "42": [
     "regno",
     "irene",
-    "arianna"
+    "arianna",
+    "rana",
+    "ragno"
   ],
   "43": [
     "arma",
     "oramai",
     "roma",
     "rum",
-    "irama"
+    "irama",
+    "ramo"
   ],
   "44": [
     "errore",
-    "aurora"
+    "aurora",
+    "orrore"
   ],
   "45": [
     "reale",
     "rullo"
   ],
   "46": [
-    "roccia"
+    "roccia",
+    "riccio"
   ],
   "47": [
     "orecchio",
     "ricco",
     "ragù",
-    "rock"
+    "rock",
+    "riga"
   ],
   "48": [
     "riva",
-    "orafo"
+    "orafo",
+    "raf"
   ],
   "49": [
     "erba",
     "europeo",
     "roba",
     "europa",
-    "rap"
+    "rap",
+    "rabbia"
   ],
   "50": [
     "alessia",
     "elisa",
     "alessio",
-    "lazio"
+    "lazio",
+    "lisa"
   ],
   "51": [
     "alto",
@@ -315,10 +360,13 @@
   "52": [
     "linea",
     "luna",
-    "elena"
+    "elena",
+    "lana",
+    "leone"
   ],
   "53": [
-    "lima"
+    "lima",
+    "lama"
   ],
   "54": [
     "allora",
@@ -327,7 +375,9 @@
     "laura"
   ],
   "55": [
-    "luglio"
+    "luglio",
+    "lollo",
+    "lolla"
   ],
   "56": [
     "legge",
@@ -342,19 +392,23 @@
     "luca"
   ],
   "58": [
-    "halva"
+    "halva",
+    "lava"
   ],
   "59": [
-    "alpi"
+    "alpi",
+    "lupo"
   ],
   "60": [
-    "gyoza"
+    "gyoza",
+    "cesso"
   ],
   "61": [
     "città",
     "oggetto",
     "egitto",
-    "aceto"
+    "aceto",
+    "cd"
   ],
   "62": [
     "giugno",
@@ -362,27 +416,40 @@
     "oceania",
     "oceano",
     "gin",
-    "gennaio"
+    "gennaio",
+    "cena"
   ],
   "63": [
-    "cima"
+    "cima",
+    "gemma"
   ],
   "64": [
-    "giro"
+    "giro",
+    "gerry"
   ],
   "65": [
     "cielo",
     "giallo",
     "giulia",
-    "agile"
+    "agile",
+    "jolly"
   ],
   "66": [
-    "ceci"
+    "ceci",
+    "ciccio"
   ],
   "67": [
     "gioco",
     "acciuga",
-    "giacca"
+    "giacca",
+    "jack",
+    "geco"
+  ],
+  "68": [
+    "ciuffo"
+  ],
+  "69": [
+    "giubba"
   ],
   "70": [
     "casa",
@@ -393,7 +460,8 @@
     "cosa",
     "quasi",
     "cozze",
-    "caos"
+    "caos",
+    "gas"
   ],
   "71": [
     "gatto",
@@ -406,7 +474,8 @@
     "cane",
     "kenya",
     "quinoa",
-    "gonna"
+    "gonna",
+    "iguana"
   ],
   "73": [
     "come",
@@ -422,7 +491,8 @@
     "chiara",
     "curry",
     "gru",
-    "gara"
+    "gara",
+    "carro"
   ],
   "75": [
     "collo",
@@ -434,16 +504,21 @@
     "chili",
     "cola",
     "ghali",
-    "gol"
+    "gol",
+    "gallo",
+    "koala",
+    "aquila"
   ],
   "76": [
     "gucci",
     "ghiacciaio",
-    "ghiacciaia"
+    "ghiacciaia",
+    "cuccia"
   ],
   "77": [
     "cuoco",
-    "cucchiaio"
+    "cucchiaio",
+    "cacca"
   ],
   "78": [
     "caffè",
@@ -451,15 +526,19 @@
     "cuffie",
     "chiavi",
     "cavo",
-    "cfo"
+    "cfo",
+    "caffe",
+    "gufo"
   ],
   "79": [
     "capo",
     "jacopo",
-    "coppa"
+    "coppa",
+    "cubo"
   ],
   "80": [
-    "viso"
+    "viso",
+    "vaso"
   ],
   "81": [
     "affatto",
@@ -477,11 +556,13 @@
     "fino",
     "vino",
     "ivan",
-    "avena"
+    "avena",
+    "phon"
   ],
   "83": [
     "fame",
-    "fiume"
+    "fiume",
+    "fiamme"
   ],
   "84": [
     "affare",
@@ -515,13 +596,17 @@
   ],
   "87": [
     "fuoco",
-    "vecchio"
+    "vecchio",
+    "vacca",
+    "foca"
   ],
   "88": [
-    "vivo"
+    "vivo",
+    "fave"
   ],
   "89": [
-    "fabio"
+    "fabio",
+    "fibbia"
   ],
   "90": [
     "base",
@@ -561,6 +646,9 @@
     "bignè",
     "penne"
   ],
+  "93": [
+    "piuma"
+  ],
   "94": [
     "bere",
     "eppure",
@@ -587,18 +675,24 @@
     "puglia",
     "pollo",
     "paella",
-    "polo"
+    "polo",
+    "palla"
   ],
   "96": [
     "pace",
-    "peggio"
+    "peggio",
+    "buccia"
   ],
   "97": [
     "bocca",
     "epoca",
     "poco",
     "poiché",
-    "poke"
+    "poke",
+    "pacco"
+  ],
+  "98": [
+    "puffo"
   ],
   "99": [
     "papà",
@@ -654,7 +748,8 @@
   ],
   "125": [
     "daniele",
-    "daniela"
+    "daniela",
+    "donnola"
   ],
   "127": [
     "dunque",
@@ -689,7 +784,8 @@
     "tardi",
     "tratto",
     "edoardo",
-    "torta"
+    "torta",
+    "trota"
   ],
   "142": [
     "attorno",
@@ -743,6 +839,9 @@
     "dolci",
     "taleggio"
   ],
+  "159": [
+    "talpa"
+  ],
   "164": [
     "tacere"
   ],
@@ -756,7 +855,8 @@
   ],
   "174": [
     "attaccare",
-    "toccare"
+    "toccare",
+    "tigre"
   ],
   "180": [
     "difesa",
@@ -930,7 +1030,11 @@
   ],
   "307": [
     "musica",
-    "messico"
+    "messico",
+    "mosca"
+  ],
+  "310": [
+    "medusa"
   ],
   "311": [
     "matita"
@@ -998,6 +1102,9 @@
     "marito",
     "merito",
     "morte"
+  ],
+  "342": [
+    "murena"
   ],
   "344": [
     "morire"
@@ -1089,7 +1196,8 @@
     "rischio"
   ],
   "409": [
-    "ruspa"
+    "ruspa",
+    "rospo"
   ],
   "412": [
     "ordine"
@@ -1329,6 +1437,9 @@
   "647": [
     "circa"
   ],
+  "648": [
+    "giraffa"
+  ],
   "650": [
     "geloso"
   ],
@@ -1343,10 +1454,12 @@
     "geologo"
   ],
   "674": [
-    "giocare"
+    "giocare",
+    "giaguaro"
   ],
   "681": [
-    "giovedì"
+    "giovedì",
+    "civetta"
   ],
   "682": [
     "giovane",
@@ -1437,7 +1550,8 @@
     "gomorra"
   ],
   "735": [
-    "camilla"
+    "camilla",
+    "cammello"
   ],
   "736": [
     "camicia"
@@ -1490,7 +1604,9 @@
   "745": [
     "carlo",
     "carrello",
-    "griglia"
+    "griglia",
+    "gorilla",
+    "grillo"
   ],
   "746": [
     "coraggio",
@@ -1510,7 +1626,8 @@
   "749": [
     "corpo",
     "gruppo",
-    "grappa"
+    "grappa",
+    "carpa"
   ],
   "750": [
     "classe",
@@ -1525,7 +1642,8 @@
     "culotte"
   ],
   "752": [
-    "collina"
+    "collina",
+    "gallina"
   ],
   "754": [
     "accogliere",
@@ -1568,8 +1686,13 @@
     "cappotto",
     "accappatoio"
   ],
+  "792": [
+    "gabbiano"
+  ],
   "794": [
-    "capire"
+    "capire",
+    "capra",
+    "cobra"
   ],
   "795": [
     "capello",
@@ -1579,7 +1702,8 @@
     "capace"
   ],
   "799": [
-    "kebab"
+    "kebab",
+    "gabibbo"
   ],
   "801": [
     "festa",
@@ -1596,6 +1720,9 @@
   "807": [
     "fisico",
     "vasca"
+  ],
+  "809": [
+    "vespa"
   ],
   "810": [
     "fedez"
@@ -1666,7 +1793,8 @@
     "frutta",
     "fritto",
     "frutti",
-    "offerta"
+    "offerta",
+    "furetto"
   ],
   "842": [
     "verona",
@@ -1694,7 +1822,8 @@
     "volto"
   ],
   "852": [
-    "violino"
+    "violino",
+    "falena"
   ],
   "853": [
     "film"
@@ -1709,9 +1838,13 @@
     "felice",
     "valigia"
   ],
+  "857": [
+    "falco"
+  ],
   "859": [
     "filippo",
-    "felpa"
+    "felpa",
+    "volpe"
   ],
   "862": [
     "vicino"
@@ -1785,7 +1918,8 @@
   "912": [
     "pettine",
     "budino",
-    "piadina"
+    "piadina",
+    "pitone"
   ],
   "914": [
     "abitare",
@@ -1822,7 +1956,8 @@
     "ponte",
     "punta",
     "punto",
-    "band"
+    "band",
+    "panda"
   ],
   "922": [
     "opinione",
@@ -1915,10 +2050,12 @@
   "952": [
     "bologna",
     "polonia",
-    "bullone"
+    "bullone",
+    "balena"
   ],
   "956": [
-    "belgio"
+    "belgio",
+    "pagliaccio"
   ],
   "957": [
     "biologo",
@@ -1929,7 +2066,8 @@
   ],
   "962": [
     "pagina",
-    "bacino"
+    "bacino",
+    "piccione"
   ],
   "963": [
     "pigiama"
@@ -1951,11 +2089,15 @@
   ],
   "974": [
     "pagare",
-    "bicchiere"
+    "bicchiere",
+    "pecora"
   ],
   "975": [
     "piccolo",
     "baccalà"
+  ],
+  "982": [
+    "pavone"
   ],
   "984": [
     "povero"
@@ -2083,6 +2225,9 @@
   "1471": [
     "traghetto"
   ],
+  "1477": [
+    "tricheco"
+  ],
   "1484": [
     "trovare"
   ],
@@ -2102,7 +2247,8 @@
     "taglierino"
   ],
   "1582": [
-    "telefono"
+    "telefono",
+    "delfino"
   ],
   "1602": [
     "decisione"
@@ -2204,6 +2350,9 @@
   "2150": [
     "noodles"
   ],
+  "2159": [
+    "antilope"
+  ],
   "2174": [
     "indicare"
   ],
@@ -2230,6 +2379,9 @@
   ],
   "2480": [
     "nervoso"
+  ],
+  "2485": [
+    "narvalo"
   ],
   "2486": [
     "norvegia"
@@ -2575,7 +2727,8 @@
     "lontano"
   ],
   "5214": [
-    "allenatore"
+    "allenatore",
+    "lontra"
   ],
   "5217": [
     "lenticchie"
@@ -2606,10 +2759,14 @@
     "liquidità"
   ],
   "5714": [
-    "elicottero"
+    "elicottero",
+    "alligatore"
   ],
   "5814": [
     "allevatore"
+  ],
+  "5821": [
+    "elefante"
   ],
   "5843": [
     "alfa romeo"
@@ -2620,7 +2777,8 @@
   "5941": [
     "libertà",
     "alberto",
-    "eliporto"
+    "eliporto",
+    "leopardo"
   ],
   "5944": [
     "liberare",
@@ -2773,6 +2931,9 @@
   "7237": [
     "economico"
   ],
+  "7242": [
+    "canarino"
+  ],
   "7252": [
     "cannelloni"
   ],
@@ -2782,6 +2943,9 @@
   ],
   "7265": [
     "guanciale"
+  ],
+  "7274": [
+    "canguro"
   ],
   "7280": [
     "confuso"
@@ -2866,6 +3030,9 @@
   "7426": [
     "cornice"
   ],
+  "7427": [
+    "granchio"
+  ],
   "7435": [
     "carmela",
     "caramella",
@@ -2912,7 +3079,8 @@
     "qualunque"
   ],
   "7534": [
-    "calamari"
+    "calamari",
+    "calamaro"
   ],
   "7539": [
     "colomba"
@@ -2945,6 +3113,9 @@
   ],
   "7842": [
     "governo"
+  ],
+  "7851": [
+    "cavalletta"
   ],
   "7912": [
     "capitano"
@@ -3088,6 +3259,9 @@
   "8436": [
     "formaggio"
   ],
+  "8437": [
+    "formica"
+  ],
   "8451": [
     "frullato"
   ],
@@ -3099,6 +3273,9 @@
   ],
   "8475": [
     "fragola"
+  ],
+  "8485": [
+    "farfalla"
   ],
   "8496": [
     "forbici"
@@ -3160,11 +3337,17 @@
   "9020": [
     "business"
   ],
+  "9021": [
+    "bisonte"
+  ],
   "9024": [
     "bisognare"
   ],
   "9035": [
     "besciamella"
+  ],
+  "9040": [
+    "pesce rosso"
   ],
   "9071": [
     "biscotti",
@@ -3178,7 +3361,8 @@
   ],
   "9095": [
     "possibile",
-    "baseball"
+    "baseball",
+    "pesce palla"
   ],
   "9101": [
     "piuttosto"
@@ -3244,7 +3428,8 @@
     "panchetta"
   ],
   "9272": [
-    "banchina"
+    "banchina",
+    "pinguino"
   ],
   "9275": [
     "binocolo"
@@ -3313,6 +3498,9 @@
   "9418": [
     "aperitivo"
   ],
+  "9419": [
+    "bradipo"
+  ],
   "9420": [
     "pranzo"
   ],
@@ -3328,6 +3516,9 @@
   "9460": [
     "preciso",
     "processo"
+  ],
+  "9462": [
+    "procione"
   ],
   "9464": [
     "bruciare"
@@ -3419,6 +3610,9 @@
   "9957": [
     "pubblico"
   ],
+  "9975": [
+    "pappagallo"
+  ],
   "10120": [
     "distanza"
   ],
@@ -3473,6 +3667,9 @@
   "14114": [
     "traduttore"
   ],
+  "14147": [
+    "tartaruga"
+  ],
   "14152": [
     "tortellini",
     "triathlon"
@@ -3488,6 +3685,9 @@
   ],
   "14302": [
     "tramezzino"
+  ],
+  "14314": [
+    "dromedario"
   ],
   "14325": [
     "terminal"
@@ -3806,6 +4006,9 @@
   "56270": [
     "leggings"
   ],
+  "56415": [
+    "lucertola"
+  ],
   "57318": [
     "locomotiva"
   ],
@@ -3964,6 +4167,9 @@
   "76785": [
     "caciocavallo"
   ],
+  "77145": [
+    "coccodrillo"
+  ],
   "78015": [
     "chiavistello"
   ],
@@ -4007,6 +4213,9 @@
   "82620": [
     "vincenzo"
   ],
+  "82714": [
+    "fenicottero"
+  ],
   "82741": [
     "vinaigrette"
   ],
@@ -4044,6 +4253,9 @@
   "85321": [
     "fallimento"
   ],
+  "90091": [
+    "pesce spada"
+  ],
   "90120": [
     "abbastanza"
   ],
@@ -4061,6 +4273,9 @@
   ],
   "90951": [
     "possibilità"
+  ],
+  "90956": [
+    "pesce pagliaccio"
   ],
   "91432": [
     "patrimonio"
@@ -4358,6 +4573,9 @@
   ],
   "409214": [
     "rispondere"
+  ],
+  "426421": [
+    "rinoceronte"
   ],
   "427404": [
     "ringraziare"
@@ -4685,6 +4903,9 @@
   "7437215": [
     "cremachantilly"
   ],
+  "7856342": [
+    "cavalluccio marino"
+  ],
   "8946121": [
     "febbricitante"
   ],
@@ -4717,6 +4938,9 @@
   ],
   "9514146": [
     "obliteratrice"
+  ],
+  "14147342": [
+    "tartaruga marina"
   ],
   "14265212": [
     "adriano celentano"
@@ -4827,10 +5051,13 @@
     "serio",
     "usare",
     "uscire",
-    "sara"
+    "sara",
+    "zorro"
   ],
   "03": [
-    "esame"
+    "esame",
+    "sim",
+    "scimmia"
   ],
   "039": [
     "esempio",
@@ -4846,7 +5073,8 @@
   "094": [
     "esporre",
     "sapere",
-    "sopra"
+    "sopra",
+    "zebra"
   ],
   "09402": [
     "espressione",
@@ -4881,7 +5109,8 @@
     "sala",
     "sole",
     "solo",
-    "sale"
+    "sale",
+    "sella"
   ],
   "0121": [
     "istante"
@@ -4932,7 +5161,8 @@
     "secolo",
     "secchiello",
     "segale",
-    "scalo"
+    "scalo",
+    "squalo"
   ],
   "0794": [
     "scappare",
@@ -5377,7 +5607,8 @@
     "astuccio"
   ],
   "0204": [
-    "sensore"
+    "sensore",
+    "zanzara"
   ],
   "09052": [
     "spazzolino",
@@ -5436,7 +5667,8 @@
   ],
   "00": [
     "sushi",
-    "sazio"
+    "sazio",
+    "sasso"
   ],
   "031": [
     "smoothie"
@@ -5505,7 +5737,8 @@
     "shorts"
   ],
   "0749": [
-    "scarpe"
+    "scarpe",
+    "scarabeo"
   ],
   "0185": [
     "stivali"
@@ -5635,5 +5868,32 @@
   ],
   "01401": [
     "stressato"
+  ],
+  "06": [
+    "saggio"
+  ],
+  "08": [
+    "sofia"
+  ],
+  "03920": [
+    "scimpanzé"
+  ],
+  "0140": [
+    "struzzo"
+  ],
+  "04921": [
+    "serpente"
+  ],
+  "053214": [
+    "salamandra"
+  ],
+  "015342": [
+    "stella marina"
+  ],
+  "07492": [
+    "scorpione"
+  ],
+  "075927": [
+    "squalo bianco"
   ]
 }

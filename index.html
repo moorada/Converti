@@ -80,9 +80,9 @@
 
   <!-- Header -->
   <header class="header">
-    <a href="#" class="icon icon-left" id="help-icon">
-      <span class="material-icons">help_outline</span>
-    </a>
+    <div class="header-left">
+      <button id="lab-toggle" class="lab-toggle" type="button" aria-pressed="false">LAB</button>
+    </div>
 
     <div class="title-container">
       <div class="svg-container">
@@ -96,9 +96,14 @@
       </div>
     </div>
 
-    <a href="#" class="icon icon-right" id="settings-icon">
-      <span class="material-icons">settings</span>
-    </a>
+    <div class="header-actions">
+      <a href="#" class="icon" id="help-icon" aria-label="Info">
+        <span class="material-icons">info_outline</span>
+      </a>
+      <a href="#" class="icon icon-right" id="settings-icon">
+        <span class="material-icons">settings</span>
+      </a>
+    </div>
   </header>
 
   <!-- Overlay for Popups -->
@@ -189,6 +194,34 @@
     <p>🅰️ Le vocali? Non contano, sono solo di compagnia!</p>
     <p>🔁 Le doppie? Contano come una, niente raddoppi inutili!</p>
     <p>🎵 Conta il suono, non la scrittura! Fidati delle tue orecchie👂!</p>
+
+    <hr style="margin: 30px 0; border: none; border-top: 1px solid #ccc;">
+    <p class="support-message">
+      Questo progetto è completamente gratuito e privo di pubblicità. Se ti è stato utile e desideri supportare il lavoro e il tempo dedicato alla sua realizzazione, puoi contribuire con una donazione.
+    </p>
+
+    <a href="https://www.buymeacoffee.com/moorada" target="_blank" rel="noopener noreferrer">
+      <button class="donation-feedback-button">
+        ☕ Buy Me a Coffee
+      </button>
+    </a>
+    <a href="https://www.paypal.com/donate/?hosted_button_id=8KWRVYPQ5Q49J" target="_blank" rel="noopener noreferrer">
+      <button class="donation-feedback-button">
+        💙 Dona con PayPal
+      </button>
+    </a>
+
+    <a href="https://github.com/moorada/Converti/issues/new" target="_blank" rel="noopener noreferrer">
+      <button class="donation-feedback-button">
+        📝 Lasciami un feedback
+      </button>
+    </a>
+
+    <a href="https://github.com/moorada/Converti" target="_blank" rel="noopener noreferrer">
+      <button class="donation-feedback-button">
+        ⭐ Metti una stella su GitHub
+      </button>
+    </a>
   </div>
 
   <!-- Popup Settings -->
@@ -206,6 +239,20 @@
       <small>
         Se attivato, le parole inserite in “DA NUMERI” saranno verificate
         con il dizionario per assicurarsi che esistano davvero.
+      </small>
+    </div>
+
+    <div class="setting-row" style="flex-direction: column; align-items: flex-start;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <p style="margin: 0;">LAB numeri -> parole con dizionario grande</p>
+        <label class="switch">
+          <input type="checkbox" id="check-big-dict-numbers" />
+          <span class="slider"></span>
+        </label>
+      </div>
+      <small>
+        Se attivato, nella sezione LAB la conversione numeri -> parole usa
+        il dizionario grande invece di quello comune.
       </small>
     </div>
 
@@ -249,6 +296,9 @@
 
     <!-- BuyMeACoffee -->
     <hr style="margin: 30px 0; border: none; border-top: 1px solid #ccc;">
+    <p class="support-message">
+      Questo progetto è completamente gratuito e privo di pubblicità. Se ti è stato utile e desideri supportare il lavoro e il tempo dedicato alla sua realizzazione, puoi contribuire con una donazione.
+    </p>
 
     <a href="https://www.buymeacoffee.com/moorada" target="_blank" rel="noopener noreferrer">
       <button class="donation-feedback-button">
@@ -277,16 +327,7 @@
   </div>
 
   <main>
-    <div class="app-mode-switch" role="tablist" aria-label="Sezione principale">
-      <button id="btn-play-section" class="active" type="button" role="tab" aria-selected="true" aria-controls="play-section">
-        PLAY
-      </button>
-      <button id="btn-lab-section" type="button" role="tab" aria-selected="false" aria-controls="lab-section">
-        LAB
-      </button>
-    </div>
-
-    <section id="play-section" class="app-section active" role="tabpanel" aria-labelledby="btn-play-section">
+    <section id="play-section" class="app-section active">
       <!-- Navigation Buttons -->
       <div class="menu">
         <button id="btn-numbers" onclick="showContent('numbers')">DA NUMERI</button>
@@ -318,11 +359,26 @@
       <div id="resoconto"></div>
     </section>
 
-    <section id="lab-section" class="app-section" role="tabpanel" aria-labelledby="btn-lab-section">
-      <div class="lab-card">
-        <p class="lab-kicker">Converti</p>
-        <h2>LAB</h2>
-        <p>Placeholder</p>
+    <section id="lab-section" class="app-section" aria-labelledby="lab-toggle">
+      <div class="lab-shell">
+        <div id="lab-converter-container">
+          <div class="input-group lab-input-group">
+            <input
+              type="text"
+              inputmode="text"
+              id="lab-unified-input"
+              placeholder="Scrivi numeri o parole (es. 1234 oppure stella marina)"
+              autocomplete="off"
+            />
+            <button id="lab-convert-button" class="submit-btn lab-convert-btn">Converti</button>
+          </div>
+          <p id="lab-mode-hint">
+            Inserisci solo cifre per ottenere una tabella di parole.
+            Inserisci testo per ottenere un solo numero.
+          </p>
+        </div>
+
+        <div id="lab-result-container"></div>
       </div>
     </section>
   </main>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://moorada.github.io/converti-lab/sitemap.xml
