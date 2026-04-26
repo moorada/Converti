@@ -277,40 +277,58 @@
   </div>
 
   <main>
-    <!-- Navigation Buttons -->
-    <div class="menu">
-      <button id="btn-numbers" onclick="showContent('numbers')">DA NUMERI</button>
-      <button id="btn-words" onclick="showContent('words')">DA PAROLE</button>
+    <div class="app-mode-switch" role="tablist" aria-label="Sezione principale">
+      <button id="btn-play-section" class="active" type="button" role="tab" aria-selected="true" aria-controls="play-section">
+        PLAY
+      </button>
+      <button id="btn-lab-section" type="button" role="tab" aria-selected="false" aria-controls="lab-section">
+        LAB
+      </button>
     </div>
 
-    <!-- Main Container -->
-    <div id="page-container">
-      <div id="loading-message-first" style="max-width:600px; margin:10px auto;">
-        <span class="material-icons" style="vertical-align:middle;">schedule</span>
-        Caricamento in corso... Attendere
+    <section id="play-section" class="app-section active" role="tabpanel" aria-labelledby="btn-play-section">
+      <!-- Navigation Buttons -->
+      <div class="menu">
+        <button id="btn-numbers" onclick="showContent('numbers')">DA NUMERI</button>
+        <button id="btn-words" onclick="showContent('words')">DA PAROLE</button>
       </div>
-      <div id="game-container">
-        <div id="timer">10</div>
-        <p id="info-text"></p>
-        <div id="box"></div>
 
-        <div id="input-group" class="input-group">
-          <input type="text" inputmode="text" id="word-input" placeholder="Inserisci le parole" />
-          <input type="input" inputmode="numeric" pattern="[0-9]*" id="number-input" placeholder="Inserisci i numeri" />
-          <button id="submit-btn" class="submit-btn" tabindex="-1">Invia</button>
+      <!-- Main Container -->
+      <div id="page-container">
+        <div id="loading-message-first" style="max-width:600px; margin:10px auto;">
+          <span class="material-icons" style="vertical-align:middle;">schedule</span>
+          Caricamento in corso... Attendere
         </div>
+        <div id="game-container">
+          <div id="timer">10</div>
+          <p id="info-text"></p>
+          <div id="box"></div>
 
-        <button id="start-button" onclick="initGame()" disabled>Inizia</button>
+          <div id="input-group" class="input-group">
+            <input type="text" inputmode="text" id="word-input" placeholder="Inserisci le parole" />
+            <input type="input" inputmode="numeric" pattern="[0-9]*" id="number-input" placeholder="Inserisci i numeri" />
+            <button id="submit-btn" class="submit-btn" tabindex="-1">Invia</button>
+          </div>
+
+          <button id="start-button" onclick="initGame()" disabled>Inizia</button>
+        </div>
       </div>
-    </div>
 
-    <!-- Scoreboard -->
-    <div id="resoconto"></div>
+      <!-- Scoreboard -->
+      <div id="resoconto"></div>
+    </section>
 
+    <section id="lab-section" class="app-section" role="tabpanel" aria-labelledby="btn-lab-section">
+      <div class="lab-card">
+        <p class="lab-kicker">Converti</p>
+        <h2>LAB</h2>
+        <p>Placeholder</p>
+      </div>
+    </section>
   </main>
 
   <!-- Footer with mapping reminder -->
-  <div class="footer">
+  <div class="footer" id="play-footer">
     <div class="mapping-footer">
       <div>1 ➜ T, D</div>
       <div>2 ➜ N, GN</div>

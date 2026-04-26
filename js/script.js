@@ -2,6 +2,7 @@ let bigDictionary = {};
 let smallDictionary = {};
 
 let currentMode = "numbers";
+let currentSection = "play";
 let isGameOver = false;
 let timerInterval = null;
 const gameDuration = 120;
@@ -20,6 +21,11 @@ const helpPopup         = document.getElementById("help-popup");
 const settingsIcon      = document.getElementById("settings-icon");
 const settingsPopup     = document.getElementById("settings-popup");
 const overlay           = document.getElementById("overlay");
+const btnPlaySection    = document.getElementById("btn-play-section");
+const btnLabSection     = document.getElementById("btn-lab-section");
+const playSection       = document.getElementById("play-section");
+const labSection        = document.getElementById("lab-section");
+const playFooter        = document.getElementById("play-footer");
 
 const btnNumbers        = document.getElementById("btn-numbers");
 const btnWords          = document.getElementById("btn-words");
@@ -307,7 +313,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   loadingMessage.style.display = "none";
 
   verifyWordsCheck.checked = (localStorage.getItem("checkWords") === "true");
+  switchAppSection("play");
   showContent("numbers");
+
+  btnPlaySection.addEventListener("click", () => switchAppSection("play"));
+  btnLabSection.addEventListener("click", () => switchAppSection("lab"));
 
   verifyWordsCheck.addEventListener("change", () => {
     localStorage.setItem("checkWords", verifyWordsCheck.checked);
@@ -368,9 +378,34 @@ document.addEventListener("DOMContentLoaded", async () => {
 const submitBtn = document.getElementById("submit-btn");
 
 function updateSubmitButtonVisibility() {
+  if (currentSection !== "play") {
+    submitBtn.style.display = "none";
+    return;
+  }
+
   const wordVisible = wordInput.style.display !== "none";
   const numberVisible = numberInput.style.display !== "none";
   submitBtn.style.display = (wordVisible || numberVisible) ? "inline-block" : "none";
+}
+
+function switchAppSection(sectionName) {
+  currentSection = sectionName;
+  const isPlaySection = (sectionName === "play");
+
+  playSection.classList.toggle("active", isPlaySection);
+  labSection.classList.toggle("active", !isPlaySection);
+  playFooter.style.display = isPlaySection ? "block" : "none";
+
+  btnPlaySection.classList.toggle("active", isPlaySection);
+  btnLabSection.classList.toggle("active", !isPlaySection);
+  btnPlaySection.setAttribute("aria-selected", isPlaySection ? "true" : "false");
+  btnLabSection.setAttribute("aria-selected", isPlaySection ? "false" : "true");
+
+  if (!isPlaySection && timerInterval && !isGameOver) {
+    endGame();
+  }
+
+  updateSubmitButtonVisibility();
 }
 
 // Wrappa showContent, initGame, endGame per aggiornare visibilità bottone

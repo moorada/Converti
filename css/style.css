@@ -33,6 +33,7 @@ body {
 
 main {
   flex: 1;
+  padding-bottom: 20px;
 }
 
 h1 {
@@ -247,10 +248,68 @@ small {
   z-index: 9;
 }
 
+.app-mode-switch {
+  display: flex;
+  gap: 8px;
+  max-width: 520px;
+  margin: 20px auto 0;
+  padding: 8px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #dde6dc 0%, #eff3ea 100%);
+  box-shadow: 0 10px 25px rgba(23, 46, 30, 0.15);
+}
+
+.app-mode-switch button {
+  flex: 1;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: #254130;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.app-mode-switch button.active {
+  background: linear-gradient(135deg, #4caf50 0%, #2f8f42 100%);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(41, 120, 55, 0.35);
+}
+
+.app-mode-switch button:not(.active):hover {
+  background: rgba(255, 255, 255, 0.65);
+  transform: translateY(-1px);
+}
+
+.app-section {
+  display: none;
+}
+
+.app-section.active {
+  display: block;
+  animation: section-reveal 0.25s ease;
+}
+
+@keyframes section-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Menu */
 .menu {
   display: flex;
   width: 100%;
+  margin-top: 14px;
 }
 
 .menu button {
@@ -610,4 +669,58 @@ input:checked+.slider:before {
 
 .submit-btn:hover {
   background: #43a047;
+}
+
+#lab-section {
+  padding: 16px;
+}
+
+.lab-card {
+  max-width: 740px;
+  margin: 18px auto;
+  padding: 58px 24px;
+  border-radius: 22px;
+  border: 1px solid #c9d8c8;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(76, 175, 80, 0.24), transparent 45%),
+    radial-gradient(circle at 15% 85%, rgba(173, 214, 140, 0.28), transparent 38%),
+    #f8fbf5;
+  box-shadow: 0 18px 38px rgba(34, 63, 41, 0.14);
+}
+
+.lab-kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-size: 0.82rem;
+  color: #456a4e;
+}
+
+.lab-card h2 {
+  margin: 6px 0 8px;
+  font-size: clamp(2.1rem, 7vw, 3.4rem);
+  letter-spacing: 0.12em;
+  color: #1e3627;
+}
+
+.lab-card p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #42614b;
+}
+
+@media (max-width: 600px) {
+  .app-mode-switch {
+    margin: 14px 12px 0;
+  }
+
+  .app-mode-switch button {
+    font-size: 0.92rem;
+    padding: 10px 14px;
+  }
+
+  .lab-card {
+    padding: 46px 16px;
+    border-radius: 18px;
+  }
 }
