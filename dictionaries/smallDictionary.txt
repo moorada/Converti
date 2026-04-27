@@ -230,7 +230,6 @@ luogo
 luca
 halva
 alpi
-gyoza
 città
 oggetto
 egitto

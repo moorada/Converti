@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Conversione Fonetica: guida completa e funzioni app Converti</title>
-  <meta name="description" content="Guida completa alla conversione fonetica (sistema maggiore): regole, metodo pratico ed elenco di tutte le funzionalita dell'app Converti in PLAY e LAB." />
+  <title>Conversione Fonetica: guida completa, allenamento e dizionari in Converti</title>
+  <meta name="description" content="Guida pratica alla conversione fonetica (sistema maggiore), con regole, metodo di allenamento e spiegazione completa di import/export dizionari nell'app Converti." />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <link rel="canonical" href="https://moorada.github.io/Converti/allenamento-conversione-fonetica.html" />
   <link rel="alternate" hreflang="it-IT" href="https://moorada.github.io/Converti/allenamento-conversione-fonetica.html" />
@@ -12,22 +12,30 @@
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Converti" />
   <meta property="og:title" content="Conversione Fonetica: guida completa" />
-  <meta property="og:description" content="Regole della conversione fonetica e guida pratica a tutte le funzioni dell'app Converti." />
+  <meta property="og:description" content="Regole della conversione fonetica, metodo pratico di allenamento e guida import/export dizionari su Converti." />
   <meta property="og:url" content="https://moorada.github.io/Converti/allenamento-conversione-fonetica.html" />
   <meta property="og:image" content="https://moorada.github.io/Converti/favicon/favicon.svg" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Conversione Fonetica: guida e funzioni Converti" />
-  <meta name="twitter:description" content="Metodo, regole e tutte le funzionalita di Converti per allenarti meglio." />
+  <meta name="twitter:description" content="Metodo, regole, allenamento e gestione dizionari per usare Converti al meglio." />
   <meta name="twitter:image" content="https://moorada.github.io/Converti/favicon/favicon.svg" />
   <link rel="icon" href="/Converti/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #f4f6f8;
-      --text: #1f2933;
+      --bg: #eef2f5;
+      --surface: #ffffff;
+      --surface-soft: #f7fafb;
+      --text: #1f2b32;
+      --muted: #51616d;
       --title: #0f1720;
       --accent: #1f6f36;
-      --card: #ffffff;
-      --border: #d6dde4;
+      --accent-dark: #165428;
+      --border: #c9d4dd;
+      --shadow: 0 10px 30px rgba(24, 34, 43, 0.08);
+      --radius: 22px;
     }
 
     * {
@@ -36,88 +44,217 @@
 
     body {
       margin: 0;
-      font-family: "Montserrat", sans-serif;
-      background: var(--bg);
+      font-family: "Manrope", sans-serif;
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.7;
+      background:
+        radial-gradient(1100px 620px at 96% -8%, rgba(76, 175, 80, 0.14), transparent 60%),
+        radial-gradient(760px 460px at -4% 8%, rgba(31, 111, 54, 0.1), transparent 70%),
+        var(--bg);
     }
 
     .wrap {
-      max-width: 920px;
+      width: 100%;
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 18px 16px 34px;
+      padding: clamp(12px, 1.8vw, 24px);
     }
 
     .top-link {
-      display: inline-block;
-      margin-bottom: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid #b8d7c0;
       color: var(--accent);
-      font-weight: 600;
       text-decoration: none;
+      background: #eef8f0;
+      font-weight: 700;
+      box-shadow: var(--shadow);
     }
 
     .top-link:hover {
-      text-decoration: underline;
+      background: #e4f2e7;
     }
 
+    .hero,
     .card {
-      background: var(--card);
+      width: 100%;
+      margin: 0 0 16px;
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 24px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+      border-radius: var(--radius);
+      padding: clamp(16px, 2vw, 32px);
+      background: linear-gradient(160deg, var(--surface) 0%, var(--surface-soft) 100%);
+      box-shadow: var(--shadow);
     }
 
     h1,
     h2,
     h3 {
-      color: var(--title);
       margin-top: 0;
+      color: var(--title);
+      font-family: "Space Grotesk", "Manrope", sans-serif;
+      line-height: 1.25;
+      letter-spacing: 0.01em;
+    }
+
+    h1 {
+      font-size: clamp(1.6rem, 2vw + 1rem, 2.5rem);
+      margin-bottom: 0.45em;
+    }
+
+    h2 {
+      margin-top: 1.3em;
+      font-size: clamp(1.25rem, 1vw + 0.95rem, 1.75rem);
+    }
+
+    h3 {
+      margin-top: 1.05em;
+      font-size: clamp(1.05rem, 0.7vw + 0.9rem, 1.3rem);
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: #3c4c58;
+    }
+
+    .hero p {
+      max-width: 75ch;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      border: 1px solid #c7d8ce;
+      background: #edf7f0;
+      color: #28553a;
+      padding: 5px 10px;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .toc {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .toc li {
+      margin-bottom: 6px;
     }
 
     ul,
     ol {
       margin: 0 0 16px 20px;
-    }
-
-    p {
-      margin-top: 0;
+      color: #3c4c58;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      overflow: hidden;
     }
 
     th,
     td {
-      border: 1px solid var(--border);
-      padding: 8px;
+      border: 1px solid #d4dee7;
+      padding: 10px 11px;
       text-align: left;
       vertical-align: top;
     }
 
     th {
-      background: #eef4ef;
+      background: #edf3f8;
+      color: #2e3c48;
+    }
+
+    code {
+      background: #eef3f6;
+      border: 1px solid #d8e0e6;
+      border-radius: 6px;
+      padding: 1px 6px;
+      color: #24313a;
+      font-family: "Space Grotesk", monospace;
+      font-size: 0.95em;
+    }
+
+    .callout {
+      margin-top: 14px;
+      margin-bottom: 14px;
+      border-radius: 14px;
+      padding: 12px 14px;
+      border: 1px solid #c4d9c9;
+      background: #edf7f0;
+      color: #2d3f49;
+    }
+
+    .warning {
+      border-color: #e0d2b8;
+      background: #faf4e8;
+    }
+
+    .flow {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .flow-step {
+      border: 1px dashed #c5d1da;
+      border-radius: 12px;
+      padding: 10px 12px;
+      background: #f8fbfd;
     }
 
     .cta {
-      margin-top: 18px;
-      padding: 14px;
+      margin-top: 22px;
+      padding: 14px 16px;
       border: 1px solid #bad8c2;
-      border-radius: 10px;
+      border-radius: 14px;
       background: #eef7f0;
+      color: #2f3f49;
     }
 
     .cta a {
-      color: var(--accent);
-      font-weight: 700;
+      color: var(--accent-dark);
+      font-weight: 800;
+      text-decoration: none;
     }
 
-    @media (max-width: 600px) {
+    .cta a:hover {
+      text-decoration: underline;
+    }
+
+    .mini {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 700px) {
+      .wrap {
+        padding: 10px;
+      }
+
+      .hero,
       .card {
-        padding: 16px;
+        border-radius: 16px;
+        padding: 14px;
+      }
+
+      th,
+      td {
+        padding: 8px;
       }
     }
   </style>
@@ -144,7 +281,7 @@
             "name": "moorada"
           },
           "datePublished": "2026-04-26",
-          "dateModified": "2026-04-26",
+          "dateModified": "2026-04-27",
           "inLanguage": "it-IT",
           "mainEntityOfPage": "https://moorada.github.io/Converti/allenamento-conversione-fonetica.html"
         }
@@ -156,18 +293,35 @@
   <main class="wrap">
     <a class="top-link" href="./index.html">&larr; Torna al gioco Converti</a>
 
-    <article class="card">
-      <h1>Conversione fonetica: guida completa + tutte le funzioni di Converti</h1>
+    <section class="hero">
+      <div class="badge-row">
+        <span class="badge">conversione fonetica</span>
+        <span class="badge">mnemonica</span>
+        <span class="badge">major system</span>
+        <span class="badge">memorizzare numeri</span>
+        <span class="badge">gioco</span>
+        <span class="badge">sistema maggiore</span>
+      </div>
+      <h1>Conversione fonetica: guida completa + funzioni chiave di Converti</h1>
       <p>
-        La <strong>conversione fonetica</strong> (sistema maggiore) e una tecnica mnemonica che
-        trasforma le cifre in suoni consonantici. Da questi suoni puoi costruire parole,
-        immagini mentali e storie molto piu facili da ricordare rispetto a una sequenza numerica pura.
+        Questa pagina ti aiuta a usare Converti in modo piu efficace: regole essenziali,
+        metodo di allenamento e gestione dizionari. Se ti serve solo una cosa,
+        parti dall'indice rapido qui sotto.
       </p>
+      <ol class="toc">
+        <li><a href="#base">Base della conversione fonetica</a></li>
+        <li><a href="#regole">Regole operative</a></li>
+        <li><a href="#uso">Come usare PLAY e LAB</a></li>
+        <li><a href="#import-export">Import/Export dizionari (guida completa)</a></li>
+        <li><a href="#metodo">Metodo di allenamento consigliato</a></li>
+      </ol>
+    </section>
 
-      <h2>1) Cos'e la conversione fonetica</h2>
+    <article class="card">
+      <h2 id="base">1) Cos'e la conversione fonetica</h2>
       <p>
-        L'idea base e semplice: ogni cifra corrisponde a un gruppo di suoni.
-        Le vocali non portano valore numerico e servono solo a rendere pronunciabili le parole.
+        La <strong>conversione fonetica</strong> (sistema maggiore) trasforma numeri in suoni consonantici.
+        Le vocali servono solo a creare parole pronunciabili e facili da visualizzare mentalmente.
       </p>
 
       <table>
@@ -176,61 +330,96 @@
             <th>Cifra</th>
             <th>Suono principale</th>
             <th>Lettere tipiche</th>
+            <th>Esempio veloce</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>1</td><td>Dentale</td><td>T, D</td></tr>
-          <tr><td>2</td><td>Nasale</td><td>N, GN</td></tr>
-          <tr><td>3</td><td>Mugolante</td><td>M</td></tr>
-          <tr><td>4</td><td>Vibrante</td><td>R</td></tr>
-          <tr><td>5</td><td>Liquido</td><td>L, GL</td></tr>
-          <tr><td>6</td><td>Palatale</td><td>C/G dolci</td></tr>
-          <tr><td>7</td><td>Gutturale</td><td>C/G dure, K</td></tr>
-          <tr><td>8</td><td>Labiodentale</td><td>F, V</td></tr>
-          <tr><td>9</td><td>Labiale</td><td>P, B</td></tr>
-          <tr><td>0</td><td>Sibilante</td><td>S, SC, Z</td></tr>
+          <tr><td>0</td><td>Sibilante</td><td>S, SC, Z</td><td><code>zio</code></td></tr>
+          <tr><td>1</td><td>Dentale</td><td>T, D</td><td><code>tetto</code></td></tr>
+          <tr><td>2</td><td>Nasale</td><td>N, GN</td><td><code>naso</code></td></tr>
+          <tr><td>3</td><td>Mugolante</td><td>M</td><td><code>mimo</code></td></tr>
+          <tr><td>4</td><td>Vibrante</td><td>R</td><td><code>ruota</code></td></tr>
+          <tr><td>5</td><td>Liquido</td><td>L, GL</td><td><code>luna</code></td></tr>
+          <tr><td>6</td><td>Palatale</td><td>C/G dolci</td><td><code>cena</code></td></tr>
+          <tr><td>7</td><td>Gutturale</td><td>C/G dure, K</td><td><code>coda</code></td></tr>
+          <tr><td>8</td><td>Labiodentale</td><td>F, V</td><td><code>fava</code></td></tr>
+          <tr><td>9</td><td>Labiale</td><td>P, B</td><td><code>pipa</code></td></tr>
         </tbody>
       </table>
 
-      <h2>2) Regole operative rapide</h2>
+      <h2 id="regole">2) Regole operative rapide</h2>
       <ul>
         <li>Le vocali non contano nel codice numerico.</li>
-        <li>Conta il suono, non la grafia letterale.</li>
-        <li>Le doppie si trattano come un solo suono utile.</li>
+        <li>Conta il suono reale, non la lettera isolata.</li>
+        <li>Le doppie valgono come un solo suono utile.</li>
         <li>Una parola puo codificare una o piu cifre.</li>
       </ul>
 
-      <h2>3) Come usare Converti: tutte le funzionalita</h2>
-      <h3>PLAY (allenamento a tempo)</h3>
+      <div class="callout">
+        Suggerimento pratico: invece di imparare solo la tabella,
+        esercitati su micro-obiettivi (es. 10 numeri da 2 cifre al giorno).
+        La velocita aumenta molto quando ripeti su blocchi piccoli.
+      </div>
+
+      <h2 id="uso">3) Come usare Converti: PLAY e LAB</h2>
+      <h3>PLAY (allenamento a tempo, 2 minuti)</h3>
       <ul>
-        <li><strong>Da numeri</strong>: trasformi numeri in parole entro 2 minuti.</li>
-        <li><strong>Da parole</strong>: trasformi parole in numeri entro 2 minuti.</li>
-        <li>Difficolta progressiva: ogni 3 risposte corrette aumenta il livello.</li>
-        <li>Resoconto finale con cronologia risposte e pulsante di condivisione.</li>
+        <li><strong>Da numeri</strong>: converti numeri in parole.</li>
+        <li><strong>Da parole</strong>: converti parole in numeri.</li>
+        <li>Ogni 3 risposte corrette aumenta la difficolta.</li>
+        <li>A fine partita trovi il resoconto con storico risposte.</li>
       </ul>
 
-      <h3>LAB (esplorazione e conversione avanzata)</h3>
+      <h3>LAB (esplorazione libera)</h3>
       <ul>
-        <li>Input unico: inserisci numeri o testo e il LAB capisce la modalita.</li>
-        <li>Numero -> parole: visualizzazione in <strong>tabella</strong> o <strong>grafo</strong>.</li>
-        <li>Parole -> numero: conversione diretta con eventuale warning su parole non trovate.</li>
-        <li>Per numeri lunghi (oltre 16 cifre) viene usata la modalita grafo.</li>
+        <li>Input unico: se scrivi cifre lavora in modalita numeri -> parole.</li>
+        <li>Se scrivi testo, converte parole -> numero.</li>
+        <li>Per numeri lunghi puo usare la visualizzazione a grafo.</li>
+        <li>Puoi scegliere se usare dizionario comune o grande (toggle impostazioni).</li>
       </ul>
 
-      <h3>Impostazioni e dizionari</h3>
+      <h2 id="import-export">4) Import/Export dizionari: cosa fanno davvero</h2>
+      <p>
+        Converti usa due dizionari distinti, entrambi salvati localmente nel browser (IndexedDB):
+      </p>
       <ul>
-        <li><strong>Solo parole esistenti</strong>: verifica i termini contro il dizionario.</li>
-        <li><strong>LAB numeri -> parole con dizionario grande</strong>: toggle dedicato in settings.</li>
-        <li>Import/Export dei dizionari grande e comune tramite file .txt.</li>
-        <li>Dati dizionari salvati localmente in IndexedDB.</li>
+        <li><strong>Dizionario grande</strong>: controllo parole in "DA NUMERI" quando attivi "Solo parole esistenti".</li>
+        <li><strong>Dizionario comune</strong>: parole usate in "DA PAROLE" e in LAB quando non attivi il dizionario grande.</li>
       </ul>
 
-      <h2>4) Strategia consigliata</h2>
-      <ol>
-        <li>Warm-up breve in PLAY per velocita e riflessi.</li>
-        <li>Sessione LAB per esplorare alternative su numeri difficili.</li>
-        <li>Ritorno in PLAY per consolidare precisione sotto tempo.</li>
-      </ol>
+      <h3>Export dizionario (pulsante "Esporta dizionario")</h3>
+      <div class="flow">
+        <div class="flow-step">1. Converti raccoglie tutte le parole del dizionario selezionato.</div>
+        <div class="flow-step">2. Rimuove eventuali duplicati.</div>
+        <div class="flow-step">3. Scarica un file <code>.txt</code> con una parola per riga.</div>
+      </div>
+      <p class="mini">
+        Nota: l'export salva la lista parole, non la mappa numerica. La mappa viene ricostruita automaticamente in import.
+      </p>
+
+      <h3>Import dizionario (pulsante "Importa dizionario")</h3>
+      <div class="flow">
+        <div class="flow-step">1. Selezioni un file <code>.txt</code> (una parola per riga).</div>
+        <div class="flow-step">2. Converti ricalcola il codice numerico di ogni parola.</div>
+        <div class="flow-step">3. Sostituisce il dizionario corrente (grande o comune) con il nuovo contenuto.</div>
+        <div class="flow-step">4. Salva tutto in IndexedDB e usa subito il nuovo dizionario.</div>
+      </div>
+
+      <div class="callout warning">
+        Attenzione: l'import <strong>sovrascrive</strong> il dizionario scelto.
+        Prima di importare, conviene fare sempre un export di backup.
+      </div>
+
+      <h3>Formato consigliato del file .txt per import</h3>
+      <ul>
+        <li>Una parola per riga.</li>
+        <li>Niente numeri o simboli strani nella stessa riga.</li>
+        <li>Puoi usare minuscole o maiuscole: Converti normalizza in automatico.</li>
+        <li>Le righe vuote vengono ignorate.</li>
+      </ul>
+
+      <p>Esempio valido:</p>
+      <p><code>faro</code><br><code>luna</code><br><code>piuma</code><br><code>cane</code></p>
 
       <div class="cta">
         Inizia subito dalla web app:

@@ -59,23 +59,50 @@ POLSO   950
 
 ## Caratteristiche dell'app
 
-✅ **Doppia modalità:** "DA NUMERI" e "DA PAROLE"
-✅ **Validazione parole con dizionario personalizzabile**  
-✅ **Interfaccia semplice e intuitiva**  
-✅ **Timer per modalità sfida**  
-✅ **Salvataggio automatico su IndexedDB**  
-✅ **Compatibile con dispositivi mobili**  
+✅ **Due sezioni principali:** GAME e LAB  
+✅ **In GAME:** doppia modalità "DA NUMERI" e "DA PAROLE"  
+✅ **In LAB:** conversione libera numeri ⇄ parole  
+✅ **Dizionari personalizzabili:** grande + comune  
+✅ **Import/Export dizionari (.txt)** dalle impostazioni  
+✅ **Salvataggio automatico locale su IndexedDB**  
+✅ **Compatibile con dispositivi mobili**
 
 ---
 
-## 🕹 **Come si gioca?**
+## 🕹 **GAME: come si gioca?**
 ### 🎮 **Modalità "DA NUMERI"**
- - Un numero casuale viene mostrato.  
- - Devi trovare una o più parole che corrispondono a quel numero secondo le regole della conversione fonetica.  
- - Se le parole sono valide, verrà mostrato un nuovo numero.
- - Ogni 3 risposte giuste, il livello si alza e i numeri si allungano!
+- Un numero casuale viene mostrato.
+- Devi trovare una o più parole che corrispondono a quel numero secondo le regole della conversione fonetica.
+- Se le parole sono valide, verrà mostrato un nuovo numero.
+- Ogni 3 risposte giuste, il livello si alza e i numeri si allungano.
 
 ### 🎮 **Modalità "DA PAROLE"**
- - Ti viene mostrata una o più parole casuali.  
- - Devi scrivere il numero corrispondente secondo le regole della conversione fonetica. 
- - Ogni 3 risposte corrette, aumentano le parole da convertire!
+- Ti viene mostrata una o più parole casuali.
+- Devi scrivere il numero corrispondente secondo le regole della conversione fonetica.
+- Ogni 3 risposte corrette, aumentano le parole da convertire.
+
+---
+
+## 🧪 **LAB: conversione libera**
+La sezione **LAB** è pensata per allenarsi senza timer e testare conversioni in modo rapido:
+
+- **Input unico:** inserisci numeri o testo, Converti rileva automaticamente il tipo di conversione.
+- **Numeri → parole:** mostra possibili combinazioni (tabella o grafo, in base alla lunghezza).
+- **Parole → numeri:** converte direttamente la parola/frase in codice numerico.
+- **Supporto dizionario:** in LAB puoi usare il dizionario comune o, se attivato nelle impostazioni, il dizionario grande per numeri → parole.
+
+---
+
+## 📚 **Dizionari: come funzionano**
+Converti utilizza due dizionari separati:
+
+- **Dizionario grande:** usato per validare le parole in GAME "DA NUMERI" quando è attiva l'opzione "Solo parole esistenti".
+- **Dizionario comune:** usato per estrarre parole più frequenti in GAME "DA PAROLE" e come base in LAB.
+
+### Import/Export dizionari
+Dalle impostazioni puoi:
+
+- **Esportare** un dizionario in formato `.txt` (una parola per riga).
+- **Importare** un file `.txt` personalizzato per sostituire il dizionario corrente.
+
+I dizionari importati vengono salvati localmente nel browser tramite **IndexedDB**.

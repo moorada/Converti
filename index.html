@@ -28,6 +28,9 @@
 
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Favicons -->
   <link rel="icon" href="/Converti/favicon/favicon.ico" type="image/x-icon" />
@@ -111,6 +114,7 @@
 
   <!-- Popup Help -->
   <div id="help-popup" class="popup">
+    <button type="button" class="popup-close" data-close-popup aria-label="Chiudi finestra">×</button>
     <h2>CONVERSIONE FONETICA</h2>
     <p>
       La conversione fonetica è una tecnica di memorizzazione dei numeri. Funziona convertendo i numeri in consonanti e,
@@ -200,32 +204,33 @@
       Questo progetto è completamente gratuito e privo di pubblicità. Se ti è stato utile e desideri supportare il lavoro e il tempo dedicato alla sua realizzazione, puoi contribuire con una donazione.
     </p>
 
-    <a href="https://www.buymeacoffee.com/moorada" target="_blank" rel="noopener noreferrer">
-      <button class="donation-feedback-button">
-        ☕ Buy Me a Coffee
-      </button>
-    </a>
-    <a href="https://www.paypal.com/donate/?hosted_button_id=8KWRVYPQ5Q49J" target="_blank" rel="noopener noreferrer">
-      <button class="donation-feedback-button">
-        💙 Dona con PayPal
-      </button>
-    </a>
-
-    <a href="https://github.com/moorada/Converti/issues/new" target="_blank" rel="noopener noreferrer">
-      <button class="donation-feedback-button">
-        📝 Lasciami un feedback
-      </button>
-    </a>
-
-    <a href="https://github.com/moorada/Converti" target="_blank" rel="noopener noreferrer">
-      <button class="donation-feedback-button">
-        ⭐ Metti una stella su GitHub
-      </button>
-    </a>
+    <div class="support-actions">
+      <a href="https://www.buymeacoffee.com/moorada" target="_blank" rel="noopener noreferrer">
+        <button class="donation-feedback-button">
+          ☕ Buy Me a Coffee
+        </button>
+      </a>
+      <a href="https://www.paypal.com/donate/?hosted_button_id=8KWRVYPQ5Q49J" target="_blank" rel="noopener noreferrer">
+        <button class="donation-feedback-button">
+          💙 Dona con PayPal
+        </button>
+      </a>
+      <a href="https://github.com/moorada/Converti/issues/new" target="_blank" rel="noopener noreferrer">
+        <button class="donation-feedback-button">
+          📝 Lasciami un feedback
+        </button>
+      </a>
+      <a href="https://github.com/moorada/Converti" target="_blank" rel="noopener noreferrer">
+        <button class="donation-feedback-button">
+          ⭐ Metti una stella su GitHub
+        </button>
+      </a>
+    </div>
   </div>
 
   <!-- Popup Settings -->
   <div id="settings-popup" class="popup">
+    <button type="button" class="popup-close" data-close-popup aria-label="Chiudi finestra">×</button>
     <h2>IMPOSTAZIONI</h2>
 
     <div class="setting-row" style="flex-direction: column; align-items: flex-start;">
@@ -300,28 +305,28 @@
       Questo progetto è completamente gratuito e privo di pubblicità. Se ti è stato utile e desideri supportare il lavoro e il tempo dedicato alla sua realizzazione, puoi contribuire con una donazione.
     </p>
 
-    <a href="https://www.buymeacoffee.com/moorada" target="_blank" rel="noopener noreferrer">
-      <button class="donation-feedback-button">
-        ☕ Buy Me a Coffee
-      </button>
-    </a>
-    <a href="https://www.paypal.com/donate/?hosted_button_id=8KWRVYPQ5Q49J" target="_blank" rel="noopener noreferrer">
-      <button class="donation-feedback-button">
-        💙 Dona con PayPal
-      </button>
-    </a>
-
-    <a href="https://github.com/moorada/Converti/issues/new" target="_blank" rel="noopener noreferrer">
-      <button class="donation-feedback-button">
-        📝 Lasciami un feedback
-      </button>
-    </a>
-
-    <a href="https://github.com/moorada/Converti" target="_blank" rel="noopener noreferrer">
-      <button class="donation-feedback-button">
-        ⭐ Metti una stella su GitHub
-      </button>
-    </a>
+    <div class="support-actions">
+      <a href="https://www.buymeacoffee.com/moorada" target="_blank" rel="noopener noreferrer">
+        <button class="donation-feedback-button">
+          ☕ Buy Me a Coffee
+        </button>
+      </a>
+      <a href="https://www.paypal.com/donate/?hosted_button_id=8KWRVYPQ5Q49J" target="_blank" rel="noopener noreferrer">
+        <button class="donation-feedback-button">
+          💙 Dona con PayPal
+        </button>
+      </a>
+      <a href="https://github.com/moorada/Converti/issues/new" target="_blank" rel="noopener noreferrer">
+        <button class="donation-feedback-button">
+          📝 Lasciami un feedback
+        </button>
+      </a>
+      <a href="https://github.com/moorada/Converti" target="_blank" rel="noopener noreferrer">
+        <button class="donation-feedback-button">
+          ⭐ Metti una stella su GitHub
+        </button>
+      </a>
+    </div>
 
 
   </div>
@@ -342,7 +347,7 @@
         </div>
         <div id="game-container">
           <div id="timer">10</div>
-          <p id="info-text"></p>
+          <div id="info-text"></div>
           <div id="box"></div>
 
           <div id="input-group" class="input-group">

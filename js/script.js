@@ -139,6 +139,21 @@ function getNumberToWordsDictionaryLabel() {
   return shouldUseBigDictionaryForNumbers() ? "dizionario grande" : "dizionario comune";
 }
 
+function buildGraphTraversalDictionary() {
+  const merged = {};
+  Object.keys(smallDictionary).forEach((key) => {
+    if (!merged[key]) {
+      merged[key] = ["_"];
+    }
+  });
+  Object.keys(bigDictionary).forEach((key) => {
+    if (!merged[key]) {
+      merged[key] = ["_"];
+    }
+  });
+  return merged;
+}
+
 function ensureRequiredDictionaryEntries(dict) {
   let changed = false;
 
@@ -441,8 +456,24 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
 
+  infoText.addEventListener("click", (event) => {
+    const modeCard = event.target.closest("[data-mode-card]");
+    if (!modeCard || startButton.style.display === "none") {
+      return;
+    }
+
+    const nextMode = modeCard.getAttribute("data-mode-card");
+    if (nextMode && nextMode !== currentMode) {
+      showContent(nextMode);
+    }
+  });
+
   // Popup logic
   const popups = [helpPopup, settingsPopup];
+  function hidePopups() {
+    popups.forEach((p) => { p.style.display = "none"; });
+    overlay.style.display = "none";
+  }
   function togglePopup(popup) {
     const isVisible = (popup.style.display === "block");
     popups.forEach((p) => { p.style.display = "none"; });
@@ -451,9 +482,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
   helpIcon.addEventListener("click", () => togglePopup(helpPopup));
   settingsIcon.addEventListener("click", () => togglePopup(settingsPopup));
-  overlay.addEventListener("click", () => {
-    popups.forEach((p) => { p.style.display = "none"; });
-    overlay.style.display = "none";
+  overlay.addEventListener("click", hidePopups);
+  document.querySelectorAll("[data-close-popup]").forEach((closeBtn) => {
+    closeBtn.addEventListener("click", hidePopups);
   });
 
   // Export / Import big
@@ -566,6 +597,32 @@ submitBtn.addEventListener("mousedown", (e) => {
 /**
  * Show the content for the given mode ("numbers" or "words").
  */
+function buildModeMissionCards(selectedMode) {
+  return `
+    <div class="mode-missions" role="presentation">
+      <article class="mode-mission-card ${selectedMode === "numbers" ? "is-active" : ""}" data-mode-card="numbers">
+        <p class="mode-mission-kicker">Modalita da numeri</p>
+        <h2 class="mode-mission-title">Numeri → Parole</h2>
+        <p class="mode-mission-detail">
+          Ogni 3 risposte corrette il livello aumenta e i numeri diventano piu lunghi.
+        </p>
+        <p class="mode-mission-goal">Obiettivo: fai piu conversioni possibili in 2:00.</p>
+        <p class="mode-mission-flow">🔢 47 → 🔡 faro</p>
+      </article>
+
+      <article class="mode-mission-card ${selectedMode === "words" ? "is-active" : ""}" data-mode-card="words">
+        <p class="mode-mission-kicker">Modalita da parole</p>
+        <h2 class="mode-mission-title">Parole → Numeri</h2>
+        <p class="mode-mission-detail">
+          Ogni 3 risposte corrette aumenta il numero di parole da convertire.
+        </p>
+        <p class="mode-mission-goal">Obiettivo: fai piu conversioni possibili in 2:00.</p>
+        <p class="mode-mission-flow">🔡 faro → 🔢 84</p>
+      </article>
+    </div>
+  `;
+}
+
 function showContent(newMode) {
   resultContainer.innerHTML = "";
   resultContainer.style.display = "none";
@@ -576,36 +633,26 @@ function showContent(newMode) {
   currentMode = newMode;
   btnNumbers.classList.remove("active");
   btnWords.classList.remove("active");
+  gameContainer.classList.add("is-mode-preview");
 
   const oldShareBtn = document.getElementById("share-button");
   if (oldShareBtn) oldShareBtn.remove();
 
+  const wordsDictionaryReady = Object.keys(smallDictionary).length > 0;
+
   if (currentMode === "numbers") {
     btnNumbers.classList.add("active");
     startButton.disabled = false;
-    wordInput.style.display = "none";
-    numberInput.style.display = "none";
-    infoText.innerHTML = `
-      ⏳<br>Hai 2 minuti per trasformare i numeri in parole!<br>
-      🎯<br>Ogni 3 risposte giuste, il livello si alza e i numeri si allungano!<br>🚀
-    `;
   } else {
     btnWords.classList.add("active");
-    if (Object.keys(smallDictionary).length > 0) {
-      startButton.disabled = false;
-      infoText.innerHTML = `
-        ⏳<br>Hai 2 minuti per convertire le parole in numeri!<br>
-        🎯<br>Ogni 3 risposte corrette, aumentano le parole da convertire!<br>🚀
-      `;
-    } else {
-      startButton.disabled = true;
-      infoText.innerHTML = `
-        <strong>Da parole</strong>: Caricamento smallDictionary in corso...
-      `;
-    }
-    wordInput.style.display = "none";
-    numberInput.style.display = "none";
+    startButton.disabled = !wordsDictionaryReady;
   }
+
+  startButton.textContent = currentMode === "numbers" ? "Inizia da numeri" : "Inizia da parole";
+  wordInput.style.display = "none";
+  numberInput.style.display = "none";
+  infoText.style.display = "block";
+  infoText.innerHTML = buildModeMissionCards(currentMode);
 
   boxElement.style.display = "none";
   boxElement.textContent = "";
@@ -617,6 +664,7 @@ function showContent(newMode) {
  */
 function initGame() {
   infoText.style.display = "none";
+  gameContainer.classList.remove("is-mode-preview");
 
   const oldShareBtn = document.getElementById("share-button");
   if (oldShareBtn) oldShareBtn.remove();
@@ -931,7 +979,7 @@ function numberToWordPaths(number, dictionarySource) {
   return paths;
 }
 
-function createLabGraphEngine(number, dictionarySource) {
+function createLabGraphEngine(number, dictionarySource, wordsDictionarySource = dictionarySource) {
   const { keySet, prefixSet, maxKeyLength } = getDictionaryIndex(dictionarySource);
   const canFinishMemo = new Map();
   const minPartsMemo = new Map();
@@ -1024,7 +1072,7 @@ function createLabGraphEngine(number, dictionarySource) {
       }
 
       const minRemaining = minPartsFrom(end);
-      const words = dictionarySource[fragment] || [];
+      const words = wordsDictionarySource[fragment] || [];
       words.forEach((word) => {
         candidates.push({
           part: fragment,
@@ -1079,11 +1127,17 @@ function renderLabNoCombinations(number, dictionaryLabel) {
 function renderLabNumberWordsResult(number, paths, dictionaryLabel, dictionarySource, options = {}) {
   const forceGraphOnly = Boolean(options.forceGraphOnly);
   const rows = forceGraphOnly ? [] : buildTableRowsFromPaths(paths);
-  const graphEngine = createLabGraphEngine(number, dictionarySource);
+  const graphTraversalDictionary = options.graphTraversalDictionary || dictionarySource;
+  const graphEngineByMode = {
+    small: createLabGraphEngine(number, graphTraversalDictionary, smallDictionary),
+    big: createLabGraphEngine(number, graphTraversalDictionary, bigDictionary)
+  };
+  const defaultGraphDictionaryMode = shouldUseBigDictionaryForNumbers() ? "big" : "small";
   const graphState = {
     selectedParts: [],
     selectedWords: [],
-    currentIndex: 0
+    currentIndex: 0,
+    nextDictionaryMode: defaultGraphDictionaryMode
   };
 
   const graphOnlyMessage = forceGraphOnly
@@ -1092,9 +1146,9 @@ function renderLabNumberWordsResult(number, paths, dictionaryLabel, dictionarySo
   labModeHint.textContent = `Modalita numeri -> parole (${dictionaryLabel}).${graphOnlyMessage}`;
 
   const viewToggleHtml = forceGraphOnly
-    ? `<div class="lab-result-view-toggle"><button type="button" class="lab-result-mode-btn active" data-view-mode="graph">Modalita grafo</button></div>`
+    ? `<div class="lab-result-view-toggle"><button type="button" class="lab-result-mode-btn active" data-view-mode="graph">Grafo</button></div>`
     : `<div class="lab-result-view-toggle">
-          <button type="button" class="lab-result-mode-btn active" data-view-mode="graph">Modalita grafo</button>
+          <button type="button" class="lab-result-mode-btn active" data-view-mode="graph">Grafo</button>
           <button type="button" class="lab-result-mode-btn" data-view-mode="table">Tabella</button>
         </div>`;
 
@@ -1261,8 +1315,11 @@ function renderLabNumberWordsResult(number, paths, dictionaryLabel, dictionarySo
   function renderGraphView() {
     setActiveMode("graph");
 
+    const activeMode = graphState.nextDictionaryMode === "big" ? "big" : "small";
+    const activeEngine = graphEngineByMode[activeMode];
+    const activeDictionaryLabel = activeMode === "big" ? "grande" : "comune";
     const isCompleted = graphState.currentIndex === number.length;
-    const candidates = graphEngine.getCandidates(graphState.currentIndex);
+    const candidates = activeEngine.getCandidates(graphState.currentIndex);
 
     function getIndexAfterStep(stepIndex) {
       let index = 0;
@@ -1282,8 +1339,7 @@ function renderLabNumberWordsResult(number, paths, dictionaryLabel, dictionarySo
               data-selected-index="${index}"
               title="Torna a questo punto"
             >
-              <span class="lab-graph-node-dot"></span>
-              <span>${escapeHtml(word)}</span>
+              <span class="lab-graph-node-word">${escapeHtml(word)}</span>
               <span class="lab-graph-node-part">${escapeHtml(graphState.selectedParts[index])}</span>
             </button>
             ${index < graphState.selectedWords.length - 1 ? '<div class="lab-graph-step-line"></div>' : ""}
@@ -1300,8 +1356,7 @@ function renderLabNumberWordsResult(number, paths, dictionaryLabel, dictionarySo
               data-next-part="${escapeHtml(candidate.part)}"
               data-next-word="${escapeHtml(candidate.word)}"
             >
-              <span class="lab-graph-node-dot"></span>
-              <span>${escapeHtml(candidate.word)}</span>
+              <span class="lab-graph-node-word">${escapeHtml(candidate.word)}</span>
               <span class="lab-graph-node-part">${escapeHtml(candidate.part)}</span>
             </button>
           </div>
@@ -1315,14 +1370,19 @@ function renderLabNumberWordsResult(number, paths, dictionaryLabel, dictionarySo
     viewNode.innerHTML = `
       <div class="lab-graph-panel">
         <div class="lab-graph-controls">
+          <div class="lab-graph-dict-toggle">
+            <span class="lab-graph-dict-label">Dizionario:</span>
+            <button type="button" class="lab-result-mode-btn ${activeMode === "small" ? "active" : ""}" data-graph-dict-mode="small">Comune</button>
+            <button type="button" class="lab-result-mode-btn ${activeMode === "big" ? "active" : ""}" data-graph-dict-mode="big">Grande</button>
+          </div>
           <button type="button" id="lab-graph-back-btn" class="lab-graph-control-btn" ${graphState.selectedWords.length ? "" : "disabled"}>Indietro</button>
           <button type="button" id="lab-graph-reset-btn" class="lab-graph-control-btn" ${graphState.selectedWords.length ? "" : "disabled"}>Ricomincia</button>
         </div>
         <div class="lab-graph-stage">
           <div class="lab-graph-selected-track">${selectedHtml}</div>
-          ${graphState.selectedWords.length ? '<div class="lab-graph-bridge"></div>' : ""}
           <div class="lab-graph-branch">${candidatesHtml}</div>
         </div>
+        <div class="lab-graph-selected-placeholder">Dizionario attivo per la prossima scelta: ${activeDictionaryLabel}</div>
         ${completedHtml}
       </div>
     `;
@@ -1350,6 +1410,16 @@ function renderLabNumberWordsResult(number, paths, dictionaryLabel, dictionarySo
         renderGraphView();
       });
     }
+
+    viewNode.querySelectorAll("[data-graph-dict-mode]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const requestedMode = button.dataset.graphDictMode === "big" ? "big" : "small";
+        if (graphState.nextDictionaryMode !== requestedMode) {
+          graphState.nextDictionaryMode = requestedMode;
+          renderGraphView();
+        }
+      });
+    });
 
     viewNode.querySelectorAll(".lab-graph-node-candidate").forEach((button) => {
       button.addEventListener("click", () => {
@@ -1411,13 +1481,17 @@ function runLabConversion() {
 
     const dictionaryForNumbers = getNumberToWordsDictionary();
     const dictionaryLabel = getNumberToWordsDictionaryLabel();
+    const graphTraversalDictionary = buildGraphTraversalDictionary();
 
     if (compact.length > LAB_FORCE_GRAPH_AFTER_DIGITS) {
-      const graphEngine = createLabGraphEngine(compact, dictionaryForNumbers);
+      const graphEngine = createLabGraphEngine(compact, graphTraversalDictionary, dictionaryForNumbers);
       if (!graphEngine.canFinishFrom(0)) {
         renderLabNoCombinations(compact, dictionaryLabel);
       } else {
-        renderLabNumberWordsResult(compact, [], dictionaryLabel, dictionaryForNumbers, { forceGraphOnly: true });
+        renderLabNumberWordsResult(compact, [], dictionaryLabel, dictionaryForNumbers, {
+          forceGraphOnly: true,
+          graphTraversalDictionary
+        });
       }
       return;
     }
@@ -1426,7 +1500,9 @@ function runLabConversion() {
     if (paths.length === 0) {
       renderLabNoCombinations(compact, dictionaryLabel);
     } else {
-      renderLabNumberWordsResult(compact, paths, dictionaryLabel, dictionaryForNumbers);
+      renderLabNumberWordsResult(compact, paths, dictionaryLabel, dictionaryForNumbers, {
+        graphTraversalDictionary
+      });
     }
     return;
   }
