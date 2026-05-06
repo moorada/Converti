@@ -4,8 +4,8 @@ The description of this tool is in Italian because this tool is designed for Ita
 
 Webapp per esercitarsi con la conversione fonetica (The major system), in lingua italiana.
 
-🔗 **[Live Demo](https://moorada.github.io/Converti/)** (GitHub Pages)
-🔗 **[Allenamento conversione fonetica](https://moorada.github.io/Converti/allenamento-conversione-fonetica.html)** (guida pratica)
+🔗 **[Live Demo](https://converti.alongale.com/)** (sito live)
+🔗 **[Allenamento conversione fonetica](https://converti.alongale.com/allenamento-conversione-fonetica.html)** (guida pratica)
 
 ---
 

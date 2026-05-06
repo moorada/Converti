@@ -1597,7 +1597,7 @@ function shareResult() {
     textContent += p.innerText + "\n";
   });
 
-  const gameUrl = `${window.location.origin}/Converti/`;
+  const gameUrl = `${window.location.origin}/`;
 
   const finalText = `Ho totalizzato ${correctCount} punti giocando a \n🔢 CONVERTI 🔡!
 

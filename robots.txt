@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://moorada.github.io/Converti/sitemap.xml
+Sitemap: https://converti.alongale.com/sitemap.xml
