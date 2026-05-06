@@ -1,7 +1,6 @@
 let bigDictionary = {};
 let smallDictionary = {};
 const NUMBER_WORDS_VIEW_MODE_KEY = "numberWordsViewMode";
-const USE_BIG_DICT_FOR_NUMBERS_KEY = "useBigDictForNumbers";
 const LAB_DEFAULT_HINT = "Inserisci solo cifre per ottenere una tabella di parole. Inserisci testo per ottenere un solo numero.";
 const LAB_MAX_INPUT_DIGITS = 24;
 const LAB_FORCE_GRAPH_AFTER_DIGITS = 16;
@@ -56,7 +55,6 @@ const timerElement      = document.getElementById("timer");
 const boxElement        = document.getElementById("box");
 const resultContainer   = document.getElementById("resoconto");
 const verifyWordsCheck  = document.getElementById("check-words");
-const useBigDictionaryForNumbersCheck = document.getElementById("check-big-dict-numbers");
 const customAlert       = document.getElementById("custom-alert");
 const gameContainer     = document.getElementById("game-container");
 const labUnifiedInput   = document.getElementById("lab-unified-input");
@@ -125,18 +123,6 @@ function buildWordsLookup(dict) {
   Object.values(dict).forEach((list) => {
     list.forEach((word) => wordsLookupSet.add(String(word).toLowerCase()));
   });
-}
-
-function shouldUseBigDictionaryForNumbers() {
-  return Boolean(useBigDictionaryForNumbersCheck && useBigDictionaryForNumbersCheck.checked);
-}
-
-function getNumberToWordsDictionary() {
-  return shouldUseBigDictionaryForNumbers() ? bigDictionary : smallDictionary;
-}
-
-function getNumberToWordsDictionaryLabel() {
-  return shouldUseBigDictionaryForNumbers() ? "dizionario grande" : "dizionario comune";
 }
 
 function buildGraphTraversalDictionary() {
@@ -425,18 +411,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   verifyWordsCheck.addEventListener("change", () => {
     localStorage.setItem("checkWords", verifyWordsCheck.checked);
   });
-
-  if (useBigDictionaryForNumbersCheck) {
-    useBigDictionaryForNumbersCheck.checked = (localStorage.getItem(USE_BIG_DICT_FOR_NUMBERS_KEY) === "true");
-    useBigDictionaryForNumbersCheck.addEventListener("change", () => {
-      localStorage.setItem(USE_BIG_DICT_FOR_NUMBERS_KEY, useBigDictionaryForNumbersCheck.checked);
-      const cleanInput = sanitizeInput(labUnifiedInput.value);
-      const compact = cleanInput.replace(/\s+/g, "");
-      if (/^\d+$/.test(compact)) {
-        runLabConversion();
-      }
-    });
-  }
 
   wordInput.addEventListener("keypress", (event) => {
     if (event.key === "Enter") {
@@ -1132,7 +1106,7 @@ function renderLabNumberWordsResult(number, paths, dictionaryLabel, dictionarySo
     small: createLabGraphEngine(number, graphTraversalDictionary, smallDictionary),
     big: createLabGraphEngine(number, graphTraversalDictionary, bigDictionary)
   };
-  const defaultGraphDictionaryMode = shouldUseBigDictionaryForNumbers() ? "big" : "small";
+  const defaultGraphDictionaryMode = "small";
   const graphState = {
     selectedParts: [],
     selectedWords: [],
@@ -1479,8 +1453,8 @@ function runLabConversion() {
       return;
     }
 
-    const dictionaryForNumbers = getNumberToWordsDictionary();
-    const dictionaryLabel = getNumberToWordsDictionaryLabel();
+    const dictionaryForNumbers = smallDictionary;
+    const dictionaryLabel = "dizionario comune";
     const graphTraversalDictionary = buildGraphTraversalDictionary();
 
     if (compact.length > LAB_FORCE_GRAPH_AFTER_DIGITS) {

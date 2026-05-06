@@ -89,15 +89,15 @@ La sezione **LAB** è pensata per allenarsi senza timer e testare conversioni in
 - **Input unico:** inserisci numeri o testo, Converti rileva automaticamente il tipo di conversione.
 - **Numeri → parole:** mostra possibili combinazioni (tabella o grafo, in base alla lunghezza).
 - **Parole → numeri:** converte direttamente la parola/frase in codice numerico.
-- **Supporto dizionario:** in LAB puoi usare il dizionario comune o, se attivato nelle impostazioni, il dizionario grande per numeri → parole.
+- **Supporto dizionario:** in LAB la tabella numeri → parole usa il dizionario comune; nella vista a grafo puoi selezionare in ogni momento dizionario comune o grande.
 
 ---
 
 ## 📚 **Dizionari: come funzionano**
 Converti utilizza due dizionari separati:
 
-- **Dizionario grande:** usato per validare le parole in GAME "DA NUMERI" quando è attiva l'opzione "Solo parole esistenti".
-- **Dizionario comune:** usato per estrarre parole più frequenti in GAME "DA PAROLE" e come base in LAB.
+- **Dizionario grande:** usato per validare le parole in GAME "DA NUMERI" quando è attiva l'opzione "Solo parole esistenti"; in LAB è selezionabile nella vista a grafo.
+- **Dizionario comune:** usato per estrarre parole più frequenti in GAME "DA PAROLE"; in LAB è la base iniziale per numeri → parole e resta selezionabile nella vista a grafo.
 
 ### Import/Export dizionari
 Dalle impostazioni puoi:

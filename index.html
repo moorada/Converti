@@ -33,7 +33,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Favicons -->
-  <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="./css/style.css" />
@@ -247,39 +249,25 @@
       </small>
     </div>
 
-    <div class="setting-row" style="flex-direction: column; align-items: flex-start;">
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <p style="margin: 0;">LAB numeri -> parole con dizionario grande</p>
-        <label class="switch">
-          <input type="checkbox" id="check-big-dict-numbers" />
-          <span class="slider"></span>
-        </label>
-      </div>
-      <small>
-        Se attivato, nella sezione LAB la conversione numeri -> parole usa
-        il dizionario grande invece di quello comune.
-      </small>
-    </div>
-
     <br>
     <h3>GESTIONE DIZIONARI</h3>
     <p class="left-text">
-      Converti utilizza <strong>due raccolte di parole</strong>,
-      pensate per le due modalità di gioco.
+      Converti utilizza <strong>due raccolte di parole</strong>:
+      <strong>dizionario grande</strong> e <strong>dizionario comune</strong>.
       <br><br>
-      Il primo dizionario include un <em>ampio ventaglio di parole</em>
-      e serve a controllare che i termini inseriti in “DA NUMERI”
-      siano effettivamente esistenti,
-      quando si attiva l’opzione “Solo parole esistenti”.
+      Il <strong>dizionario grande</strong> include un <em>ampio ventaglio di parole</em>:
+      viene usato in GAME “DA NUMERI” per validare le parole quando attivi “Solo parole esistenti”.
       <br><br>
-      Il secondo dizionario, invece, raccoglie <em>parole più comuni</em>
-      per la modalità “DA PAROLE”.
-      In questo modo, quando l’app genera una parola a caso da convertire in cifre,
-      si evitano termini troppo rari, offrendo un’esperienza di gioco più scorrevole.
+      Il <strong>dizionario comune</strong> raccoglie invece <em>parole più frequenti</em>:
+      viene usato in GAME “DA PAROLE” per evitare termini troppo rari.
+      <br><br>
+      In LAB (numeri -> parole) puoi usare entrambi:
+      la tabella parte dal dizionario comune, mentre nella vista a grafo puoi selezionare in ogni momento
+      “Comune” o “Grande” con i pulsanti dedicati.
     </p>
 
     <div>
-      <h4>Dizionario per validare parole (DA NUMERI)</h4>
+      <h4>Dizionario grande (GAME DA NUMERI + LAB)</h4>
       <div class="dictionary-actions">
         <button id="export-big" class="export-import-button">Esporta dizionario</button>
         <button id="import-big" class="export-import-button">Importa dizionario</button>
@@ -287,7 +275,7 @@
     </div>
     <br>
     <div>
-      <h4>Dizionario con parole più comuni (DA PAROLE)</h4>
+      <h4>Dizionario comune (GAME DA PAROLE + LAB)</h4>
       <div class="dictionary-actions">
         <button id="export-small" class="export-import-button">Esporta dizionario</button>
         <button id="import-small" class="export-import-button">Importa dizionario</button>
