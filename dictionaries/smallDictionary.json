@@ -19,7 +19,6 @@
     "idea",
     "tè",
     "auto",
-    "dj",
     "judo",
     "odio",
     "te"
@@ -43,7 +42,6 @@
     "oro",
     "yuri",
     "aereo",
-    "hr",
     "re"
   ],
   "5": [
@@ -68,7 +66,6 @@
     "qui",
     "gaia",
     "kiwi",
-    "coo",
     "hockey",
     "oca"
   ],
@@ -82,7 +79,6 @@
     "buio",
     "baia",
     "hub",
-    "pho",
     "pooh",
     "ape"
   ],
@@ -135,7 +131,8 @@
     "tela"
   ],
   "16": [
-    "doccia"
+    "doccia",
+    "digei (dj)"
   ],
   "17": [
     "diego",
@@ -158,8 +155,10 @@
   "20": [
     "anzi",
     "inizio",
-    "jeans",
     "naso"
+  ],
+  "620": [
+    "gins (jeans)"
   ],
   "21": [
     "noto",
@@ -407,7 +406,7 @@
     "oggetto",
     "egitto",
     "aceto",
-    "cd"
+    "cidi (cd)"
   ],
   "62": [
     "giugno",
@@ -431,7 +430,7 @@
     "giallo",
     "giulia",
     "agile",
-    "jolly"
+    "giolli (jolly)"
   ],
   "66": [
     "ceci",
@@ -441,7 +440,7 @@
     "gioco",
     "acciuga",
     "giacca",
-    "jack",
+    "giak (jack)",
     "geco"
   ],
   "68": [
@@ -556,7 +555,7 @@
     "vino",
     "ivan",
     "avena",
-    "phon"
+    "fon (phon)"
   ],
   "83": [
     "fame",

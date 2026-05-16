@@ -121,7 +121,7 @@ const ITALIAN_ADJUSTMENTS = [
 ];
 const EXCEPTIONS = [
   { number:"756", words:["glig","glic"] },
-  { number:"05",  words:["siglio"] },
+  { number:"05",  words:["ssigli","siglio"] },
   { number:"405", words:["rsigli"] },
   { number:"205", words:["msigli"] },
   { number:"075", words:["sigli"] }
@@ -140,6 +140,10 @@ const CONVERSION_TABLE = [
 ];
 
 
+    function escapeRegExp(value) {
+      return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    }
+
     /**
      * Converts a single word to its numeric code according to phonetic rules.
      * Vowels are removed, and specific phonetic patterns are replaced with digits.
@@ -147,7 +151,12 @@ const CONVERSION_TABLE = [
      */
      function convertWord(input) {
   if (!input) return "99999999";
-  let word = String(input).toLowerCase().trim();
+  let word = String(input)
+    .replace(/\([^)]*\)/g, " ")
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, " ");
+  if (!word) return "99999999";
 
   ITALIAN_ADJUSTMENTS.forEach((adj) => {
     adj.variants.forEach((variant) => {
@@ -156,7 +165,7 @@ const CONVERSION_TABLE = [
   });
   EXCEPTIONS.forEach((ex) => {
     ex.words.forEach((w) => {
-      word = word.replace(new RegExp(w, "g"), ex.number);
+      word = word.replace(new RegExp(escapeRegExp(w), "g"), ex.number);
     });
   });
   CONVERSION_TABLE.forEach((entry) => {

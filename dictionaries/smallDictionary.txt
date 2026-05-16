@@ -15,7 +15,7 @@ età
 idea
 tè
 auto
-dj
+digei (dj)
 judo
 odio
 anno
@@ -30,7 +30,6 @@ ora
 oro
 yuri
 aereo
-hr
 egli
 illy
 olio
@@ -46,7 +45,6 @@ qua
 qui
 gaia
 kiwi
-coo
 hockey
 via
 uova
@@ -54,7 +52,6 @@ iva
 buio
 baia
 hub
-pho
 pooh
 addosso
 adesso
@@ -99,7 +96,7 @@ dubbio
 tipo
 anzi
 inizio
-jeans
+gins (jeans)
 noto
 notte
 nudo
@@ -2558,12 +2555,12 @@ lolla
 lava
 lupo
 cesso
-cd
+cidi (cd)
 gemma
 gerry
-jolly
+giolli (jolly)
 ciccio
-jack
+giak (jack)
 ciuffo
 giubba
 gas
@@ -2574,7 +2571,7 @@ cacca
 caffe
 cubo
 vaso
-phon
+fon (phon)
 fiamme
 vacca
 fave

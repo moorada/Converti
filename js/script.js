@@ -8,14 +8,15 @@ let wordsLookupSet = new Set();
 const dictionaryIndexCache = new WeakMap();
 const REQUIRED_DICTIONARY_ENTRIES = [
   ["00","sasso"],["01","sedia"],["02","zaino"],["03","sim"],["04","zorro"],["05","sella"],["06","saggio"],["07","secchio"],["08","sofia"],["09","seppia"],
-  ["10","tasso"],["11","dadi"],["12","tonno"],["13","dama"],["14","toro"],["15","tela"],["16","doccia"],["17","tacchi"],["18","duff"],["19","topo"],
+  ["10","tasso"],["11","dadi"],["12","tonno"],["13","dama"],["14","toro"],["15","tela"],["16","doccia"],["16","digei (dj)"],["17","tacchi"],["18","duff"],["19","topo"],
   ["20","naso"],["21","nido"],["22","nonno"],["23","nemo"],["24","nero"],["25","anello"],["26","noci"],["27","nico"],["28","neve"],["29","nube"],
   ["30","mazza"],["31","moto"],["32","mina"],["33","mamma"],["34","muro"],["35","mela"],["36","mocio"],["37","mago"],["38","muffa"],["39","mappa"],
   ["40","razzo"],["41","rete"],["42","rana"],["43","ramo"],["44","orrore"],["45","rullo"],["46","riccio"],["47","riga"],["48","raf"],["49","rabbia"],
   ["50","lisa"],["51","latte"],["52","lana"],["53","lama"],["54","lira"],["55","lollo"],["55","lolla"],["56","luce"],["57","luca"],["58","lava"],["59","lupo"],
-  ["60","cesso"],["61","cd"],["62","cina"],["63","gemma"],["64","gerry"],["65","jolly"],["66","ciccio"],["67","jack"],["68","ciuffo"],["69","giubba"],
+  ["60","cesso"],["61","cidi (cd)"],["62","cina"],["63","gemma"],["64","gerry"],["65","giolli (jolly)"],["66","ciccio"],["67","giak (jack)"],["68","ciuffo"],["69","giubba"],
+  ["620","gins (jeans)"],
   ["70","gas"],["71","gatto"],["72","cane"],["73","gomma"],["74","carro"],["75","gallo"],["76","cuccia"],["77","cacca"],["78","caffe"],["78","caffè"],["79","cubo"],
-  ["80","vaso"],["81","fede"],["82","phon"],["83","fiamme"],["84","faro"],["85","vela"],["86","faccia"],["87","vacca"],["88","fave"],["89","fibbia"],
+  ["80","vaso"],["81","fede"],["82","fon (phon)"],["83","fiamme"],["84","faro"],["85","vela"],["86","faccia"],["87","vacca"],["88","fave"],["89","fibbia"],
   ["90","pizza"],["91","piede"],["92","pane"],["93","piuma"],["94","pera"],["95","palla"],["96","buccia"],["97","pacco"],["98","puffo"],["99","papa"],["99","papà"],
   ["0","sci"],["1","te"],["1","tè"],["2","anna"],["3","amo"],["4","re"],["5","ali"],["6","ciao"],["7","oca"],["8","ufo"],["9","ape"]
 ];
@@ -24,9 +25,12 @@ let currentMode = "numbers";
 let currentSection = "play";
 let isGameOver = false;
 let timerInterval = null;
-const gameDuration = 120;
-let timeLeft = gameDuration;
+let selectedMinutes = 2;
+let gameDurationSeconds = selectedMinutes * 60;
+let timeLeft = gameDurationSeconds;
 let correctCount = 0;
+let isProgressiveDifficulty = true;
+let fixedDifficultyLevel = 1;
 
 let digitsForNumbers = 1;  
 let currentNumber = "";
@@ -54,6 +58,14 @@ const infoText          = document.getElementById("info-text");
 const timerElement      = document.getElementById("timer");
 const boxElement        = document.getElementById("box");
 const resultContainer   = document.getElementById("resoconto");
+const minutesSlider     = document.getElementById("minutes-slider");
+const minutesValue      = document.getElementById("minutes-value");
+const difficultyGrowthToggle = document.getElementById("difficulty-growth-toggle");
+const difficultySlider  = document.getElementById("difficulty-slider");
+const difficultyValue   = document.getElementById("difficulty-value");
+const difficultySliderLabel = document.getElementById("difficulty-slider-label");
+const difficultyFixedControls = document.getElementById("difficulty-fixed-controls");
+const difficultyModeDescription = document.getElementById("difficulty-mode-description");
 const verifyWordsCheck  = document.getElementById("check-words");
 const customAlert       = document.getElementById("custom-alert");
 const gameContainer     = document.getElementById("game-container");
@@ -87,7 +99,7 @@ const ITALIAN_ADJUSTMENTS = [
 ];
 const EXCEPTIONS = [
   { number:"756", words:["glig","glic"] },
-  { number:"05",  words:["siglio"] },
+  { number:"05",  words:["ssigli","siglio"] },
   { number:"405", words:["rsigli"] },
   { number:"205", words:["msigli"] },
   { number:"075", words:["sigli"] }
@@ -104,6 +116,18 @@ const CONVERSION_TABLE = [
   { number:"8", phonetics:["ff","vv","f","v"] },
   { number:"9", phonetics:["pp","bb","p","b"] }
 ];
+const PHONETIC_HINTS = {
+  "0": "S, SC, Z",
+  "1": "T, D",
+  "2": "N, GN",
+  "3": "M",
+  "4": "R",
+  "5": "L, GL",
+  "6": "C, G (dolci)",
+  "7": "C, G (dure), K",
+  "8": "F, V",
+  "9": "P, B"
+};
 
 function escapeHtml(value) {
   return String(value)
@@ -118,10 +142,34 @@ function sanitizeInput(value) {
   return String(value).trim().replace(/\s+/g, " ");
 }
 
+function escapeRegExp(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function normalizeWordForAlgorithms(value) {
+  return String(value)
+    .replace(/\([^)]*\)/g, " ")
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, " ");
+}
+
+function formatTimeDisplay(totalSeconds) {
+  const safeSeconds = Math.max(0, totalSeconds);
+  const minutes = Math.floor(safeSeconds / 60);
+  const seconds = safeSeconds % 60;
+  return `${minutes}:${String(seconds).padStart(2, "0")}`;
+}
+
 function buildWordsLookup(dict) {
   wordsLookupSet = new Set();
   Object.values(dict).forEach((list) => {
-    list.forEach((word) => wordsLookupSet.add(String(word).toLowerCase()));
+    list.forEach((word) => {
+      const rawWord = String(word).toLowerCase().trim();
+      const normalizedWord = normalizeWordForAlgorithms(word);
+      if (rawWord) wordsLookupSet.add(rawWord);
+      if (normalizedWord) wordsLookupSet.add(normalizedWord);
+    });
   });
 }
 
@@ -401,7 +449,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   verifyWordsCheck.checked = (localStorage.getItem("checkWords") === "true");
   switchAppSection("play");
   showContent("numbers");
-  labModeHint.textContent = LAB_DEFAULT_HINT;
+  labModeHint.textContent = "";
+  labModeHint.style.display = "none";
+  renderLabDefaultHint();
 
   labToggleBtn.addEventListener("click", () => {
     const nextSection = (currentSection === "play") ? "lab" : "play";
@@ -429,18 +479,17 @@ document.addEventListener("DOMContentLoaded", async () => {
       runLabConversion();
     }
   });
+  const refreshGamePreview = () => {
+    syncGameConfigUI();
+  };
 
-  infoText.addEventListener("click", (event) => {
-    const modeCard = event.target.closest("[data-mode-card]");
-    if (!modeCard || startButton.style.display === "none") {
-      return;
-    }
-
-    const nextMode = modeCard.getAttribute("data-mode-card");
-    if (nextMode && nextMode !== currentMode) {
-      showContent(nextMode);
-    }
-  });
+  if (minutesSlider && difficultyGrowthToggle && difficultySlider) {
+    minutesSlider.addEventListener("input", refreshGamePreview);
+    minutesSlider.addEventListener("change", refreshGamePreview);
+    difficultyGrowthToggle.addEventListener("change", refreshGamePreview);
+    difficultySlider.addEventListener("input", refreshGamePreview);
+    difficultySlider.addEventListener("change", refreshGamePreview);
+  }
 
   // Popup logic
   const popups = [helpPopup, settingsPopup];
@@ -568,33 +617,40 @@ submitBtn.addEventListener("mousedown", (e) => {
     targetInput.dispatchEvent(event);
   }
 });
-/**
- * Show the content for the given mode ("numbers" or "words").
- */
-function buildModeMissionCards(selectedMode) {
-  return `
-    <div class="mode-missions" role="presentation">
-      <article class="mode-mission-card ${selectedMode === "numbers" ? "is-active" : ""}" data-mode-card="numbers">
-        <p class="mode-mission-kicker">Modalita da numeri</p>
-        <h2 class="mode-mission-title">Numeri → Parole</h2>
-        <p class="mode-mission-detail">
-          Ogni 3 risposte corrette il livello aumenta e i numeri diventano piu lunghi.
-        </p>
-        <p class="mode-mission-goal">Obiettivo: fai piu conversioni possibili in 2:00.</p>
-        <p class="mode-mission-flow">🔢 47 → 🔡 faro</p>
-      </article>
+function getDifficultyUnitLabel(mode) {
+  return mode === "numbers" ? "cifre" : "fonemi";
+}
 
-      <article class="mode-mission-card ${selectedMode === "words" ? "is-active" : ""}" data-mode-card="words">
-        <p class="mode-mission-kicker">Modalita da parole</p>
-        <h2 class="mode-mission-title">Parole → Numeri</h2>
-        <p class="mode-mission-detail">
-          Ogni 3 risposte corrette aumenta il numero di parole da convertire.
-        </p>
-        <p class="mode-mission-goal">Obiettivo: fai piu conversioni possibili in 2:00.</p>
-        <p class="mode-mission-flow">🔡 faro → 🔢 84</p>
-      </article>
-    </div>
-  `;
+function updateDifficultyModeDescription() {
+  if (!difficultyModeDescription) return;
+  const difficultyUnit = getDifficultyUnitLabel(currentMode);
+  difficultyModeDescription.textContent = isProgressiveDifficulty
+    ? `Difficolta crescente: parti da 1 ${difficultyUnit} e aumenti ogni 3 risposte corrette.`
+    : `Difficolta fissa: in ogni turno avrai ${fixedDifficultyLevel} ${difficultyUnit} da convertire.`;
+}
+
+function syncGameConfigUI() {
+  if (!minutesSlider || !minutesValue || !difficultyGrowthToggle || !difficultySlider || !difficultyValue || !difficultySliderLabel) {
+    return;
+  }
+
+  const difficultyUnit = getDifficultyUnitLabel(currentMode);
+  const minutesTarget = Number.parseInt(minutesSlider.value, 10) || selectedMinutes;
+  const fixedTarget = Number.parseInt(difficultySlider.value, 10) || fixedDifficultyLevel;
+  selectedMinutes = minutesTarget;
+  fixedDifficultyLevel = fixedTarget;
+  isProgressiveDifficulty = difficultyGrowthToggle.checked;
+
+  gameDurationSeconds = selectedMinutes * 60;
+  minutesValue.textContent = `${selectedMinutes} min`;
+  difficultySliderLabel.textContent = `Livello fisso (${difficultyUnit})`;
+  difficultyValue.textContent = `${fixedDifficultyLevel} ${difficultyUnit}`;
+  difficultySlider.disabled = isProgressiveDifficulty;
+  difficultySlider.classList.toggle("is-disabled", isProgressiveDifficulty);
+  if (difficultyFixedControls) {
+    difficultyFixedControls.style.display = isProgressiveDifficulty ? "none" : "grid";
+  }
+  updateDifficultyModeDescription();
 }
 
 function showContent(newMode) {
@@ -625,8 +681,9 @@ function showContent(newMode) {
   startButton.textContent = currentMode === "numbers" ? "Inizia da numeri" : "Inizia da parole";
   wordInput.style.display = "none";
   numberInput.style.display = "none";
-  infoText.style.display = "block";
-  infoText.innerHTML = buildModeMissionCards(currentMode);
+  infoText.style.display = "none";
+  infoText.innerHTML = "";
+  syncGameConfigUI();
 
   boxElement.style.display = "none";
   boxElement.textContent = "";
@@ -639,22 +696,23 @@ function showContent(newMode) {
 function initGame() {
   infoText.style.display = "none";
   gameContainer.classList.remove("is-mode-preview");
+  syncGameConfigUI();
 
   const oldShareBtn = document.getElementById("share-button");
   if (oldShareBtn) oldShareBtn.remove();
 
   isGameOver = false;
-  timeLeft = gameDuration;
+  timeLeft = gameDurationSeconds;
   correctCount = 0;
   timerElement.style.display = "inline-block";
-  timerElement.textContent = timeLeft;
+  timerElement.textContent = formatTimeDisplay(timeLeft);
 
   timerInterval = setInterval(() => {
     if (timeLeft <= 0) {
       endGame();
     } else {
       timeLeft--;
-      timerElement.textContent = timeLeft;
+      timerElement.textContent = formatTimeDisplay(timeLeft);
     }
   }, 1000);
 
@@ -663,14 +721,14 @@ function initGame() {
   startButton.style.display = "none";
 
   if (currentMode === "numbers") {
-    digitsForNumbers = 1;
+    digitsForNumbers = isProgressiveDifficulty ? 1 : fixedDifficultyLevel;
     wordInput.value = "";
     wordInput.style.display = "inline-block";
     wordInput.disabled = false;
     wordInput.focus();
     nextQuestionNumbers();
   } else {
-    wordsCountForGame = 1;
+    wordsCountForGame = isProgressiveDifficulty ? 1 : fixedDifficultyLevel;
     numberInput.value = "";
     numberInput.style.display = "inline-block";
     numberInput.disabled = false;
@@ -697,17 +755,17 @@ function nextQuestionNumbers() {
 function checkNumbersAnswer() {
   if (isGameOver) return;
   const userAnswer = wordInput.value.trim().toLowerCase();
-  const wordsArray = userAnswer.split(/\s+/);
+  const normalizedUserAnswer = normalizeWordForAlgorithms(userAnswer);
+  const wordsArray = normalizedUserAnswer
+    .split(/\s+/)
+    .filter((word) => word !== "");
   const convertedValue = convertWord(userAnswer);
 
   const onlyExistingWords = verifyWordsCheck.checked;
   let isExistingWord = true;
 
   if (onlyExistingWords) {
-    // Validate each typed word in bigDictionary
-    isExistingWord = wordsArray.every((w) =>
-      Object.values(bigDictionary).some((list) => list.includes(w))
-    );
+    isExistingWord = wordsArray.every((w) => wordsLookupSet.has(w));
   }
 
   if (convertedValue === currentNumber) {
@@ -716,16 +774,16 @@ function checkNumbersAnswer() {
       // The phonetic match is correct, but the words are not in dictionary
       gameContainer.classList.add("incorrect");
       setTimeout(() => gameContainer.classList.remove("incorrect"), 500);
-      updateScoreboard(currentNumber, userAnswer, false, true);
+      updateScoreboard(currentNumber, userAnswer, false, true, currentNumber);
       wordInput.value = "";
       return;
     }
     // Fully correct
     gameContainer.classList.add("correct");
     setTimeout(() => gameContainer.classList.remove("correct"), 500);
-    updateScoreboard(currentNumber, userAnswer, true, false);
+    updateScoreboard(currentNumber, userAnswer, true, false, currentNumber);
     correctCount++;
-    if (correctCount % 3 === 0) {
+    if (isProgressiveDifficulty && correctCount % 3 === 0) {
       digitsForNumbers++;
     }
     nextQuestionNumbers();
@@ -733,7 +791,7 @@ function checkNumbersAnswer() {
     // Incorrect
     gameContainer.classList.add("incorrect");
     setTimeout(() => gameContainer.classList.remove("incorrect"), 500);
-    updateScoreboard(currentNumber, userAnswer, false, false);
+    updateScoreboard(currentNumber, userAnswer, false, false, currentNumber);
   }
   wordInput.value = "";
 }
@@ -775,7 +833,13 @@ function trySplitNumberIntoWordsSmall(numberStr, segmentCount) {
       return null;
     }
   }
+  const possibleCuts = [];
   for (let cut = 1; cut < numberStr.length; cut++) {
+    possibleCuts.push(cut);
+  }
+  shuffleArray(possibleCuts);
+
+  for (const cut of possibleCuts) {
     const firstPart = numberStr.slice(0, cut);
     const remainder = numberStr.slice(cut);
     if (smallDictionary[firstPart]) {
@@ -799,12 +863,15 @@ function nextQuestionWords() {
     return;
   }
 
-  const possibleSegments = Array.from({ length: wordsCountForGame }, (_, i) => i + 1);
   const maxAttempts = 30;
   let foundWordCombo = null;
 
   for (let attempt = 0; attempt < maxAttempts; attempt++) {
     const randomNumStr = generateRandomNumberString(wordsCountForGame);
+    const possibleSegments = [];
+    for (let segCount = 1; segCount <= randomNumStr.length; segCount++) {
+      possibleSegments.push(segCount);
+    }
     shuffleArray(possibleSegments);
 
     for (const segCount of possibleSegments) {
@@ -841,16 +908,16 @@ function checkWordsAnswer() {
   if (userNumber === correctNumber) {
     gameContainer.classList.add("correct");
     setTimeout(() => gameContainer.classList.remove("correct"), 500);
-    updateScoreboard(joinedWords, userNumber, true, false);
+    updateScoreboard(joinedWords, userNumber, true, false, correctNumber);
     correctCount++;
-    if (correctCount % 3 === 0) {
+    if (isProgressiveDifficulty && correctCount % 3 === 0) {
       wordsCountForGame++;
     }
     nextQuestionWords();
   } else {
     gameContainer.classList.add("incorrect");
     setTimeout(() => gameContainer.classList.remove("incorrect"), 500);
-    updateScoreboard(joinedWords, userNumber, false, false);
+    updateScoreboard(joinedWords, userNumber, false, false, correctNumber);
   }
   numberInput.value = "";
 }
@@ -860,7 +927,8 @@ function checkWordsAnswer() {
  */
 function convertWord(input) {
   if (!input) return "99999999";
-  let word = String(input).toLowerCase().trim();
+  let word = normalizeWordForAlgorithms(input);
+  if (!word) return "99999999";
 
   ITALIAN_ADJUSTMENTS.forEach((adj) => {
     adj.variants.forEach((variant) => {
@@ -869,7 +937,7 @@ function convertWord(input) {
   });
   EXCEPTIONS.forEach((ex) => {
     ex.words.forEach((w) => {
-      word = word.replace(new RegExp(w, "g"), ex.number);
+      word = word.replace(new RegExp(escapeRegExp(w), "g"), ex.number);
     });
   });
   CONVERSION_TABLE.forEach((entry) => {
@@ -1073,9 +1141,15 @@ function buildTableRowsFromPaths(paths) {
   return paths.map((path) => path.wordsByPart.map((words) => words.join(", ")));
 }
 
-function renderLabWordNumberResult(sourceText, number, warningText) {
-  labModeHint.textContent = `Modalita parole -> numeri. Input: ${sourceText}`;
+function renderLabDefaultHint() {
+  labResultContainer.innerHTML = `
+    <div class="lab-result-empty">
+      ${escapeHtml(LAB_DEFAULT_HINT)}
+    </div>
+  `;
+}
 
+function renderLabWordNumberResult(sourceText, number, warningText) {
   const warningHtml = warningText
     ? `<p class="lab-conversion-warning">${escapeHtml(warningText)}</p>`
     : "";
@@ -1090,10 +1164,9 @@ function renderLabWordNumberResult(sourceText, number, warningText) {
 }
 
 function renderLabNoCombinations(number, dictionaryLabel) {
-  labModeHint.textContent = `Modalita numeri -> parole (${dictionaryLabel}). Nessuna combinazione per ${number}.`;
   labResultContainer.innerHTML = `
     <div class="lab-result-empty">
-      Nessuna combinazione trovata per <strong>${escapeHtml(number)}</strong> usando il ${escapeHtml(dictionaryLabel)}.
+      Nessuna combinazione trovata per <strong>${escapeHtml(number)}</strong>.
     </div>
   `;
 }
@@ -1114,10 +1187,9 @@ function renderLabNumberWordsResult(number, paths, dictionaryLabel, dictionarySo
     nextDictionaryMode: defaultGraphDictionaryMode
   };
 
-  const graphOnlyMessage = forceGraphOnly
-    ? ` Numero lungo (${number.length} cifre): usa la modalita grafo.`
+  const graphOnlyNoteHtml = forceGraphOnly
+    ? `<p class="lab-result-limit-note">Numero lungo (${number.length} cifre): usa la modalita grafo.</p>`
     : "";
-  labModeHint.textContent = `Modalita numeri -> parole (${dictionaryLabel}).${graphOnlyMessage}`;
 
   const viewToggleHtml = forceGraphOnly
     ? `<div class="lab-result-view-toggle"><button type="button" class="lab-result-mode-btn active" data-view-mode="graph">Grafo</button></div>`
@@ -1129,9 +1201,10 @@ function renderLabNumberWordsResult(number, paths, dictionaryLabel, dictionarySo
   labResultContainer.innerHTML = `
     <div class="lab-result-table-wrap">
       <div class="lab-result-head">
-        <div class="lab-result-title">Parole per ${escapeHtml(number)} (${escapeHtml(dictionaryLabel)})</div>
+        <div></div>
         ${viewToggleHtml}
       </div>
+      ${graphOnlyNoteHtml}
       <div id="lab-number-words-view"></div>
     </div>
   `;
@@ -1291,7 +1364,6 @@ function renderLabNumberWordsResult(number, paths, dictionaryLabel, dictionarySo
 
     const activeMode = graphState.nextDictionaryMode === "big" ? "big" : "small";
     const activeEngine = graphEngineByMode[activeMode];
-    const activeDictionaryLabel = activeMode === "big" ? "grande" : "comune";
     const isCompleted = graphState.currentIndex === number.length;
     const candidates = activeEngine.getCandidates(graphState.currentIndex);
 
@@ -1321,7 +1393,7 @@ function renderLabNumberWordsResult(number, paths, dictionaryLabel, dictionarySo
         `).join("");
 
     const candidatesHtml = candidates.length === 0
-      ? `<div class="lab-graph-end">Nessun nodo successivo disponibile.</div>`
+      ? ""
       : candidates.map((candidate) => `
           <div class="lab-graph-candidate-row">
             <button
@@ -1336,10 +1408,7 @@ function renderLabNumberWordsResult(number, paths, dictionaryLabel, dictionarySo
           </div>
         `).join("");
 
-    const selectedSummary = graphState.selectedWords.map((word) => escapeHtml(word)).join(" -> ");
-    const completedHtml = isCompleted
-      ? `<div class="lab-graph-complete">Percorso completo: ${selectedSummary || "(vuoto)"}</div>`
-      : "";
+    const completedHtml = "";
 
     viewNode.innerHTML = `
       <div class="lab-graph-panel">
@@ -1356,7 +1425,6 @@ function renderLabNumberWordsResult(number, paths, dictionaryLabel, dictionarySo
           <div class="lab-graph-selected-track">${selectedHtml}</div>
           <div class="lab-graph-branch">${candidatesHtml}</div>
         </div>
-        <div class="lab-graph-selected-placeholder">Dizionario attivo per la prossima scelta: ${activeDictionaryLabel}</div>
         ${completedHtml}
       </div>
     `;
@@ -1440,7 +1508,6 @@ function runLabConversion() {
 
   if (!cleanInput) {
     labResultContainer.innerHTML = "";
-    labModeHint.textContent = LAB_DEFAULT_HINT;
     return;
   }
 
@@ -1448,8 +1515,11 @@ function runLabConversion() {
 
   if (/^\d+$/.test(compact)) {
     if (compact.length > LAB_MAX_INPUT_DIGITS) {
-      labResultContainer.innerHTML = "";
-      labModeHint.textContent = `Numero troppo lungo (${compact.length} cifre). Massimo consigliato: ${LAB_MAX_INPUT_DIGITS}.`;
+      labResultContainer.innerHTML = `
+        <div class="lab-result-empty">
+          Numero troppo lungo (<strong>${compact.length}</strong> cifre). Massimo consigliato: ${LAB_MAX_INPUT_DIGITS}.
+        </div>
+      `;
       return;
     }
 
@@ -1485,8 +1555,7 @@ function runLabConversion() {
   let warning = "";
 
   if (verifyWordsCheck.checked) {
-    const words = cleanInput
-      .toLowerCase()
+    const words = normalizeWordForAlgorithms(cleanInput)
       .split(/\s+/)
       .filter((word) => word !== "");
 
@@ -1502,11 +1571,46 @@ function runLabConversion() {
 /**
  * Update scoreboard with user attempt.
  */
-function updateScoreboard(correctValue, userValue, isCorrect, notExistingWord) {
+function buildPhoneticCorrections(expectedNumber, attemptedNumber) {
+  const expected = String(expectedNumber || "").trim();
+  const attempted = String(attemptedNumber || "").trim();
+  if (!expected) return "";
+
+  const wrongDigits = [];
+  const seen = new Set();
+  const maxLen = Math.max(expected.length, attempted.length);
+
+  for (let i = 0; i < maxLen; i++) {
+    const expDigit = expected[i] || "";
+    const userDigit = attempted[i] || "";
+    if (expDigit && expDigit !== userDigit && PHONETIC_HINTS[expDigit] && !seen.has(expDigit)) {
+      seen.add(expDigit);
+      wrongDigits.push(expDigit);
+    }
+  }
+
+  if (wrongDigits.length === 0) return "";
+
+  const hints = wrongDigits
+    .map((digit) => `${digit} ➜ ${PHONETIC_HINTS[digit]}`)
+    .join(" • ");
+
+  return `<br><small style="color:#41515f;">Correzione: ${hints}</small>`;
+}
+
+function updateScoreboard(correctValue, userValue, isCorrect, notExistingWord, expectedNumber = "") {
   if (resultContainer.style.display === "none") {
     resultContainer.style.display = "block";
   }
   const p = document.createElement("p");
+
+  const userDigits = /^\d+$/.test(String(userValue).trim())
+    ? String(userValue).trim()
+    : convertWord(String(userValue).toLowerCase());
+  const correctionNote = (!isCorrect && !notExistingWord)
+    ? buildPhoneticCorrections(expectedNumber, userDigits)
+    : "";
+
   if (isCorrect) {
     p.innerHTML = `
       <strong style="color: green;">✅</strong>
@@ -1519,6 +1623,7 @@ function updateScoreboard(correctValue, userValue, isCorrect, notExistingWord) {
         <strong style="color:red;">❌</strong>
         <strong>${correctValue}</strong>
         ➜ <strong>${userValue}</strong>
+        ${correctionNote}
       `;
     } else {
       p.innerHTML = `
@@ -1538,6 +1643,7 @@ function endGame() {
   isGameOver = true;
   clearInterval(timerInterval);
   timerInterval = null;
+  gameContainer.classList.add("is-mode-preview");
   timerElement.style.display = "none";
 
   wordInput.disabled = true;
@@ -1551,7 +1657,13 @@ function endGame() {
   boxElement.style.display = "none";
 
   infoText.style.display = "block";
-  infoText.innerHTML = `Tempo scaduto! Hai totalizzato ${correctCount} punti.`;
+  infoText.innerHTML = `
+    <article class="mode-summary-card">
+      <p class="mode-summary-kicker">Partita conclusa</p>
+      <h2 class="mode-summary-title">Tempo scaduto</h2>
+      <p class="mode-summary-goal">Hai totalizzato ${correctCount} punti.</p>
+    </article>
+  `;
 
   const shareBtn = document.createElement("button");
   shareBtn.id = "share-button";

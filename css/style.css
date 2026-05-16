@@ -1414,7 +1414,7 @@ main {
 
 #timer {
   margin: 0;
-  align-self: flex-start;
+  align-self: center;
   border: none;
   border-radius: 999px;
   padding: 10px 18px;
@@ -1428,48 +1428,130 @@ main {
 #info-text {
   margin: 0;
   width: 100%;
-  padding: clamp(18px, 2.2vw, 30px);
-  border: 1px solid #d3dde6;
-  border-radius: var(--radius-md);
-  background: linear-gradient(150deg, #ffffff 0%, #eff5fb 100%);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
   color: var(--text-muted);
   line-height: 1.55;
 }
 
-.mode-missions {
+.game-settings {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(12px, 1.6vw, 18px);
-  width: min(1040px, 100%);
+  gap: 14px;
+  grid-template-columns: minmax(0, 1fr);
+  width: min(720px, 100%);
   margin: 0 auto;
 }
 
-.mode-mission-card {
+#game-container:not(.is-mode-preview) .game-settings {
+  display: none;
+}
+
+.game-setting-card {
+  display: grid;
+  gap: 10px;
+  padding: clamp(14px, 1.7vw, 20px);
+  border: 1px solid #cad5df;
+  border-radius: 16px;
+  background: linear-gradient(154deg, #ffffff 0%, #f0f6fb 100%);
+  box-shadow: 0 10px 22px rgba(39, 54, 67, 0.1);
+  justify-items: center;
+  text-align: center;
+}
+
+.game-setting-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.game-setting-fixed {
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+}
+
+.game-setting-label,
+.game-setting-subtitle {
+  margin: 0;
+  font-weight: 700;
+  color: #1d2831;
+}
+
+.game-setting-subtitle {
+  font-size: 0.94rem;
+  color: #4f6170;
+}
+
+.game-setting-value {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 56px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e9f2fb;
+  border: 1px solid #c4d3e1;
+  font-weight: 700;
+  color: #2b3b49;
+}
+
+#minutes-slider,
+#difficulty-slider {
+  width: min(520px, 100%);
+  accent-color: #4caf50;
+}
+
+#difficulty-slider.is-disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.game-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: #2f3f4b;
+}
+
+.game-toggle-switch {
+  flex-shrink: 0;
+}
+
+.game-setting-help {
+  margin: 0;
+  color: #4f6170;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+.mode-summary-card {
   display: grid;
   gap: 12px;
-  text-align: left;
+  text-align: center;
   padding: clamp(16px, 1.9vw, 22px);
   border: 1px solid #cad5df;
   border-radius: 16px;
-  background: linear-gradient(155deg, #ffffff 0%, #f1f6fb 100%);
-  box-shadow: 0 8px 20px rgba(32, 46, 58, 0.09);
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-  cursor: pointer;
-}
-
-.mode-mission-card:hover {
-  transform: translateY(-2px);
-  border-color: #a2b7c9;
-}
-
-.mode-mission-card.is-active {
-  border-color: #4caf50;
-  box-shadow: 0 14px 28px rgba(76, 175, 80, 0.24);
   background: linear-gradient(155deg, #ffffff 0%, #edf8ef 100%);
+  box-shadow: 0 12px 28px rgba(76, 175, 80, 0.18);
+  width: min(760px, 100%);
+  margin: 0 auto;
 }
 
-.mode-mission-kicker {
+.mode-summary-kicker {
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -1478,7 +1560,7 @@ main {
   color: #4f6170;
 }
 
-.mode-mission-title {
+.mode-summary-title {
   margin: 0;
   font-family: "Space Grotesk", "Manrope", sans-serif;
   font-size: clamp(1.08rem, 1.1vw + 0.78rem, 1.52rem);
@@ -1486,24 +1568,50 @@ main {
   color: #1d2831;
 }
 
-.mode-mission-detail {
+.mode-summary-subtitle {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #466072;
+}
+
+.mode-summary-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.mode-summary-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #b8c8d7;
+  background: #f2f7fc;
+  color: #31414d;
+  font-weight: 700;
+  font-size: 0.86rem;
+}
+
+.mode-summary-detail {
   margin: 0;
   font-size: clamp(0.95rem, 0.92rem + 0.2vw, 1.08rem);
   color: #4f6170;
 }
 
-.mode-mission-goal {
+.mode-summary-goal {
   margin: 0;
   font-size: 0.95rem;
   font-weight: 800;
   color: #1f6f36;
 }
 
-.mode-mission-flow {
+.mode-summary-flow {
   margin: 0;
   display: inline-flex;
   align-items: center;
-  justify-self: start;
+  justify-self: center;
   padding: 6px 10px;
   border-radius: 999px;
   border: 1px solid #b8c8d7;
@@ -1514,14 +1622,7 @@ main {
 }
 
 #game-container.is-mode-preview {
-  justify-content: center;
-}
-
-#game-container.is-mode-preview #info-text {
-  padding: 0;
-  border: none;
-  background: transparent;
-  box-shadow: none;
+  justify-content: flex-start;
 }
 
 #game-container.is-mode-preview #start-button {
@@ -1588,13 +1689,15 @@ main {
   align-items: stretch;
   justify-content: flex-start;
   gap: 10px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 #word-input,
 #number-input,
 #lab-unified-input {
-  flex: 1 1 300px;
+  flex: 1 1 auto;
+  width: auto;
+  max-width: 100%;
   min-width: 0;
   min-height: 52px;
   margin: 0;
@@ -1656,6 +1759,44 @@ main {
 
 .submit-btn {
   white-space: nowrap;
+  max-width: 100%;
+  min-width: 96px;
+  box-sizing: border-box;
+  flex: 0 0 clamp(96px, 26vw, 132px);
+}
+
+@media (max-width: 932px) {
+  #word-input,
+  #number-input {
+    flex: 1 1 auto;
+    width: 0;
+    min-height: 46px;
+    padding: 0 12px;
+    font-size: 16px;
+  }
+
+  .submit-btn {
+    width: auto;
+    min-width: 96px;
+    min-height: 46px;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  #word-input,
+  #number-input {
+    width: 0 !important;
+    max-width: none;
+    flex: 1 1 auto;
+  }
+
+  .submit-btn {
+    width: auto !important;
+    min-width: 96px;
+    max-width: 132px;
+    display: block !important;
+    align-self: auto;
+  }
 }
 
 #resoconto {
@@ -2204,30 +2345,37 @@ input:checked + .slider {
     min-height: 0;
   }
 
-  .mode-missions {
-    grid-template-columns: 1fr;
+  .game-settings {
     gap: 10px;
   }
 
-  .mode-mission-card {
+  .game-setting-card,
+  .mode-summary-card {
     padding: 14px;
   }
 
-  #word-input,
-  #number-input,
   #lab-unified-input {
     flex-basis: 100%;
+    min-height: 46px;
+    padding: 0 12px;
+    font-size: 16px;
   }
 
-  .submit-btn,
   #start-button,
   .lab-convert-btn {
     width: 100%;
+    min-height: 46px;
   }
 
-  #input-group,
   .lab-input-group {
     flex-direction: column;
+    gap: 8px;
+  }
+
+  #input-group .submit-btn {
+    width: auto;
+    min-width: 96px;
+    max-width: 132px;
   }
 
   .footer .mapping-footer {

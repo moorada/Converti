@@ -38,7 +38,7 @@
   <link rel="shortcut icon" href="/favicon/favicon.ico" />
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/style.css?v=20260507-3" />
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKYCT5V96P"></script>
   <script>
@@ -339,6 +339,38 @@
         </div>
         <div id="game-container">
           <div id="timer">10</div>
+          <div id="game-settings" class="game-settings">
+            <div class="game-setting-card">
+              <div class="game-setting-head">
+                <label for="minutes-slider" class="game-setting-label">Durata partita</label>
+                <span id="minutes-value" class="game-setting-value">2 min</span>
+              </div>
+              <input type="range" id="minutes-slider" min="1" max="10" step="1" value="2" />
+            </div>
+
+            <div class="game-setting-card">
+              <div class="game-setting-head">
+                <p class="game-setting-label">Difficolta</p>
+                <div class="game-toggle">
+                  <span id="difficulty-growth-toggle-label">Difficolta crescente</span>
+                  <label class="switch game-toggle-switch" for="difficulty-growth-toggle" aria-label="Difficolta crescente">
+                    <input type="checkbox" id="difficulty-growth-toggle" checked aria-labelledby="difficulty-growth-toggle-label" />
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div id="difficulty-fixed-controls" class="game-setting-fixed">
+                <div class="game-setting-head">
+                <label for="difficulty-slider" id="difficulty-slider-label" class="game-setting-subtitle">Livello fisso</label>
+                <span id="difficulty-value" class="game-setting-value">1</span>
+                </div>
+                <input type="range" id="difficulty-slider" min="1" max="8" step="1" value="1" />
+              </div>
+
+              <p id="difficulty-mode-description" class="game-setting-help"></p>
+            </div>
+          </div>
           <div id="info-text"></div>
           <div id="box"></div>
 
@@ -369,10 +401,7 @@
             />
             <button id="lab-convert-button" class="submit-btn lab-convert-btn">Converti</button>
           </div>
-          <p id="lab-mode-hint">
-            Inserisci solo cifre per ottenere una tabella di parole.
-            Inserisci testo per ottenere un solo numero.
-          </p>
+          <p id="lab-mode-hint"></p>
         </div>
 
         <div id="lab-result-container"></div>
@@ -397,7 +426,7 @@
   </div>
 
   <!-- Main JS -->
-  <script src="./js/script.js"></script>
+  <script src="./js/script.js?v=20260507-3"></script>
 
 </body>
 
